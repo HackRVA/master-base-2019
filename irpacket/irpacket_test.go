@@ -24,13 +24,13 @@ func TestBitShifting(t *testing.T) {
 	fmt.Printf("address - %#5x - %6[1]d - %08[1]b\n", address)
 	fmt.Printf("badgeid - %#5x - %6[1]d - %016[1]b\n", badgeid)
 	fmt.Println()
-	fmt.Printf("(start   & 0x01)  >> 32  - %032b - %#[1]x\n", startBits(start))
+	fmt.Printf("(start   & 0x01)  << 31  - %032b - %#[1]x\n", startBits(start))
 	fmt.Printf("(command & 0x01)  << 30  - %032b - %#[1]x\n", commandBits(command))
 	fmt.Printf("(address & 0x01f) << 25  - %032b - %#[1]x\n", addressBits(address))
 	fmt.Printf("(badgeid & 0x1ff) << 16  - %032b - %#[1]x\n", badgeidBits(badgeid))
 	fmt.Printf("(payload & 0x0ffff)      - %032b - %#[1]x\n", payloadBits(payload))
 	fmt.Println()
-	fmt.Printf("bits ored together       - %032b - %#[1]x\n", testRawPacket())
+	fmt.Printf("bits or'd together       - %032b - %#[1]x\n", testRawPacket())
 }
 
 func TestReadPacket(t *testing.T) {
