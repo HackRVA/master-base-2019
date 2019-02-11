@@ -5,16 +5,16 @@ import "fmt"
 
 const start uint8 = 1
 const command uint8 = 1
-const address uint8 = 0x1B
-const badgeid uint16 = 0x0101
-const payload uint16 = 0xffff
+const address uint8 = 0x1A
+const badgeid uint16 = 0x063
+const payload uint16 = 0x3002
 
 func testRawPacket() uint32 {
-	return startBits(start) |
-		commandBits(command) |
-		addressBits(address) |
-		badgeidBits(badgeid) |
-		payloadBits(payload)
+	return StartBits(start) |
+		CommandBits(command) |
+		AddressBits(address) |
+		BadgeidBits(badgeid) |
+		PayloadBits(payload)
 }
 
 func TestBitShifting(t *testing.T) {
@@ -33,18 +33,32 @@ func TestBitShifting(t *testing.T) {
 	fmt.Printf("badgeid - %#6x - %6[1]d - %016[1]b\n", badgeid)
 	fmt.Printf("payload - %#6x - %6[1]d - %016[1]b\n", payload)
 	fmt.Println()
-	fmt.Printf("(start   & 0x01)  << 31   - %032b - %#[1]x\n", startBits(start))
-	fmt.Printf("(command & 0x01)  << 30   - %032b - %#[1]x\n", commandBits(command))
-	fmt.Printf("(address & 0x01f) << 25   - %032b - %#[1]x\n", addressBits(address))
-	fmt.Printf("(badgeid & 0x1ff) << 16   - %032b - %#[1]x\n", badgeidBits(badgeid))
-	fmt.Printf("(payload & 0x0ffff)       - %032b - %#[1]x\n", payloadBits(payload))
+	fmt.Printf("(start   & 0x01)  << 31   - %032b - %#[1]x\n", StartBits(start))
+	fmt.Printf("(command & 0x01)  << 30   - %032b - %#[1]x\n", CommandBits(command))
+	fmt.Printf("(address & 0x01f) << 25   - %032b - %#[1]x\n", AddressBits(address))
+	fmt.Printf("(badgeid & 0x1ff) << 16   - %032b - %#[1]x\n", BadgeidBits(badgeid))
+	fmt.Printf("(payload & 0x0ffff)       - %032b - %#[1]x\n", PayloadBits(payload))
 	fmt.Println()
 	fmt.Printf("bits or'd together        - %032b - %#[1]x\n", testRawPacket())
+
+	byte1 := uint8(testRawPacket() & 0x0ff)
+	byte2 := uint8((testRawPacket() >> 8) & 0x0ff)
+	byte3 := uint8((testRawPacket() >> 16) & 0x0ff)
+	byte4 := uint8((testRawPacket() >> 24) & 0x0ff)
+	fmt.Printf("Bytes: %#x, %#x, %#x, %#x\n", byte1, byte2, byte3, byte4)
+	fmt.Printf("Bytes: %d, %d, %d, %d\n", byte1, byte2, byte3, byte4)
+
+	fmt.Println("Byte Slice:", RawPacketToBytes(testRawPacket()))
+
 }
 
 func TestReadPacket(t *testing.T) {
 
-	testPacket := readPacket(testRawPacket())
+	testPacket := ReadPacket(testRawPacket())
+
+	fmt.Println()
+	PrintPacket(testPacket)
+	fmt.Println()
 
 	if testPacket.Start != start {
 		t.Errorf("readPacket(testRawPacket()).Start = start")
@@ -70,7 +84,7 @@ func TestReadPacket(t *testing.T) {
 
 func TestBuildPacket(t *testing.T) {
 
-	testPacket := buildPacket(start, command, address, badgeid, payload)
+	testPacket := BuildPacket(start, command, address, badgeid, payload)
 
 	if testPacket.Start != start {
 		t.Errorf("testPacket.Start = start")
@@ -96,9 +110,9 @@ func TestBuildPacket(t *testing.T) {
 
 func TestWritePacket(t *testing.T) {
 
-	testPacket := buildPacket(start, command, address, badgeid, payload)
+	testPacket := BuildPacket(start, command, address, badgeid, payload)
 
-	if writePacket(testPacket) != testRawPacket() {
-		t.Errorf("writePacket(testPacket()) = rawTestPacket")
+	if WritePacket(testPacket) != testRawPacket() {
+		t.Errorf("writePacket(testPacket()) = testRawPacket")
 	}
 }
