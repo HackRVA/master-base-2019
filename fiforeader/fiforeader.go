@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	irp "github.com/wjodon/master-base/irpacket"
+	irp "github.com/HackRVA/master-base-2019/irpacket"
 )
 
 var fifofile = "/tmp/badge-ir-fifo"
