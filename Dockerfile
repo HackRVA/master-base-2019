@@ -13,6 +13,7 @@ COPY . .
 # build main.go
 RUN go build -o op-codes opcodes/*.go
 RUN go build -o ir irpacket/*.go
+RUN go build -o readfifo fiforeader/*.go
 
 # Run the executable
-CMD ["./op-codes"]
+CMD ["./readfifo"]
