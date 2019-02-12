@@ -52,6 +52,7 @@ func BadgeidBits(badgeid uint16) uint32 {
 func PayloadBits(payload uint16) uint32 {
 	return (uint32(payload) & 0x0ffff)
 }
+
 func WritePacket(packet *Packet) uint32 {
 	return StartBits(packet.Start) |
 		CommandBits(packet.Command) |
