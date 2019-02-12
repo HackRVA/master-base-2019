@@ -74,9 +74,9 @@ func RawPacketToBytes(rawPacket uint32) []byte {
 
 func PrintPacket(packet *Packet) {
 	fmt.Printf("  packet: %x\n", WritePacket(packet))
-	fmt.Printf("     cmd: %#x\n", packet.Command)
-	fmt.Printf("   start: %#x\n", packet.Start)
-	fmt.Printf(" address: %#x\n", packet.Address)
-	fmt.Printf("badge ID: %#x\n", packet.BadgeID)
-	fmt.Printf(" payload: %#x\n", packet.Payload)
+	fmt.Printf("     cmd: %#6x - %6[1]d\n", packet.Command)
+	fmt.Printf("   start: %#6x - %6[1]d\n", packet.Start)
+	fmt.Printf(" address: %#6x - %6[1]d\n", packet.Address)
+	fmt.Printf("badge ID: %#6x - %6[1]d\n", packet.BadgeID)
+	fmt.Printf(" payload: %#6x - %6[1]d\n", packet.Payload)
 }
