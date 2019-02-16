@@ -35,6 +35,7 @@ type GameData struct {
 
 // GameSpec - The game specification sent to the badge
 type GameSpec struct {
+	BadgeID   uint16
 	StartTime uint16
 	Duration  uint16
 	Variant   uint8 // 0x0f
@@ -117,6 +118,9 @@ func ProcessPackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 		default:
 			fmt.Println("** Opcode", opcode, "not handled yet")
 		}
-
 	}
+}
+
+func buildGameStartTime(gameSpec *GameSpec) *irp.Packet {
+	return irb.BuildPacket(1, 1, C.BADGE_IR_GAME_ADDRESS, gameSpec.BadgeID, C.OPCODE_SET_GAME_START_TIME<<12|gameSpec.StartTime)
 }

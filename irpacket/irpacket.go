@@ -2,6 +2,9 @@ package irpacket
 
 import "fmt"
 
+const Start = 1
+const Command = 1
+
 // Packet structure for badge messages
 type Packet struct {
 	Start   uint8
