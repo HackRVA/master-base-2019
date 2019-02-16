@@ -3,4 +3,5 @@ services:
   master-base: 
     build: .
     volumes:
-      - /tmp/badge-ir-fifo:/tmp/badge-ir-fifo
+      - /tmp/fifo-to-badge:/tmp/fifo-to-badge
+      - /tmp/fifo-from-badge:/tmp/fifo-from-badge

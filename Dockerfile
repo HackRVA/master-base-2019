@@ -11,8 +11,6 @@ WORKDIR $GOPATH/src/github.com/HackRVA/master-base-2019
 COPY . .
 
 # build main.go
-RUN go build -o op-codes opcodes/*.go
-RUN go build -o ir irpacket/*.go
 RUN go build -o readfifo fiforeader/*.go
 
 # Run the executable
