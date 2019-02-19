@@ -122,5 +122,5 @@ func ProcessPackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 }
 
 func buildGameStartTime(gameSpec *GameSpec) *irp.Packet {
-	return irb.BuildPacket(1, 1, C.BADGE_IR_GAME_ADDRESS, gameSpec.BadgeID, C.OPCODE_SET_GAME_START_TIME<<12|gameSpec.StartTime)
+	return irp.BuildPacket(1, 1, C.BADGE_IR_GAME_ADDRESS, gameSpec.BadgeID, C.OPCODE_SET_GAME_START_TIME<<12|gameSpec.StartTime)
 }
