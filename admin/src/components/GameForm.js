@@ -12,6 +12,7 @@ const styles = theme => ({
 })
 
 const GameForm = props => {
+  const { classes } = props;
   return <div style={{ justifyContent: 'left' }}>
     <NativeSelect
       // value={this.state.age}
@@ -24,8 +25,7 @@ const GameForm = props => {
     <TimePicker label={"Game Start Time"} />
     <TimePicker label={"Game Duration"} />
 
-    <Button className={props.classes.btn} variant="outlined" onClick={props.handleSchedule}>Submit</Button>
-
+    <Button className={classes.btn} variant="outlined" onClick={props.handleSchedule}>Submit</Button>
   </div>
 }
 

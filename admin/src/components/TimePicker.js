@@ -24,8 +24,6 @@ const styles = theme => ({
 
 function TimePickers(props) {
   const { classes } = props;
-
-  console.log('props in other: ', props)
   return (
     <form className={classes.container} noValidate>
       <TextField
