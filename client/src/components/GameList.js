@@ -5,13 +5,14 @@ const GameList = () => {
   return <div>
     <h3> Game List...</h3>
     {Games.map((x, i) => {
+      const { GameID, StartTime, Duration, Variant, Team } = x;
       return <div key={i}>
         <ul style={{ listStyle: "none" }}>
-          <li> GameID: {x.GameID} </li>
-          <li> StartTime: {x.StartTime} </li>
-          <li> Duration: {x.Duration} </li>
-          <li> Variant: {x.Variant} </li>
-          <li> Team: {x.Team} </li>
+          <li> GameID: {GameID} </li>
+          <li> StartTime: {StartTime} </li>
+          <li> Duration: {Duration} </li>
+          <li> Variant: {Variant} </li>
+          <li> Team: {Team} </li>
         </ul>
       </div>
     })}

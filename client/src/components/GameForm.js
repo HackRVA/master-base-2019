@@ -1,25 +1,32 @@
 import React from 'react';
+import TimePicker from './TimePicker';
+import NativeSelect from '@material-ui/core/NativeSelect';
+import Input from '@material-ui/core/Input';
+import Button from '@material-ui/core/Button';
+import { withStyles } from '@material-ui/core/styles';
+
+const styles = theme => ({
+  btn: {
+    background: theme.palette.primary.main,
+  }
+})
 
 const GameForm = props => {
   return <div style={{ justifyContent: 'left' }}>
-    <div>
-      Game Type:
-    <select>
-        <option value="grapefruit">DeathMatch</option>
-        <option value="lime">Team DeathMatch</option>
-      </select>
-    </div>
-    <div>
-      Game Start Time:
-      <input />
-    </div>
-    <div>
-      Game Duration:
-      <input />
-    </div>
-    <button onClick={props.handleSchedule}>Submit</button>
+    <NativeSelect
+      // value={this.state.age}
+      // onChange={this.handleChange('gameType')}
+      input={<Input name="gameType" id="gameType" />}
+    >
+      <option value={"DEATMATCH"}>DeathMatch</option>
+      <option value={"TEAMDEATHMATCH"}>Team DeathMatch</option>
+    </NativeSelect>
+    <TimePicker label={"Game Start Time"} />
+    <TimePicker label={"Game Duration"} />
+
+    <Button className={props.classes.btn} variant="outlined" onClick={props.handleSchedule}>Submit</Button>
 
   </div>
 }
 
-export default GameForm;
+export default withStyles(styles)(GameForm);
