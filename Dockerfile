@@ -10,8 +10,9 @@ WORKDIR $GOPATH/src/github.com/HackRVA/master-base-2019
 # Copy everything from the current directory
 COPY . .
 
+RUN go get
 # build main.go
-RUN go build -o readfifo fiforeader/*.go
+RUN go build -o server server.go
 
 # Run the executable
-CMD ["./readfifo"]
+CMD ["./server"]

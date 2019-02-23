@@ -5,3 +5,5 @@ services:
     volumes:
       - /tmp/fifo-to-badge:/tmp/fifo-to-badge
       - /tmp/fifo-from-badge:/tmp/fifo-from-badge
+    ports:
+      - 3000:3000
