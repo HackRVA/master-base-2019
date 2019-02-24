@@ -51,3 +51,4 @@
 #define OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP 0x09
 /* 16 bits timestamp of hit, seconds since game start */
 
+#define BASE_STATION_BADGE_ID 99

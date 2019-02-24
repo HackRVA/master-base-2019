@@ -9,12 +9,12 @@ import (
 
 func main() {
 	packetsIn := make(chan *irp.Packet)
-	go fifo.ReadFifo(fifo.FifoOutFile, packetsIn)
+	go fifo.ReadFifo(fifo.BadgeOutFile, packetsIn)
 	//go msg.ProcessPackets(packetsIn)
 	for {
 		packet := <-packetsIn
-		fmt.Println()
-		irp.PrintPacket(packet)
+		fmt.Println("\nPacket received from packetsIn channel")
+		packet.Print()
 		fmt.Println()
 	}
 }

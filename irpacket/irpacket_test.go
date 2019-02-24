@@ -1,7 +1,9 @@
 package irpacket
 
-import "testing"
-import "fmt"
+import (
+	"fmt"
+	"testing"
+)
 
 const start uint8 = 1
 const command uint8 = 1
@@ -9,12 +11,12 @@ const address uint8 = 0x1A
 const badgeid uint16 = 0x063
 const payload uint16 = 0x3002
 
-func testRawPacket() uint32 {
-	return StartBits(start) |
-		CommandBits(command) |
+func testRawPacket() RawPacket {
+	return RawPacket(StartBit(start) |
+		CommandBit(command) |
 		AddressBits(address) |
-		BadgeidBits(badgeid) |
-		PayloadBits(payload)
+		BadgeIDBits(badgeid) |
+		PayloadBits(payload))
 }
 
 func TestBitShifting(t *testing.T) {
@@ -33,10 +35,10 @@ func TestBitShifting(t *testing.T) {
 	fmt.Printf("badgeid - %#6x - %6[1]d - %016[1]b\n", badgeid)
 	fmt.Printf("payload - %#6x - %6[1]d - %016[1]b\n", payload)
 	fmt.Println()
-	fmt.Printf("(start   & 0x01)  << 31   - %032b - %#[1]x\n", StartBits(start))
-	fmt.Printf("(command & 0x01)  << 30   - %032b - %#[1]x\n", CommandBits(command))
+	fmt.Printf("(start   & 0x01)  << 31   - %032b - %#[1]x\n", StartBit(start))
+	fmt.Printf("(command & 0x01)  << 30   - %032b - %#[1]x\n", CommandBit(command))
 	fmt.Printf("(address & 0x01f) << 25   - %032b - %#[1]x\n", AddressBits(address))
-	fmt.Printf("(badgeid & 0x1ff) << 16   - %032b - %#[1]x\n", BadgeidBits(badgeid))
+	fmt.Printf("(badgeid & 0x1ff) << 16   - %032b - %#[1]x\n", BadgeIDBits(badgeid))
 	fmt.Printf("(payload & 0x0ffff)       - %032b - %#[1]x\n", PayloadBits(payload))
 	fmt.Println()
 	fmt.Printf("bits or'd together        - %032b - %#[1]x\n", testRawPacket())
@@ -50,6 +52,7 @@ func TestBitShifting(t *testing.T) {
 
 	fmt.Println("Byte Slice:", RawPacketToBytes(testRawPacket()))
 
+	fmt.Printf("12 bit integer mask: %#7x - %016[1]b\n", 0x0800)
 }
 
 func TestReadPacket(t *testing.T) {
@@ -58,6 +61,8 @@ func TestReadPacket(t *testing.T) {
 
 	fmt.Println()
 	PrintPacket(testPacket)
+	fmt.Println()
+	testPacket.Print()
 	fmt.Println()
 
 	if testPacket.Start != start {
@@ -79,12 +84,11 @@ func TestReadPacket(t *testing.T) {
 	if testPacket.Payload != payload {
 		t.Errorf("readPacket(testRawPacket()).Payload = payload")
 	}
-
 }
 
 func TestBuildPacket(t *testing.T) {
 
-	testPacket := BuildPacket(start, command, address, badgeid, payload)
+	testPacket := BuildPacket(badgeid, payload)
 
 	if testPacket.Start != start {
 		t.Errorf("testPacket.Start = start")
@@ -105,12 +109,11 @@ func TestBuildPacket(t *testing.T) {
 	if testPacket.Payload != payload {
 		t.Errorf("testPacket.Payload = payload")
 	}
-
 }
 
 func TestWritePacket(t *testing.T) {
 
-	testPacket := BuildPacket(start, command, address, badgeid, payload)
+	testPacket := BuildPacket(badgeid, payload)
 
 	if WritePacket(testPacket) != testRawPacket() {
 		t.Errorf("writePacket(testPacket()) = testRawPacket")
