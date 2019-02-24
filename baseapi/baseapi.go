@@ -2,6 +2,7 @@ package baseapi
 
 import (
 	"encoding/json"
+	"fmt"
 	"io/ioutil"
 	"net/http"
 	"time"
@@ -15,11 +16,10 @@ type extendedGameSpec struct {
 	AbsStart string
 }
 
-// Newgame - function to schedule newgame
-func Newgame(w http.ResponseWriter, r *http.Request) {
+// NewGame - function to schedule newgame
+func NewGame(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var e extendedGameSpec
-	var s msg.GameSpec
 
 	b, _ := ioutil.ReadAll(r.Body)
 	json.Unmarshal(b, &e)
@@ -27,11 +27,20 @@ func Newgame(w http.ResponseWriter, r *http.Request) {
 	form := "2006-01-02 15:04:05"
 	t2, _ := time.Parse(form, e.AbsStart)
 
-	s.StartTime = Until(t2)
-	s.Duration = e.Duration
-	s.Variant = e.Variant
-	s.GameID = 1
+	newSpec := msg.GameSpec{
+		StartTime: Until(t2),
+		Duration:  e.Duration,
+		Variant:   e.Variant,
+		GameID:    1,
+	}
+	fmt.Println(newSpec)
+	SaveGame()
 
-	j, _ := json.Marshal(s)
+	j, _ := json.Marshal(newSpec)
 	w.Write(j)
+}
+
+// NextGame -- returns the game that is sheduled next
+func NextGame(w http.ResponseWriter, r *http.Request) {
+	GetGames()
 }
