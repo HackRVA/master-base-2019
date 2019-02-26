@@ -10,17 +10,10 @@ import (
 	msg "github.com/HackRVA/master-base-2019/messages"
 )
 
-// GameSpec with absolute start time
-type extendedGameSpec struct {
-	msg.GameSpec
-	AbsStart string
-}
-
 // NewGame - function to schedule newgame
 func NewGame(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	var e extendedGameSpec
-
+	var e Game
 	b, _ := ioutil.ReadAll(r.Body)
 	json.Unmarshal(b, &e)
 
@@ -34,7 +27,7 @@ func NewGame(w http.ResponseWriter, r *http.Request) {
 		GameID:    1,
 	}
 	fmt.Println(newSpec)
-	SaveGame()
+	SaveGame(e)
 
 	j, _ := json.Marshal(newSpec)
 	w.Write(j)
@@ -42,5 +35,13 @@ func NewGame(w http.ResponseWriter, r *http.Request) {
 
 // NextGame -- returns the game that is sheduled next
 func NextGame(w http.ResponseWriter, r *http.Request) {
-	GetGames()
+	w.Header().Set("Content-Type", "application/json")
+	GetNext()
+}
+
+// AllGames - returns all scheduled games
+func AllGames(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	j, _ := json.Marshal(GetGames())
+	w.Write(j)
 }

@@ -43,4 +43,5 @@ yarn-error.log*
 
 client
 
-my.db
+#database
+data/
