@@ -1,0 +1,2 @@
+{"level":"info","time":"2019-02-26T20:15:22-05:00","message":"first message in main"}
+{"level":"info","time":"2019-02-26T20:15:22-05:00","message":"This is a\nmultiline log."}

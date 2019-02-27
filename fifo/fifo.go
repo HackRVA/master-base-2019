@@ -10,18 +10,27 @@ import (
 	irp "github.com/HackRVA/master-base-2019/irpacket"
 )
 
-// BadgeOutFile - The path of the named pipe from the badge
-var BadgeOutFile = "/tmp/fifo-from-badge"
-
-// BadgeInFile - The path of the named pipe to the badge
-var BadgeInFile = "/tmp/fifo-to-badge"
-
 var debug = false
 
 // SetDebug - sets the debugging on or off
 func SetDebug(isDebug bool) {
 	debug = isDebug
 }
+
+var connected = true
+
+// SetConnected - If true, passes packets to the channels;
+//                if false, the packets dispappear into the ether
+//                in a simulation of IR communication
+func SetConnected(isConnected bool) {
+	connected = isConnected
+}
+
+// BadgeOutFile - The path of the named pipe from the badge
+var BadgeOutFile = "/tmp/fifo-from-badge"
+
+// BadgeInFile - The path of the named pipe to the badge
+var BadgeInFile = "/tmp/fifo-to-badge"
 
 // ReadFifo - Reads a badge packet off of the named pipe (fifo)
 func ReadFifo(fifoInFile string, packetsIn chan *irp.Packet) {
@@ -59,7 +68,9 @@ func ReadFifo(fifoInFile string, packetsIn chan *irp.Packet) {
 				fmt.Println()
 			}
 
-			packetsIn <- packet
+			if connected {
+				packetsIn <- packet
+			}
 		}
 	}
 }
@@ -77,30 +88,32 @@ func WriteFifo(fifoOutFile string, packetsOut chan *irp.Packet) {
 	for {
 		packet := <-packetsOut
 
-		if debug {
-			fmt.Println("\nPacket to write recieved from channel:")
-			packet.Print()
-			fmt.Println()
-		}
+		if connected {
+			if debug {
+				fmt.Println("\nPacket to write recieved from channel:")
+				packet.Print()
+				fmt.Println()
+			}
 
-		bytes := packet.Bytes()
-		//irp.RawPacketToBytes(irp.WritePacket(packet))
+			bytes := packet.Bytes()
+			//irp.RawPacketToBytes(irp.WritePacket(packet))
 
-		if debug {
-			fmt.Println("bytes out:", bytes)
-			fmt.Println()
-		}
+			if debug {
+				fmt.Println("bytes out:", bytes)
+				fmt.Println()
+			}
 
-		byteCount, err := writer.Write(bytes)
-		if err != nil {
-			log.Println("Error writing packet:", err)
-		}
-		if byteCount != 4 {
-			log.Println("Packet written was not 4 bytes")
-		}
-		writer.Flush()
-		if err != nil {
-			log.Println("Error flushing buffer:", err)
+			byteCount, err := writer.Write(bytes)
+			if err != nil {
+				log.Println("Error writing packet:", err)
+			}
+			if byteCount != 4 {
+				log.Println("Packet written was not 4 bytes")
+			}
+			writer.Flush()
+			if err != nil {
+				log.Println("Error flushing buffer:", err)
+			}
 		}
 	}
 }

@@ -15,6 +15,7 @@ func main() {
 		packet := <-packetsIn
 		fmt.Println("\nPacket received from packetsIn channel")
 		packet.Print()
+		packet.PrintPayload()
 		fmt.Println()
 	}
 }

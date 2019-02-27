@@ -5,8 +5,11 @@ import "C"
 
 import (
 	"fmt"
+	"strconv"
 
+	log "github.com/HackRVA/master-base-2019/logging"
 	utl "github.com/HackRVA/master-base-2019/utility"
+	zl "github.com/rs/zerolog"
 )
 
 // Start - default Start value
@@ -163,11 +166,23 @@ func PrintPacket(packet *Packet) {
 	fmt.Printf(" payload: %#6x - %6[1]d\n", packet.Payload)
 }
 
+// Logger - return a packet sublogger
+func Logger(packet *Packet) zl.Logger {
+	return log.Ger.With().
+		Uint8("cmd", packet.Command).
+		Uint8("start", packet.Start).
+		Uint8("address", packet.Address).
+		Uint16("badge ID", packet.BadgeID).
+		Uint16("payload", packet.Payload).
+		Str("opcode", packet.OpcodeDescription()).
+		Int16("payload data", packet.PayloadData()).Logger()
+}
+
 // PrintPayload - Print out the payload particulars
 func PrintPayload(packet *Packet) {
 	opcode := uint8(packet.Payload >> 12)
 	pd := payloadSpecMap[opcode]
-	fmt.Println(pd.Description+":", packet.Payload&pd.Mask)
+	fmt.Println(strconv.Itoa(int(opcode))+":"+pd.Description+":", packet.Payload&pd.Mask)
 }
 
 // GetPayload - Returns the description and value of a packet's payload
@@ -208,4 +223,9 @@ func (p Packet) RawPacket() RawPacket {
 // Bytes - return a packet's raw bytes
 func (p Packet) Bytes() []byte {
 	return RawPacketToBytes(WritePacket(&p))
+}
+
+// PrintPayload - prints a packets' payload opcode and value
+func (p Packet) PrintPayload() {
+	PrintPayload(&p)
 }
