@@ -8,7 +8,6 @@ import (
 func main() {
 	log.SetGlobalLevel(zerolog.DebugLevel)
 	log.Ger.Info().Msg("first message in main")
-	//foo.Foo()
 	log.Ger.Info().Msg("This is a\nmultiline log.")
 }
 

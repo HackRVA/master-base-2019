@@ -2,27 +2,15 @@ package main
 
 import (
 	"fmt"
-	"os"
 
 	fifo "github.com/HackRVA/master-base-2019/fifo"
+	log "github.com/HackRVA/master-base-2019/filelogging"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
 	msg "github.com/HackRVA/master-base-2019/messages"
 	term "github.com/nsf/termbox-go"
-	log "github.com/sirupsen/logrus"
 )
 
-func init() {
-	log.SetOutput(os.Stdout)
-
-	file, err := os.OpenFile("test.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
-	if err == nil {
-		log.SetOutput(file)
-	} else {
-		log.Info("Failed to log to file, using default stderr")
-	}
-	log.SetLevel(log.DebugLevel)
-
-}
+var logger = log.Ger
 
 const (
 	listening = iota

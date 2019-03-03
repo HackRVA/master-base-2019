@@ -1,0 +1,58 @@
+{"level":"debug","time":"2019-03-02T19:08:54-05:00","message":"Opening named pipe /tmp/fifo-to-badge\n"}
+{"level":"debug","time":"2019-03-02T19:08:54-05:00","message":"Start handling packets"}
+{"level":"debug","time":"2019-03-02T19:10:21-05:00","message":"bytes in: [0 64 99 244]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":99,"payload":16384,"opcode":"Request Badge Dump","payload data":0,"time":"2019-03-02T19:10:21-05:00","message":"Packet read and goint to channel: /tmp/fifo-to-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes in: [0 64 99 244]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":99,"payload":16384,"opcode":"Request Badge Dump","payload data":0,"time":"2019-03-02T19:12:38-05:00","message":"Packet read and goint to channel: /tmp/fifo-to-badge"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":42194,"opcode":"Game ID","payload data":1234,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [210 164 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":28680,"opcode":"Badge Record Count","payload data":8,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [8 112 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":32869,"opcode":"Badge Upload Hit Record Badge ID","payload data":101,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [101 128 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":36897,"opcode":"Badge Upload Hit Record Timestamp","payload data":33,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [33 144 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":12290,"opcode":"Set Badge Team","payload data":2,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [2 48 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":32869,"opcode":"Badge Upload Hit Record Badge ID","payload data":101,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [101 128 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":36967,"opcode":"Badge Upload Hit Record Timestamp","payload data":103,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [103 144 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":12290,"opcode":"Set Badge Team","payload data":2,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [2 48 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":32869,"opcode":"Badge Upload Hit Record Badge ID","payload data":101,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [101 128 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":37067,"opcode":"Badge Upload Hit Record Timestamp","payload data":203,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [203 144 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":12290,"opcode":"Set Badge Team","payload data":2,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [2 48 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":32869,"opcode":"Badge Upload Hit Record Badge ID","payload data":101,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [101 128 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":37167,"opcode":"Badge Upload Hit Record Timestamp","payload data":303,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [47 145 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":12290,"opcode":"Set Badge Team","payload data":2,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [2 48 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":32869,"opcode":"Badge Upload Hit Record Badge ID","payload data":101,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [101 128 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":37267,"opcode":"Badge Upload Hit Record Timestamp","payload data":403,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [147 145 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":12290,"opcode":"Set Badge Team","payload data":2,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [2 48 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":32869,"opcode":"Badge Upload Hit Record Badge ID","payload data":101,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [101 128 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":37367,"opcode":"Badge Upload Hit Record Timestamp","payload data":503,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [247 145 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":12290,"opcode":"Set Badge Team","payload data":2,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [2 48 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":32869,"opcode":"Badge Upload Hit Record Badge ID","payload data":101,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [101 128 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":37467,"opcode":"Badge Upload Hit Record Timestamp","payload data":603,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [91 146 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":12290,"opcode":"Set Badge Team","payload data":2,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [2 48 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":32869,"opcode":"Badge Upload Hit Record Badge ID","payload data":101,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [101 128 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":37567,"opcode":"Badge Upload Hit Record Timestamp","payload data":703,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [191 146 18 245]"}
+{"level":"debug","cmd":1,"start":1,"address":26,"badge ID":2322,"payload":12290,"opcode":"Set Badge Team","payload data":2,"time":"2019-03-02T19:12:38-05:00","message":"Packet to write reeived from channel: /tmp/fifo-from-badge"}
+{"level":"debug","time":"2019-03-02T19:12:38-05:00","message":"bytes out: [2 48 18 245]"}

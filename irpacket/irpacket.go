@@ -7,7 +7,6 @@ import (
 	"fmt"
 	"strconv"
 
-	log "github.com/HackRVA/master-base-2019/logging"
 	utl "github.com/HackRVA/master-base-2019/utility"
 	zl "github.com/rs/zerolog"
 )
@@ -166,9 +165,9 @@ func PrintPacket(packet *Packet) {
 	fmt.Printf(" payload: %#6x - %6[1]d\n", packet.Payload)
 }
 
-// Logger - return a packet sublogger
-func Logger(packet *Packet) zl.Logger {
-	return log.Ger.With().
+// PacketLogger - return a packet sublogger
+func PacketLogger(logger zl.Logger, packet *Packet) zl.Logger {
+	return logger.With().
 		Uint8("cmd", packet.Command).
 		Uint8("start", packet.Start).
 		Uint8("address", packet.Address).
@@ -228,4 +227,9 @@ func (p Packet) Bytes() []byte {
 // PrintPayload - prints a packets' payload opcode and value
 func (p Packet) PrintPayload() {
 	PrintPayload(&p)
+}
+
+// Logger - returns a logger for this packet
+func (p *Packet) Logger(logger zl.Logger) zl.Logger {
+	return PacketLogger(logger, p)
 }

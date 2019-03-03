@@ -1,4 +1,4 @@
-package logging
+package filelogging
 
 import (
 	"os"
@@ -6,6 +6,7 @@ import (
 	zl "github.com/rs/zerolog"
 )
 
+// Ger - the file logger object
 var Ger zl.Logger
 
 func init() {
@@ -18,6 +19,7 @@ func init() {
 	}
 }
 
+// SetGlobalLevel - Set the global logging level
 func SetGlobalLevel(level zl.Level) {
 	zl.SetGlobalLevel(level)
 }

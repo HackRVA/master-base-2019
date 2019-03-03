@@ -7,7 +7,9 @@ import (
 	"fmt"
 	"time"
 
+	log "github.com/HackRVA/master-base-2019/filelogging"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
+	"github.com/hackebrot/go-repr/repr"
 )
 
 const (
@@ -25,6 +27,7 @@ const (
 )
 
 var debug = false
+var logger = log.Ger
 
 // SetDebug - sets the debugging on and off
 func SetDebug(isDebug bool) {
@@ -107,14 +110,16 @@ type GameSpec struct {
 
 // PrintUnexpectedPacketError - print expected vs. unexpected character error
 func PrintUnexpectedPacketError(expected uint8, got uint8) {
-	fmt.Printf("Expected \"%s\" packet but got \"%s\" packet instead\n",
+	logger.Error().Msgf("Expected \"%s\" packet but got \"%s\" packet instead\n",
 		irp.GetPayloadSpecs(expected).Description,
 		irp.GetPayloadSpecs(got).Description)
 }
 
 // ReceivePackets - Receives incoming Packets, supresses beacon, and sends out GameData
 func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beaconHoldOut chan bool) {
-	fmt.Println("Start processing packets")
+	if debug {
+		logger.Debug().Msg("Start processing packets")
+	}
 	var opcode uint8
 	var expecting uint8 = GameID
 	var gameData *GameData
@@ -148,7 +153,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 					GameID:  uint16(packet.Payload & 0x0fff)}
 				expecting = RecordCount
 				if debug {
-					fmt.Println("** Game ID Received:", gameData.GameID)
+					logger.Debug().Msgf("** Game ID Received: %s", repr.Repr(gameData.GameID))
 				}
 			} else {
 				PrintUnexpectedPacketError(expecting, opcode)
@@ -158,7 +163,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 				hitCount = uint16(packet.Payload & 0x0fff)
 				hitsRecorded = 0
 				if debug {
-					fmt.Println("** Badge Record Count Received:", hitCount)
+					logger.Debug().Msgf("** Badge Record Count Received: %s", repr.Repr(hitCount))
 				}
 			} else {
 				PrintUnexpectedPacketError(expecting, opcode)
@@ -170,7 +175,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 				gameData.Hits[hitsRecorded] = hit
 				expecting = Timestamp
 				if debug {
-					fmt.Println("** Badge Upload Hit Record Badge ID Received:", gameData.Hits[hitsRecorded].BadgeID)
+					logger.Debug().Msgf("** Badge Upload Hit Record Badge ID Received: %s", repr.Repr(gameData.Hits[hitsRecorded].BadgeID))
 				}
 			} else {
 				PrintUnexpectedPacketError(expecting, opcode)
@@ -180,7 +185,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 				gameData.Hits[hitsRecorded].Timestamp = uint16(packet.Payload & 0x0fff)
 				expecting = Team
 				if debug {
-					fmt.Println("** Badge Upload Hit Record Timestamp Received:", gameData.Hits[hitsRecorded].Timestamp)
+					logger.Debug().Msgf("** Badge Upload Hit Record Timestamp Received: %s", repr.Repr(gameData.Hits[hitsRecorded].Timestamp))
 				}
 			} else {
 				PrintUnexpectedPacketError(expecting, opcode)
@@ -189,11 +194,11 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 			if expecting == Team && hitsRecorded < hitCount {
 				gameData.Hits[hitsRecorded].Team = uint8(packet.Payload & 0x0fff)
 				if debug {
-					fmt.Println("** Badge Upload Hit Record Team Received:", gameData.Hits[hitsRecorded].Team)
+					logger.Debug().Msgf("** Badge Upload Hit Record Team Received: %s", repr.Repr(gameData.Hits[hitsRecorded].Team))
 				}
 				if hitsRecorded++; hitsRecorded == hitCount {
 					if debug {
-						fmt.Println("GameData Complete!")
+						logger.Debug().Msg("GameData Complete!")
 					}
 					gameDataOut <- gameData
 					hitsRecorded = 0
@@ -208,7 +213,11 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 
 			}
 		default:
-			fmt.Println("** Opcode", opcode, "not handled yet")
+			{
+			}
+			if debug {
+				logger.Debug().Msgf("** Opcode %s not handled yet", repr.Repr(opcode))
+			}
 		}
 	}
 }
@@ -305,45 +314,22 @@ func TransmitBeacon(packetsOut chan *irp.Packet, beaconHoldIn chan bool) {
 
 // BadgeHandlePackets - packet handler for the badge simulator
 func BadgeHandlePackets(packetsIn chan *irp.Packet, packetsOut chan *irp.Packet, gameData *GameData) {
-	fmt.Println("Start handling packets")
-	// beaconIgnoredChan := make(chan bool)
+	if debug {
+		logger.Debug().Msg("Start handling packets")
+	}
 	var opcode uint8
-	// isBeaconIgnored := false
-
-	// timer := time.NewTimer(beaconDelay)
-	// timer.Stop()
-
-	/*
-		go func(beaconIgnored chan bool) {
-			<-timer.C
-			beaconIgnored <- true
-			if debug {
-				fmt.Println("beacon ignore put enchanneled")
-			}
-		}(beaconIgnoredChan)
-	*/
 
 	for {
 		packet := <-packetsIn
 		opcode = packet.Opcode()
 
-		/*
-			select {
-			case isBeaconIgnored = <-beaconIgnoredChan:
-			default:
-			}
-		*/
-
 		switch opcode {
 		case C.OPCODE_REQUEST_BADGE_DUMP:
-			//		if !isBeaconIgnored {
 			gameData.TransmitBadgeDump(packetsOut)
-			//			isBeaconIgnored = true
-			//			timer.Reset(beaconDelay)
-			//		}
 		default:
-			fmt.Printf("\"%s\" packet not handled yet.\n", irp.GetPayloadSpecs(opcode).Description)
+			if debug {
+				logger.Debug().Msgf("\"%s\" packet not handled yet.\n", irp.GetPayloadSpecs(opcode).Description)
+			}
 		}
-
 	}
 }
