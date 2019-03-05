@@ -3,6 +3,7 @@ package baseapi
 import (
 	"encoding/json"
 	"fmt"
+	"time"
 
 	msg "github.com/HackRVA/master-base-2019/messages"
 
@@ -13,7 +14,7 @@ import (
 // Game -- with absolute start time and ID
 type Game struct {
 	msg.GameSpec
-	AbsStart string
+	AbsStart int64
 }
 
 // SaveGame -- save gamespec to database
@@ -30,12 +31,25 @@ func SaveGame(game Game) {
 }
 
 // GetNext -- return the next game
-func GetNext() {
+func GetNext() int64 {
+	t := time.Now()
 	// TODO: sort by date to find the next date
 	games := GetGames()
 	for _, game := range games {
-		fmt.Println(game.AbsStart)
+		fmt.Println(
+			"now: ",
+			int64(t.Unix()),
+			"\nnextGame: ",
+			game.AbsStart,
+			"\nin the future:",
+			int64(t.Unix()) < game.AbsStart)
+
+		// return the first game that is greater than now
+		if int64(t.Unix()) < game.AbsStart {
+			return game.AbsStart
+		}
 	}
+	return 0
 }
 
 // GetGames -- retrieves games from DB
