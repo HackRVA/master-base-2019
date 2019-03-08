@@ -26,7 +26,8 @@ func SaveGame(game Game) {
 func GetNext() Game {
 	t := time.Now()
 	var g Game
-	// TODO: send next game or *Current Game
+	g.AbsStart = 0
+
 	games := GetGames()
 	for _, game := range games {
 		fmt.Println(
@@ -35,7 +36,7 @@ func GetNext() Game {
 			"\nnextGame: ",
 			game.AbsStart,
 			"\nin the future:",
-			int64(t.Unix()) < game.AbsStart)
+			int64(t.Unix()) < game.AbsStart+int64(game.Duration))
 
 		// return the first game that is greater than now
 		if int64(t.Unix()) < game.AbsStart+int64(game.Duration) {
