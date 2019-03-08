@@ -1,4 +1,4 @@
-package messages
+package badgewrangler
 
 // #include <../badge-ir-game-protocol.h>
 import "C"

@@ -3,10 +3,10 @@ package main
 import (
 	"fmt"
 
+	bw "github.com/HackRVA/master-base-2019/badgewrangler"
 	fifo "github.com/HackRVA/master-base-2019/fifo"
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
-	msg "github.com/HackRVA/master-base-2019/messages"
 	term "github.com/nsf/termbox-go"
 )
 
@@ -30,7 +30,7 @@ func main() {
 	go fifo.WriteFifo(fifo.BadgeOutFile, packetsOut)
 	fifo.SetConnected(false)
 	fifo.SetDebug(true)
-	msg.SetDebug(true)
+	bw.SetDebug(true)
 
 	err := term.Init()
 	if err != nil {
@@ -41,10 +41,10 @@ func main() {
 
 	status := ignoring
 
-	gameData := &msg.GameData{
+	gameData := &bw.GameData{
 		BadgeID: uint16(2322),
 		GameID:  uint16(1234),
-		Hits: []*msg.Hit{
+		Hits: []*bw.Hit{
 			{BadgeID: uint16(101), Timestamp: uint16(33), Team: uint8(2)},
 			{BadgeID: uint16(101), Timestamp: uint16(103), Team: uint8(2)},
 			{BadgeID: uint16(101), Timestamp: uint16(203), Team: uint8(2)},
@@ -54,7 +54,7 @@ func main() {
 			{BadgeID: uint16(101), Timestamp: uint16(603), Team: uint8(2)},
 			{BadgeID: uint16(101), Timestamp: uint16(703), Team: uint8(2)}}}
 
-	go msg.BadgeHandlePackets(packetsIn, packetsOut, gameData)
+	go bw.BadgeHandlePackets(packetsIn, packetsOut, gameData)
 
 	reset()
 keyPressListenerLoop:
