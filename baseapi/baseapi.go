@@ -4,12 +4,14 @@ import (
 	"encoding/json"
 	"io/ioutil"
 	"net/http"
+
+	bw "github.com/HackRVA/master-base-2019/badgewrangler"
 )
 
 // NewGame - function to schedule newgame
 func NewGame(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	var e Game
+	var e bw.Game
 	b, _ := ioutil.ReadAll(r.Body)
 	json.Unmarshal(b, &e)
 	SaveGame(e)
