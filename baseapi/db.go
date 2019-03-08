@@ -5,17 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	bw "github.com/HackRVA/master-base-2019/badgewrangler"
-
 	"github.com/cnf/structhash"
-	"github.com/nanobox-io/golang-scribble"
+	scribble "github.com/nanobox-io/golang-scribble"
 )
-
-// Game -- with absolute start time and ID
-type Game struct {
-	bw.GameSpec
-	AbsStart int64
-}
 
 // SaveGame -- save gamespec to database
 func SaveGame(game Game) {
@@ -69,4 +61,13 @@ func GetGames() []Game {
 	}
 
 	return games
+}
+
+// DataInGameOut - stores the game data and gets the current/next game
+func DataInGameOut(gameDataIn chan *GameData, gameOut chan *Game) {
+	for {
+		gameData := <-gameDataIn
+
+		gameOut <- &ba.GetNext()
+	}
 }
