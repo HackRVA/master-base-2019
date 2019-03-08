@@ -8,6 +8,7 @@ import (
 	"time"
 
 	log "github.com/HackRVA/master-base-2019/filelogging"
+	gm "github.com/HackRVA/master-base-2019/game"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
 	"github.com/hackebrot/go-repr/repr"
 )
@@ -97,16 +98,6 @@ func (gd *GameData) TransmitBadgeDump(packetsOut chan *irp.Packet) {
 	for _, packet := range gd.Packets() {
 		packetsOut <- packet
 	}
-}
-
-// Game - The game specification sent to the badge
-type Game struct {
-	AbsStart  int64  // Unix time game starts
-	StartTime int16  // The number of seconds from now game starts
-	Duration  uint16 // 0x0fff
-	Variant   uint8  // 0x0f
-	Team      uint8  // 0x0f
-	GameID    uint16 // 0x0fff
 }
 
 // PrintUnexpectedPacketError - print expected vs. unexpected character error
@@ -224,27 +215,27 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 }
 
 // BuildGameStartTime - Build a game start time packet
-func BuildGameStartTime(game *Game) *irp.Packet {
+func BuildGameStartTime(game *gm.Game) *irp.Packet {
 	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_SET_GAME_START_TIME<<12|uint16(game.StartTime&0x0fff))
 }
 
 // BuildGameDuration - Build a game duration packet
-func BuildGameDuration(game *Game) *irp.Packet {
+func BuildGameDuration(game *gm.Game) *irp.Packet {
 	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_SET_GAME_DURATION<<12|game.Duration&0x0fff)
 }
 
 // BuildGameVariant - Build a game variant packet
-func BuildGameVariant(game *Game) *irp.Packet {
+func BuildGameVariant(game *gm.Game) *irp.Packet {
 	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_SET_GAME_VARIANT<<12|uint16(game.Variant))
 }
 
 // BuildGameTeam - Build a game team packet
-func BuildGameTeam(game *Game) *irp.Packet {
+func BuildGameTeam(game *gm.Game) *irp.Packet {
 	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_SET_BADGE_TEAM<<12|uint16(game.Team))
 }
 
 // BuildGameID - Build a game ID packet)
-func BuildGameID(game *Game) *irp.Packet {
+func BuildGameID(game *gm.Game) *irp.Packet {
 	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_GAME_ID<<12|uint16(game.GameID&0x0fff))
 }
 
@@ -279,7 +270,7 @@ func BuildBadgeUploadHitRecordTimestamp(badgeID uint16, timestamp uint16) *irp.P
 }
 
 // TransmitNewGamePackets - Receives GameData, Transmits packets to the badge, and re-enables beacon
-func TransmitNewGamePackets(packetsOut chan *irp.Packet, gameIn chan *Game, beaconHold chan bool) {
+func TransmitNewGamePackets(packetsOut chan *irp.Packet, gameIn chan *gm.Game, beaconHold chan bool) {
 
 	for {
 		game := <-gameIn

@@ -6,12 +6,13 @@ import (
 	"time"
 
 	bw "github.com/HackRVA/master-base-2019/badgewrangler"
+	gm "github.com/HackRVA/master-base-2019/game"
 	"github.com/cnf/structhash"
 	scribble "github.com/nanobox-io/golang-scribble"
 )
 
 // SaveGame -- save gamespec to database
-func SaveGame(game bw.Game) {
+func SaveGame(game gm.Game) {
 	hash, err := structhash.Hash(game, 1)
 	if err != nil {
 		panic(err)
@@ -24,9 +25,9 @@ func SaveGame(game bw.Game) {
 }
 
 // GetNext -- return the next game
-func GetNext() bw.Game {
+func GetNext() gm.Game {
 	t := time.Now()
-	var g bw.Game
+	var g gm.Game
 	g.AbsStart = 0
 
 	games := GetGames()
@@ -49,15 +50,15 @@ func GetNext() bw.Game {
 }
 
 // GetGames -- retrieves games from DB
-func GetGames() []bw.Game {
+func GetGames() []gm.Game {
 	// create a new scribble database, providing a destination for the database to live
 	db, _ := scribble.New("./data", nil)
 	// Read more games from the database
 	moregames, _ := db.ReadAll("games")
 	// iterate over moregames creating a new game for each record
-	games := []bw.Game{}
+	games := []gm.Game{}
 	for _, game := range moregames {
-		g := bw.Game{}
+		g := gm.Game{}
 		json.Unmarshal([]byte(game), &g)
 		games = append(games, g)
 	}
@@ -66,7 +67,7 @@ func GetGames() []bw.Game {
 }
 
 // DataInGameOut - stores the game data and gets the current/next game
-func DataInGameOut(gameDataIn chan *bw.GameData, gameOut chan *bw.Game) {
+func DataInGameOut(gameDataIn chan *bw.GameData, gameOut chan *gm.Game) {
 	for {
 		gameData := <-gameDataIn
 		fmt.Println(gameData.GameID)
