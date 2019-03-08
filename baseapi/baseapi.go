@@ -22,7 +22,7 @@ func NewGame(w http.ResponseWriter, r *http.Request) {
 func NextGame(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	next := GetNext()
-	if next == 0 {
+	if next.StartTime == 0 {
 		j, _ := json.Marshal("There is no game scheduled")
 		w.Write(j)
 	} else {

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 
-	msg "github.com/HackRVA/master-base-2019/messages"
+	bw "github.com/HackRVA/master-base-2019/badgewrangler"
 
 	"github.com/cnf/structhash"
 	"github.com/nanobox-io/golang-scribble"
@@ -13,7 +13,7 @@ import (
 
 // Game -- with absolute start time and ID
 type Game struct {
-	msg.GameSpec
+	bw.GameSpec
 	AbsStart int64
 }
 
@@ -31,9 +31,10 @@ func SaveGame(game Game) {
 }
 
 // GetNext -- return the next game
-func GetNext() int64 {
+func GetNext() Game {
 	t := time.Now()
-	// TODO: sort by date to find the next date
+	var g Game
+	// TODO: send next game or *Current Game
 	games := GetGames()
 	for _, game := range games {
 		fmt.Println(
@@ -45,11 +46,12 @@ func GetNext() int64 {
 			int64(t.Unix()) < game.AbsStart)
 
 		// return the first game that is greater than now
-		if int64(t.Unix()) < game.AbsStart {
-			return game.AbsStart
+		if int64(t.Unix()) < game.AbsStart+int64(game.Duration) {
+			return game
 		}
 	}
-	return 0
+
+	return g
 }
 
 // GetGames -- retrieves games from DB
