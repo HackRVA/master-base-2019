@@ -1,6 +1,6 @@
 package irpacket
 
-// #include <../badge-ir-game-protocol.h>
+// #include <../lasertag-protocol.h>
 import "C"
 
 import (
@@ -16,6 +16,9 @@ const Start = 1
 
 // Command - default Command value
 const Command = 1
+
+// BadgeIRGameAddress - Default Game Address until I understand what is going on.
+const BadgeIRGameAddress = 0x1A
 
 // PayloadSpec - The data describing a payload type
 type PayloadSpec struct {
@@ -35,7 +38,8 @@ var payloadSpecList = []PayloadSpec{
 	{C.OPCODE_BADGE_RECORD_COUNT, "Badge Record Count", 0x0fff},
 	{C.OPCODE_BADGE_UPLOAD_HIT_RECORD_BADGE_ID, "Badge Upload Hit Record Badge ID", 0x01ff},
 	{C.OPCODE_GAME_ID, "Game ID", 0x0fff},
-	{C.OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP, "Badge Upload Hit Record Timestamp", 0x0fff}}
+	{C.OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP, "Badge Upload Hit Record Timestamp", 0x0fff},
+	{C.OPCODE_BADGE_IDENTITY, "Badge Identity", 0x01ff}}
 
 var payloadSpecMap map[uint8]PayloadSpec
 
@@ -116,7 +120,7 @@ func BuildPacket(
 	return &Packet{
 		Start:   Start,
 		Command: Command,
-		Address: C.BADGE_IR_GAME_ADDRESS,
+		Address: BadgeIRGameAddress,
 		BadgeID: badgeid,
 		Payload: payload}
 }

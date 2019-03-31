@@ -4,6 +4,7 @@ import (
 	bw "github.com/HackRVA/master-base-2019/badgewrangler"
 	ba "github.com/HackRVA/master-base-2019/baseapi"
 	"github.com/HackRVA/master-base-2019/fifo"
+	"github.com/HackRVA/master-base-2019/game"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
 )
 
@@ -14,11 +15,13 @@ func StartBadgeWrangler() {
 	packetsOut := make(chan *irp.Packet)
 	gameData := make(chan *bw.GameData)
 	beaconHold := make(chan bool)
-	game := make(chan *bw.Game)
+	game := make(chan *game.Game)
+
+	//fifo.SetDebug(true)
+	bw.SetDebug(true)
 
 	go fifo.ReadFifo(fifo.BadgeOutFile, packetsIn)
 	go fifo.WriteFifo(fifo.BadgeInFile, packetsOut)
-	fifo.SetDebug(true)
 
 	go bw.ReceivePackets(packetsIn, gameData, beaconHold)
 	go bw.TransmitBeacon(packetsOut, beaconHold)

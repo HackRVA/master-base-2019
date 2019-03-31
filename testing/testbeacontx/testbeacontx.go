@@ -9,7 +9,7 @@ import (
 func main() {
 	packetsOut := make(chan *irp.Packet)
 	beaconHold := make(chan bool)
-	go fifo.WriteFifo(fifo.BadgeOutFile, packetsOut)
+	go fifo.WriteFifo(fifo.BadgeInFile, packetsOut)
 	go bw.TransmitBeacon(packetsOut, beaconHold)
 	for {
 	}

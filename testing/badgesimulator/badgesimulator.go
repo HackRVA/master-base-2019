@@ -42,7 +42,7 @@ func main() {
 	status := ignoring
 
 	gameData := &bw.GameData{
-		BadgeID: uint16(2322),
+		BadgeID: uint16(333),
 		GameID:  uint16(1234),
 		Hits: []*bw.Hit{
 			{BadgeID: uint16(101), Timestamp: uint16(33), Team: uint8(2)},

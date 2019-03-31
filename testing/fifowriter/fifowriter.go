@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
+	msg "github.com/HackRVA/master-base-2019/badgewrangler"
 	fifo "github.com/HackRVA/master-base-2019/fifo"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
-	msg "github.com/HackRVA/master-base-2019/messages"
 	term "github.com/nsf/termbox-go"
 )
 

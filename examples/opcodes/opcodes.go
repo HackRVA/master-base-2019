@@ -1,11 +1,11 @@
 package main
 
-// #include <badge-ir-game-protocol.h>
+// #include <../../lasertag-protocol.h>
 import "C"
 import "fmt"
 
 func showOpcodes() {
-	fmt.Println("BADGE_IR_GAME_ADDRESS", C.BADGE_IR_GAME_ADDRESS)
+	//fmt.Println("BADGE_IR_GAME_ADDRESS", C.BADGE_IR_GAME_ADDRESS)
 	fmt.Println("OPCODE_SET_GAME_START_TIME", C.OPCODE_SET_GAME_START_TIME)
 	fmt.Println("OPCODE_SET_GAME_DURATION", C.OPCODE_SET_GAME_DURATION)
 	fmt.Println("OPCODE_HIT", C.OPCODE_HIT)
@@ -21,6 +21,7 @@ func showOpcodes() {
 	fmt.Println("OPCODE_BADGE_UPLOAD_HIT_RECORD_BADGE_ID", C.OPCODE_BADGE_UPLOAD_HIT_RECORD_BADGE_ID)
 	fmt.Println("OPCODE_GAME_ID", C.OPCODE_GAME_ID)
 	fmt.Println("OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP", C.OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP)
+	fmt.Println("OPCODE_BADGE_IDENTITY", C.OPCODE_BADGE_IDENTITY)
 }
 
 func main() {

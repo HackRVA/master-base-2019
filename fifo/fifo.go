@@ -68,7 +68,7 @@ func ReadFifo(fifoInFile string, packetsIn chan *irp.Packet) {
 
 			if debug {
 				packetLogger := packet.Logger(logger)
-				packetLogger.Debug().Msgf("Packet read and goint to channel: %s", fifoInFile)
+				packetLogger.Debug().Msgf("Packet read and routed to channel: %s", fifoInFile)
 			}
 
 			if connected {
@@ -94,7 +94,7 @@ func WriteFifo(fifoOutFile string, packetsOut chan *irp.Packet) {
 		if connected {
 			if debug {
 				packetLogger := packet.Logger(logger)
-				packetLogger.Debug().Msgf("Packet to write reeived from channel: %s", fifoOutFile)
+				packetLogger.Debug().Msgf("Packet to write received from channel: %s", fifoOutFile)
 			}
 
 			bytes := packet.Bytes()

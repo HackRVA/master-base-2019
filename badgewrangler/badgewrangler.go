@@ -1,6 +1,6 @@
 package badgewrangler
 
-// #include <../badge-ir-game-protocol.h>
+// #include <../lasertag-protocol.h>
 import "C"
 
 import (
@@ -20,11 +20,12 @@ const (
 
 // Values for expecting
 const (
-	GameID      = C.OPCODE_GAME_ID
-	RecordCount = C.OPCODE_BADGE_RECORD_COUNT
-	BadgeID     = C.OPCODE_BADGE_UPLOAD_HIT_RECORD_BADGE_ID
-	Timestamp   = C.OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP
-	Team        = C.OPCODE_SET_BADGE_TEAM
+	SenderBadgeID = C.OPCODE_BADGE_IDENTITY
+	GameID        = C.OPCODE_GAME_ID
+	RecordCount   = C.OPCODE_BADGE_RECORD_COUNT
+	BadgeID       = C.OPCODE_BADGE_UPLOAD_HIT_RECORD_BADGE_ID
+	Timestamp     = C.OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP
+	Team          = C.OPCODE_SET_BADGE_TEAM
 )
 
 var debug = false
@@ -43,18 +44,18 @@ type Hit struct {
 }
 
 // BadgeIDPacket - return a hit's badgeID packet
-func (h *Hit) BadgeIDPacket(badgeID uint16) *irp.Packet {
-	return BuildBadgeUploadHitRecordBadgeID(badgeID, h.BadgeID)
+func (h *Hit) BadgeIDPacket() *irp.Packet {
+	return BuildBadgeUploadHitRecordBadgeID(h.BadgeID)
 }
 
 // TimestampPacket - return a hit's timestamp packet
-func (h *Hit) TimestampPacket(badgeID uint16) *irp.Packet {
-	return BuildBadgeUploadHitRecordTimestamp(badgeID, h.Timestamp)
+func (h *Hit) TimestampPacket() *irp.Packet {
+	return BuildBadgeUploadHitRecordTimestamp(h.Timestamp)
 }
 
 // TeamPacket - return a hit's team packet
-func (h *Hit) TeamPacket(badgeID uint16) *irp.Packet {
-	return BuildBadgeUploadHitRecordTeam(badgeID, h.Team)
+func (h *Hit) TeamPacket() *irp.Packet {
+	return BuildBadgeUploadHitRecordTeam(h.Team)
 }
 
 // GameData - The game data dump from a badge
@@ -66,28 +67,35 @@ type GameData struct {
 
 // BadgeIDPacket - return gameData's BadgeID packet
 func (gd *GameData) BadgeIDPacket() *irp.Packet {
-	return BuildBadgeUploadHitRecordGameID(gd.BadgeID, gd.GameID)
+	return BuildBadgeIdentity(gd.BadgeID)
+}
+
+// GameIDPacket - return a hit's gameID packet
+func (gd *GameData) GameIDPacket() *irp.Packet {
+	return BuildBadgeUploadHitRecordGameID(gd.GameID)
 }
 
 // HitCountPacket - return gameData's hit count packet
 func (gd *GameData) HitCountPacket(hitCount uint16) *irp.Packet {
-	return BuildBadgeUploadRecordCount(gd.BadgeID, hitCount)
+	return BuildBadgeUploadRecordCount(hitCount)
 }
 
 // Packets - return a slice containing all the gameData packets
 func (gd *GameData) Packets() []*irp.Packet {
 	packetIndex := 0
-	packets := make([]*irp.Packet, len(gd.Hits)*3+2)
+	packets := make([]*irp.Packet, len(gd.Hits)*3+3)
 	packets[packetIndex] = gd.BadgeIDPacket()
+	packetIndex++
+	packets[packetIndex] = gd.GameIDPacket()
 	packetIndex++
 	packets[packetIndex] = gd.HitCountPacket(uint16(len(gd.Hits)))
 	packetIndex++
 	for _, hit := range gd.Hits {
-		packets[packetIndex] = hit.BadgeIDPacket(gd.BadgeID)
+		packets[packetIndex] = hit.BadgeIDPacket()
 		packetIndex++
-		packets[packetIndex] = hit.TimestampPacket(gd.BadgeID)
+		packets[packetIndex] = hit.TimestampPacket()
 		packetIndex++
-		packets[packetIndex] = hit.TeamPacket(gd.BadgeID)
+		packets[packetIndex] = hit.TeamPacket()
 		packetIndex++
 	}
 	return packets
@@ -113,18 +121,18 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 		logger.Debug().Msg("Start processing packets")
 	}
 	var opcode uint8
-	var expecting uint8 = GameID
+	var expecting uint8 = SenderBadgeID
 	var gameData *GameData
 	var hitCount uint16
 	var hitsRecorded uint16
 	var startTime time.Time
 
 	for {
-		if expecting > GameID {
+		if expecting != SenderBadgeID {
 			elapsedTime := time.Now()
 			timeoutInterval, _ := time.ParseDuration("2s")
 			if elapsedTime.Sub(startTime) > timeoutInterval {
-				expecting = GameID
+				expecting = SenderBadgeID
 				beaconHoldOut <- false
 			}
 		}
@@ -136,13 +144,24 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 		fmt.Println("  Opcode:", opcode)
 		fmt.Println()
 		switch opcode {
+		case C.OPCODE_BADGE_IDENTITY:
+			if expecting == SenderBadgeID {
+				beaconHoldOut <- true
+				startTime = time.Now()
+				gameData = &GameData{
+					BadgeID: uint16(packet.Payload & 0x01ff)}
+				expecting = GameID
+				if debug {
+					logger.Debug().Msgf("** Sender Badge ID Received: %s", repr.Repr(gameData.BadgeID))
+				}
+			} else {
+				PrintUnexpectedPacketError(expecting, opcode)
+			}
 		case C.OPCODE_GAME_ID:
 			if expecting == GameID {
 				beaconHoldOut <- true
 				startTime = time.Now()
-				gameData = &GameData{
-					BadgeID: packet.BadgeID,
-					GameID:  uint16(packet.Payload & 0x0fff)}
+				gameData.GameID = uint16(packet.Payload & 0x0fff)
 				expecting = RecordCount
 				if debug {
 					logger.Debug().Msgf("** Game ID Received: %s", repr.Repr(gameData.GameID))
@@ -154,6 +173,10 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 			if expecting == RecordCount {
 				hitCount = uint16(packet.Payload & 0x0fff)
 				hitsRecorded = 0
+
+				gameData.Hits = make([]*Hit, hitCount)
+
+				expecting = BadgeID
 				if debug {
 					logger.Debug().Msgf("** Badge Record Count Received: %s", repr.Repr(hitCount))
 				}
@@ -196,7 +219,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 					hitsRecorded = 0
 					hitCount = 0
 					gameData = nil
-					expecting = GameID
+					expecting = SenderBadgeID
 				} else {
 					expecting = BadgeID
 				}
@@ -216,57 +239,62 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 
 // BuildGameStartTime - Build a game start time packet
 func BuildGameStartTime(game *gm.Game) *irp.Packet {
-	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_SET_GAME_START_TIME<<12|uint16(game.StartTime&0x0fff))
+	return irp.BuildPacket(game.BadgeID, C.OPCODE_SET_GAME_START_TIME<<12|uint16(game.StartTime&0x0fff))
 }
 
 // BuildGameDuration - Build a game duration packet
 func BuildGameDuration(game *gm.Game) *irp.Packet {
-	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_SET_GAME_DURATION<<12|game.Duration&0x0fff)
+	return irp.BuildPacket(game.BadgeID, C.OPCODE_SET_GAME_DURATION<<12|game.Duration&0x0fff)
 }
 
 // BuildGameVariant - Build a game variant packet
 func BuildGameVariant(game *gm.Game) *irp.Packet {
-	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_SET_GAME_VARIANT<<12|uint16(game.Variant))
+	return irp.BuildPacket(game.BadgeID, C.OPCODE_SET_GAME_VARIANT<<12|uint16(game.Variant))
 }
 
 // BuildGameTeam - Build a game team packet
 func BuildGameTeam(game *gm.Game) *irp.Packet {
-	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_SET_BADGE_TEAM<<12|uint16(game.Team))
+	return irp.BuildPacket(game.BadgeID, C.OPCODE_SET_BADGE_TEAM<<12|uint16(game.Team))
 }
 
 // BuildGameID - Build a game ID packet)
 func BuildGameID(game *gm.Game) *irp.Packet {
-	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_GAME_ID<<12|uint16(game.GameID&0x0fff))
+	return irp.BuildPacket(game.BadgeID, C.OPCODE_GAME_ID<<12|uint16(game.GameID&0x0fff))
 }
 
 // BuildBeacon - Build the "beacon" packet
 func BuildBeacon() *irp.Packet {
-	return irp.BuildPacket(uint16(C.BASE_STATION_BADGE_ID), C.OPCODE_REQUEST_BADGE_DUMP<<12)
+	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_REQUEST_BADGE_DUMP<<12)
 }
 
 // BuildBadgeUploadHitRecordGameID - Build the game ID packet for the hit record
-func BuildBadgeUploadHitRecordGameID(badgeID uint16, gameID uint16) *irp.Packet {
-	return irp.BuildPacket(badgeID, C.OPCODE_GAME_ID<<12|gameID&0x0fff)
+func BuildBadgeUploadHitRecordGameID(gameID uint16) *irp.Packet {
+	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_GAME_ID<<12|gameID&0x0fff)
 }
 
 // BuildBadgeUploadRecordCount - Build the badge record count packet
-func BuildBadgeUploadRecordCount(badgeID uint16, recordCount uint16) *irp.Packet {
-	return irp.BuildPacket(badgeID, C.OPCODE_BADGE_RECORD_COUNT<<12|recordCount&0x0fff)
+func BuildBadgeUploadRecordCount(recordCount uint16) *irp.Packet {
+	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_BADGE_RECORD_COUNT<<12|recordCount&0x0fff)
 }
 
 // BuildBadgeUploadHitRecordBadgeID - Build the badge ID packet for a hit record
-func BuildBadgeUploadHitRecordBadgeID(badgeID uint16, hitBadgeID uint16) *irp.Packet {
-	return irp.BuildPacket(badgeID, C.OPCODE_BADGE_UPLOAD_HIT_RECORD_BADGE_ID<<12|hitBadgeID&0x01ff)
+func BuildBadgeUploadHitRecordBadgeID(hitBadgeID uint16) *irp.Packet {
+	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_BADGE_UPLOAD_HIT_RECORD_BADGE_ID<<12|hitBadgeID&0x01ff)
 }
 
 // BuildBadgeUploadHitRecordTeam - Build the team packet for the hit record
-func BuildBadgeUploadHitRecordTeam(badgeID uint16, team uint8) *irp.Packet {
-	return irp.BuildPacket(badgeID, C.OPCODE_SET_BADGE_TEAM<<12|uint16(team&0x0f))
+func BuildBadgeUploadHitRecordTeam(team uint8) *irp.Packet {
+	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_SET_BADGE_TEAM<<12|uint16(team&0x0f))
 }
 
 // BuildBadgeUploadHitRecordTimestamp - Build the timestamp packet for the hit record
-func BuildBadgeUploadHitRecordTimestamp(badgeID uint16, timestamp uint16) *irp.Packet {
-	return irp.BuildPacket(badgeID, C.OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP<<12|timestamp&0x0fff)
+func BuildBadgeUploadHitRecordTimestamp(timestamp uint16) *irp.Packet {
+	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP<<12|timestamp&0x0fff)
+}
+
+// BuildBadgeIdentity - Build the badge identity packet
+func BuildBadgeIdentity(senderBadgeID uint16) *irp.Packet {
+	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_BADGE_IDENTITY<<12|senderBadgeID&0x01ff)
 }
 
 // TransmitNewGamePackets - Receives GameData, Transmits packets to the badge, and re-enables beacon
@@ -318,6 +346,21 @@ func BadgeHandlePackets(packetsIn chan *irp.Packet, packetsOut chan *irp.Packet,
 		switch opcode {
 		case C.OPCODE_REQUEST_BADGE_DUMP:
 			gameData.TransmitBadgeDump(packetsOut)
+		// Game Start Time
+		case C.OPCODE_SET_GAME_START_TIME:
+			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
+		// Game Duration
+		case C.OPCODE_SET_GAME_DURATION:
+			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
+		// Game Variant
+		case C.OPCODE_SET_GAME_VARIANT:
+			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
+		// Game Team
+		case C.OPCODE_SET_BADGE_TEAM:
+			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
+		// Game ID
+		case C.OPCODE_GAME_ID:
+			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
 		default:
 			if debug {
 				logger.Debug().Msgf("\"%s\" packet not handled yet.\n", irp.GetPayloadSpecs(opcode).Description)

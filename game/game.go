@@ -2,6 +2,7 @@ package game
 
 // Game - The game specification sent to the badge
 type Game struct {
+	BadgeID   uint16 // ID of badge receiving the game
 	AbsStart  int64  // Unix time game starts
 	StartTime int16  // The number of seconds from now game starts
 	Duration  uint16 // 0x0fff

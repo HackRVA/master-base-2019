@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	bw "github.com/HackRVA/master-base-2019/badgewrangler"
 	log "github.com/HackRVA/master-base-2019/filelogging"
+	ss "github.com/HackRVA/master-base-2019/serverstartup"
 	term "github.com/nsf/termbox-go"
 )
 
@@ -23,7 +23,7 @@ func main() {
 
 	defer term.Close()
 
-	bw.StartWrangler()
+	ss.StartBadgeWrangler()
 
 	reset()
 
