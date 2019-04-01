@@ -15,7 +15,6 @@ var logger = log.Ger
 func main() {
 	fifteenMin := time.Now().Local().Add(time.Minute * time.Duration(15))
 	url := "http://localhost:3000/api/newgame"
-	fmt.Println("URL:>", url)
 
 	var jsonStr = []byte(fmt.Sprintf(`{
 		 	"body":123,
@@ -24,11 +23,9 @@ func main() {
 		 	"Variant": 1
 			 }`, fifteenMin.Unix()))
 
-	fmt.Println(fifteenMin.Unix())
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
 	req.Header.Set("Content-Type", "application/json")
 
-	fmt.Println(req)
 	client := &http.Client{}
 	resp, err := client.Do(req)
 	if err != nil {
@@ -36,8 +33,8 @@ func main() {
 	}
 	defer resp.Body.Close()
 
-	fmt.Println("response Status:", resp.Status)
-	fmt.Println("response Headers:", resp.Header)
+	logger.Info().Msgf("response Status: %s", resp.Status)
+	logger.Info().Msgf("response Headers: %s", resp.Header)
 	body, _ := ioutil.ReadAll(resp.Body)
-	fmt.Println("response Body:", string(body))
+	logger.Info().Msgf("response Body: %s", string(body))
 }
