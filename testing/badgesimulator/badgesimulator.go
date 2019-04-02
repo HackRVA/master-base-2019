@@ -29,7 +29,7 @@ func main() {
 	go fifo.ReadFifo(fifo.BadgeInFile, packetsIn)
 	go fifo.WriteFifo(fifo.BadgeOutFile, packetsOut)
 	fifo.SetConnected(false)
-	fifo.SetDebug(true)
+	fifo.SetDebug(false)
 	bw.SetDebug(true)
 
 	err := term.Init()

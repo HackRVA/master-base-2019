@@ -213,6 +213,11 @@ func (p *Packet) PayloadData() int16 {
 	return payload
 }
 
+// PayloadDescData - Return a payload description and data from a packet
+func (p *Packet) PayloadDescData() (string, int16) {
+	return GetPayload(p)
+}
+
 // OpcodeDescription - Return the opcode descriptin from a packet
 func (p *Packet) OpcodeDescription() string {
 	return GetPayloadSpecs(p.Opcode()).Description

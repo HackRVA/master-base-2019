@@ -1,3 +1,0 @@
-{"level":"fatal","time":"2019-03-17T14:01:36-04:00","message":"Open Named pipe file error: open /tmp/fifo-from-badge: no such file or directory"}
-{"level":"fatal","time":"2019-03-17T14:02:13-04:00","message":"Open Named pipe file error: open /tmp/fifo-from-badge: no such file or directory"}
-{"level":"fatal","time":"2019-03-17T14:02:56-04:00","message":"Open Named pipe file error: open /tmp/fifo-from-badge: no such file or directory"}

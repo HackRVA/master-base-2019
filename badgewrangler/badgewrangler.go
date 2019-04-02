@@ -342,25 +342,26 @@ func BadgeHandlePackets(packetsIn chan *irp.Packet, packetsOut chan *irp.Packet,
 	for {
 		packet := <-packetsIn
 		opcode = packet.Opcode()
+		desc, data := packet.PayloadDescData()
 
 		switch opcode {
 		case C.OPCODE_REQUEST_BADGE_DUMP:
 			gameData.TransmitBadgeDump(packetsOut)
 		// Game Start Time
 		case C.OPCODE_SET_GAME_START_TIME:
-			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
+			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
 		// Game Duration
 		case C.OPCODE_SET_GAME_DURATION:
-			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
+			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
 		// Game Variant
 		case C.OPCODE_SET_GAME_VARIANT:
-			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
+			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
 		// Game Team
 		case C.OPCODE_SET_BADGE_TEAM:
-			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
+			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
 		// Game ID
 		case C.OPCODE_GAME_ID:
-			logger.Debug().Msgf("\"%s\" packet received\n", irp.GetPayloadSpecs(opcode).Description)
+			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
 		default:
 			if debug {
 				logger.Debug().Msgf("\"%s\" packet not handled yet.\n", irp.GetPayloadSpecs(opcode).Description)
