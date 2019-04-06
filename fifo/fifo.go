@@ -2,7 +2,6 @@ package fifo
 
 import (
 	"bufio"
-	"fmt"
 	"io"
 	"os"
 
@@ -63,12 +62,11 @@ func ReadFifo(fifoInFile string, packetsIn chan *irp.Packet) {
 				logger.Debug().Msgf("bytes in: %s", repr.Repr(buf))
 			}
 
-			//packet := irp.ReadPacket(irp.BytesToRawPacket(buf))
 			packet := irp.PacketBytes(buf).Packet()
 
 			if debug {
 				packetLogger := packet.Logger(logger)
-				packetLogger.Debug().Msgf("Packet read and routed to channel: %s", fifoInFile)
+				packetLogger.Debug().Msgf("Packet read and routed to channel from: %s", fifoInFile)
 			}
 
 			if connected {
@@ -80,7 +78,9 @@ func ReadFifo(fifoInFile string, packetsIn chan *irp.Packet) {
 
 // WriteFifo - Writes a badge packet to the named pipe (fifo)
 func WriteFifo(fifoOutFile string, packetsOut chan *irp.Packet) {
-	fmt.Printf("Opening named pipe %s\n", fifoOutFile)
+	if debug {
+		logger.Debug().Msgf("Opening named pipe %s\n", fifoOutFile)
+	}
 	fifoFd, err := os.OpenFile(fifoOutFile, os.O_WRONLY, os.ModeNamedPipe)
 	if err != nil {
 		logger.Fatal().Msgf("Open Named pipe error: %s", err)
@@ -111,7 +111,7 @@ func WriteFifo(fifoOutFile string, packetsOut chan *irp.Packet) {
 			if byteCount != 4 {
 				logger.Error().Msg("Packet written was not 4 bytes")
 			}
-			writer.Flush()
+			err = writer.Flush()
 			if err != nil {
 				logger.Error().Msgf("Error flushing buffer: %s", err)
 			}
