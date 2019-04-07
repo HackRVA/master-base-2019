@@ -3,18 +3,22 @@ package main
 import (
 	"fmt"
 
-	log "github.com/HackRVA/master-base-2019/filelogging"
-	ss "github.com/HackRVA/master-base-2019/serverstartup"
+	msg "github.com/HackRVA/master-base-2019/badgewrangler"
+	irp "github.com/HackRVA/master-base-2019/irpacket"
+	"github.com/HackRVA/master-base-2019/serial"
 	term "github.com/nsf/termbox-go"
 )
-
-var logger = log.Ger
 
 func reset() {
 	term.Sync() // cosmetic purpose?
 }
 
 func main() {
+	serial.SetDebug(true)
+	packetsOut := make(chan *irp.Packet)
+	serial.OpenPort("/dev/ttyUSB0", 9600)
+	go serial.WriteSerial(packetsOut)
+	packet := msg.BuildBeacon()
 
 	err := term.Init()
 	if err != nil {
@@ -22,8 +26,6 @@ func main() {
 	}
 
 	defer term.Close()
-
-	ss.StartBadgeWrangler("/dev/ttyUSB0", 9600)
 
 	reset()
 
@@ -34,6 +36,12 @@ keyPressListenerLoop:
 			if ev.Key == term.KeyEsc {
 				fmt.Println("Esc pressed")
 				break keyPressListenerLoop
+			} else if ev.Ch == 'p' {
+				fmt.Println("\nPacket built:")
+				packet.Print()
+				fmt.Println()
+
+				packetsOut <- packet
 			}
 		case term.EventError:
 			panic(ev.Err)

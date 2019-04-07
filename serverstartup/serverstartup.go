@@ -3,13 +3,13 @@ package serverstartup
 import (
 	bw "github.com/HackRVA/master-base-2019/badgewrangler"
 	ba "github.com/HackRVA/master-base-2019/baseapi"
-	"github.com/HackRVA/master-base-2019/fifo"
 	"github.com/HackRVA/master-base-2019/game"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
+	"github.com/HackRVA/master-base-2019/serial"
 )
 
 // StartBadgeWrangler - Start up the badge wrangler
-func StartBadgeWrangler() {
+func StartBadgeWrangler(port string, baud int) {
 	// Set up input a)nd output channels
 	packetsIn := make(chan *irp.Packet)
 	packetsOut := make(chan *irp.Packet)
@@ -20,8 +20,10 @@ func StartBadgeWrangler() {
 	//fifo.SetDebug(true)
 	bw.SetDebug(true)
 
-	go fifo.ReadFifo(fifo.BadgeOutFile, packetsIn)
-	go fifo.WriteFifo(fifo.BadgeInFile, packetsOut)
+	serial.OpenPort(port, baud)
+
+	go serial.ReadSerial(packetsIn)
+	go serial.WriteSerial(packetsOut)
 
 	go bw.ReceivePackets(packetsIn, gameData, beaconHold)
 	go bw.TransmitBeacon(packetsOut, beaconHold)

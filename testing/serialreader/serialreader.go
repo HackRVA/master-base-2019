@@ -8,7 +8,9 @@ import (
 )
 
 func main() {
+	serial.SetDebug(true)
 	packetsIn := make(chan *irp.Packet)
+	serial.OpenPort("/dev/ttyUSB1", 9600)
 	go serial.ReadSerial(packetsIn)
 	for {
 		packet := <-packetsIn

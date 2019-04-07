@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	bw "github.com/HackRVA/master-base-2019/badgewrangler"
-	fifo "github.com/HackRVA/master-base-2019/fifo"
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
+	"github.com/HackRVA/master-base-2019/serial"
 	term "github.com/nsf/termbox-go"
 )
 
@@ -26,10 +26,13 @@ func main() {
 	packetsIn := make(chan *irp.Packet)
 	packetsOut := make(chan *irp.Packet)
 
-	go fifo.ReadFifo(fifo.BadgeInFile, packetsIn)
-	go fifo.WriteFifo(fifo.BadgeOutFile, packetsOut)
-	fifo.SetConnected(false)
-	fifo.SetDebug(false)
+	serial.SetConnected(false)
+	serial.SetDebug(false)
+
+	serial.OpenPort("/dev/ttyUSB1", 9600)
+
+	go serial.ReadSerial(packetsIn)
+	go serial.WriteSerial(packetsOut)
 	bw.SetDebug(true)
 
 	err := term.Init()
@@ -62,10 +65,10 @@ keyPressListenerLoop:
 		switch status {
 		case listening:
 			fmt.Println("Listening to base station")
-			fifo.SetConnected(true)
+			serial.SetConnected(true)
 		case ignoring:
 			fmt.Println("Ignoring base station")
-			fifo.SetConnected(false)
+			serial.SetConnected(false)
 		}
 		fmt.Println("F5: Listen, F6: Ignore, Esc: Quit")
 
