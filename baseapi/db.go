@@ -67,10 +67,11 @@ func GetGames() []gm.Game {
 }
 
 // DataInGameOut - stores the game data and gets the current/next game
-func DataInGameOut(gameDataIn chan *bw.GameData, gameOut chan *gm.Game) {
+func DataInGameOut(gameDataIn chan *bw.GameData, gameDataOut chan *bw.GameData, gameOut chan *gm.Game) {
 	for {
 		gameData := <-gameDataIn
 		fmt.Println(gameData.GameID)
+		gameDataOut <- gameData
 		nextGame := GetNext()
 		gameOut <- &nextGame
 	}

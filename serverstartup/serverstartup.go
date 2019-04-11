@@ -13,9 +13,10 @@ func StartBadgeWrangler(port string, baud int) {
 	// Set up input a)nd output channels
 	packetsIn := make(chan *irp.Packet)
 	packetsOut := make(chan *irp.Packet)
-	gameData := make(chan *bw.GameData)
+	gameDataIn := make(chan *bw.GameData)
+	gameDataOut := make(chan *bw.GameData)
 	beaconHold := make(chan bool)
-	game := make(chan *game.Game)
+	gameOut := make(chan *game.Game)
 
 	//fifo.SetDebug(true)
 	bw.SetDebug(true)
@@ -25,8 +26,9 @@ func StartBadgeWrangler(port string, baud int) {
 	go serial.ReadSerial(packetsIn)
 	go serial.WriteSerial(packetsOut)
 
-	go bw.ReceivePackets(packetsIn, gameData, beaconHold)
+	go bw.ReceivePackets(packetsIn, gameDataIn, beaconHold)
 	go bw.TransmitBeacon(packetsOut, beaconHold)
-	go bw.TransmitNewGamePackets(packetsOut, game, beaconHold)
-	go ba.DataInGameOut(gameData, game)
+	go bw.TransmitNewGamePackets(packetsOut, gameOut, beaconHold)
+	go ba.DataInGameOut(gameDataIn, gameDataOut, gameOut)
+	go ba.SendGameData(gameDataOut)
 }
