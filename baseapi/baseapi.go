@@ -5,8 +5,11 @@ import (
 	"io/ioutil"
 	"net/http"
 
+	log "github.com/HackRVA/master-base-2019/filelogging"
 	gm "github.com/HackRVA/master-base-2019/game"
 )
+
+var logger = log.Ger
 
 // NewGame - function to schedule newgame
 func NewGame(w http.ResponseWriter, r *http.Request) {
@@ -14,7 +17,7 @@ func NewGame(w http.ResponseWriter, r *http.Request) {
 	var e gm.Game
 	b, _ := ioutil.ReadAll(r.Body)
 	json.Unmarshal(b, &e)
-	SaveGame(e)
+	ScheduleGame(e)
 
 	j, _ := json.Marshal(e)
 	w.Write(j)

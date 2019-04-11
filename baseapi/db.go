@@ -11,17 +11,29 @@ import (
 	scribble "github.com/nanobox-io/golang-scribble"
 )
 
-// SaveGame -- save gamespec to database
-func SaveGame(game gm.Game) {
+// ScheduleGame -- save gamespec to database
+func ScheduleGame(game gm.Game) {
 	hash, err := structhash.Hash(game, 1)
 	if err != nil {
-		panic(err)
+		logger.Error().Msgf("error scheduling game: %s", err)
 	}
 
 	// create a new scribble database, providing a destination for the database to live
 	db, _ := scribble.New("./data", nil)
-	fmt.Println(game)
+	logger.Info().Msg("scheduling game")
 	db.Write("games", hash, game)
+}
+
+// SaveGameData -- save game data to db
+func SaveGameData(data *bw.GameData) {
+	hash, err := structhash.Hash(&data, 1)
+	if err != nil {
+		logger.Error().Msgf("error saving game data: %s", err)
+	}
+
+	db, _ := scribble.New("./data", nil)
+	logger.Info().Msg("saving game data")
+	db.Write("game_data", hash, &data)
 }
 
 // GetNext -- return the next game
@@ -74,5 +86,6 @@ func DataInGameOut(gameDataIn chan *bw.GameData, gameDataOut chan *bw.GameData, 
 		gameDataOut <- gameData
 		nextGame := GetNext()
 		gameOut <- &nextGame
+		SaveGameData(gameData)
 	}
 }
