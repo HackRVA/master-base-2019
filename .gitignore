@@ -15,3 +15,5 @@
 data/
 
 test.log
+
+.env
