@@ -23,7 +23,7 @@ func main() {
 
 	defer term.Close()
 
-	ss.StartBadgeWrangler("/dev/ttyUSB0", 9600)
+	ss.StartBadgeWrangler("/dev/ttyACM0", 9600)
 
 	reset()
 

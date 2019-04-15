@@ -18,7 +18,7 @@ func StartBadgeWrangler(port string, baud int) {
 	beaconHold := make(chan bool)
 	gameOut := make(chan *game.Game)
 
-	//fifo.SetDebug(true)
+	serial.SetDebug(true)
 	bw.SetDebug(true)
 
 	serial.OpenPort(port, baud)
