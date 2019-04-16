@@ -35,7 +35,7 @@ func OpenPort(portName string, baud int) {
 	}
 }
 
-//ReadSerial - Reads a badge packet from a serial port
+//ReadSerial - Reads a badge packet from the serial port
 func ReadSerial(packetsIn chan *irp.Packet) {
 
 	buf := make([]byte, 1)
@@ -75,7 +75,26 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 
 }
 
-// WriteSerial - writes a packet to a serial port
+// InitIR - writes an IR initialization sequence to the serial port
+func InitIR() {
+	if debug {
+		logger.Debug().Msg("Initializing IR")
+	}
+	byteCount, err := serialConn.Write([]byte("ZsYnC#"))
+	if err != nil {
+		logger.Fatal().Err(err).Msg("Error initializing IR")
+	}
+	if byteCount != 6 {
+		logger.Fatal().Msg("IR init did not write 6 bytes")
+	}
+
+	err = serialConn.Flush()
+	if err != nil {
+		logger.Fatal().Err(err).Msg("Error flushing the buffer")
+	}
+}
+
+// WriteSerial - writes a packet to the serial port
 func WriteSerial(packetsOut chan *irp.Packet) {
 
 	for {
