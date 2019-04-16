@@ -22,6 +22,7 @@ func StartBadgeWrangler(port string, baud int) {
 	bw.SetDebug(true)
 
 	serial.OpenPort(port, baud)
+	serial.InitIR()
 
 	go serial.ReadSerial(packetsIn)
 	go serial.WriteSerial(packetsOut)
