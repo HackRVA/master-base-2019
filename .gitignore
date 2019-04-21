@@ -17,3 +17,5 @@ data/
 test.log
 
 .env
+
+.vscode/
