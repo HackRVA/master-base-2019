@@ -36,6 +36,15 @@ func SaveGameData(data *bw.GameData) {
 	db.Write("game_data", hash, &data)
 }
 
+// GetGameData -- retrieves gamedata from the db
+func GetGameData() []string {
+	// create a new scribble database, providing a destination for the database to live
+	db, _ := scribble.New("./data", nil)
+	// Read more games from the database
+	gameData, _ := db.ReadAll("game_data")
+	return gameData
+}
+
 // GetNext -- return the next game
 func GetNext() gm.Game {
 	t := time.Now()
