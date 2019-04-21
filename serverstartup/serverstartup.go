@@ -45,7 +45,7 @@ func StartBadgeWrangler() {
 	gameOut := make(chan *game.Game)
 
 	serial.SetDebug(viper.GetBool("serialDebug"))
-	bw.SetDebug(viper.GetBool("bwDebu"))
+	bw.SetDebug(viper.GetBool("bwDebug"))
 
 	serial.OpenPort(viper.GetString("serialPort"), viper.GetInt("baud"))
 	if viper.GetBool("ir") {
