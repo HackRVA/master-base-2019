@@ -7,9 +7,9 @@ import (
 
 const start uint8 = 1
 const command uint8 = 1
-const address uint8 = 0x1A
-const badgeid uint16 = 0x063
-const payload uint16 = 0x3002
+const address uint8 = 0x13
+const badgeid uint16 = 0x000
+const payload uint16 = 0x4000
 
 func testRawPacket() RawPacket {
 	return RawPacket(StartBit(start) |

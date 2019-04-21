@@ -54,20 +54,20 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 				logger.Debug().Msgf("Error reading packet: %s", err)
 			}
 			if byteCount != 1 {
-				logger.Debug().Str("bytes", "in").Msgf("Packet read is not 4 bytes, it is %d bytes", byteCount)
+				logger.Debug().Msgf("Packet read is not 4 bytes, it is %d bytes", byteCount)
 			}
 
 			packetBuffer = append(packetBuffer, buf[0])
 		}
 
 		if debug {
-			logger.Debug().Msgf("bytes in: %s", repr.Repr(packetBuffer))
+			logger.Debug().Str("bytes", "in").Hex("packet bytes", packetBuffer).Msgf("bytes in: %s", repr.Repr(packetBuffer))
 		}
 
 		packet := irp.PacketBytes(packetBuffer).Packet()
 
 		if debug {
-			packetLogger := packet.Logger(logger)
+			packetLogger := packet.LoggerPlus(logger)
 			packetLogger.Debug().Str("serial", "in").Msgf("Packet read from serial and routed to channel")
 		}
 
@@ -107,14 +107,14 @@ func WriteSerial(packetsOut chan *irp.Packet) {
 		if connected {
 
 			if debug {
-				packetLogger := packet.Logger(logger)
+				packetLogger := packet.LoggerPlus(logger)
 				packetLogger.Debug().Str("serial", "out").Msgf("Packet to write received from channel")
 			}
 
 			bytes := packet.Bytes()
 
 			if debug {
-				logger.Debug().Str("bytes", "out").Msgf("bytes out: %s", repr.Repr(bytes))
+				logger.Debug().Str("bytes", "out").Hex("packet bytes", bytes).Msgf("bytes out: %s", repr.Repr(bytes))
 			}
 
 			byteCount, err := serialConn.Write(bytes)

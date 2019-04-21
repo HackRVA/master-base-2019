@@ -181,6 +181,19 @@ func PacketLogger(logger zl.Logger, packet *Packet) zl.Logger {
 		Int16("payload data", packet.PayloadData()).Logger()
 }
 
+// PacketLoggerPlus - return a better packet sublogger
+func PacketLoggerPlus(logger zl.Logger, packet *Packet) zl.Logger {
+	return logger.With().
+		Str("packet", fmt.Sprintf("%x", packet.RawPacket())).
+		Str("cmd", fmt.Sprintf("%#x - %[1]d", packet.Command)).
+		Str("start", fmt.Sprintf("%#x - %[1]d", packet.Start)).
+		Str("address", fmt.Sprintf("%#x - %[1]d", packet.Address)).
+		Str("badge ID", fmt.Sprintf("%#x - %[1]d", packet.BadgeID)).
+		Str("payload", fmt.Sprintf("%#x - %[1]d", packet.Payload)).
+		Str("opcode", fmt.Sprintf("%#x - %[1]d - %s", packet.Opcode(), packet.OpcodeDescription())).
+		Str("payload data", fmt.Sprintf("%#x - %[1]d", packet.PayloadData())).Logger()
+}
+
 // PrintPayload - Print out the payload particulars
 func PrintPayload(packet *Packet) {
 	opcode := uint8(packet.Payload >> 12)
@@ -241,4 +254,9 @@ func (p Packet) PrintPayload() {
 // Logger - returns a logger for this packet
 func (p *Packet) Logger(logger zl.Logger) zl.Logger {
 	return PacketLogger(logger, p)
+}
+
+// LoggerPlus - returns a better logger for this packet
+func (p *Packet) LoggerPlus(logger zl.Logger) zl.Logger {
+	return PacketLoggerPlus(logger, p)
 }
