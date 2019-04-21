@@ -1,6 +1,8 @@
 package serial
 
 import (
+	"fmt"
+
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
 	"github.com/hackebrot/go-repr/repr"
@@ -31,7 +33,9 @@ func OpenPort(portName string, baud int) {
 	config := &serial.Config{Name: portName, Baud: baud}
 	serialConn, err = serial.OpenPort(config)
 	if err != nil {
-		logger.Fatal().Err(err).Msg("Error opening port")
+		errMsg := fmt.Sprintf("Error opening port %s", err)
+		fmt.Println(errMsg)
+		logger.Fatal().Err(err).Msgf("Error opening port: %s", portName)
 	}
 }
 
@@ -50,7 +54,7 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 				logger.Debug().Msgf("Error reading packet: %s", err)
 			}
 			if byteCount != 1 {
-				logger.Debug().Msgf("Packet read is not 4 bytes, it is %d bytes", byteCount)
+				logger.Debug().Str("bytes", "in").Msgf("Packet read is not 4 bytes, it is %d bytes", byteCount)
 			}
 
 			packetBuffer = append(packetBuffer, buf[0])
@@ -64,7 +68,7 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 
 		if debug {
 			packetLogger := packet.Logger(logger)
-			packetLogger.Debug().Msgf("Packet read from serial and routed to channel")
+			packetLogger.Debug().Str("serial", "in").Msgf("Packet read from serial and routed to channel")
 		}
 
 		if connected {
@@ -104,13 +108,13 @@ func WriteSerial(packetsOut chan *irp.Packet) {
 
 			if debug {
 				packetLogger := packet.Logger(logger)
-				packetLogger.Debug().Msgf("Packet to write received from channel")
+				packetLogger.Debug().Str("serial", "out").Msgf("Packet to write received from channel")
 			}
 
 			bytes := packet.Bytes()
 
 			if debug {
-				logger.Debug().Msgf("bytes out: %s", repr.Repr(bytes))
+				logger.Debug().Str("bytes", "out").Msgf("bytes out: %s", repr.Repr(bytes))
 			}
 
 			byteCount, err := serialConn.Write(bytes)

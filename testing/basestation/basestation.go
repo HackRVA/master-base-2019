@@ -23,9 +23,9 @@ func main() {
 
 	defer term.Close()
 
-	ss.StartBadgeWrangler("/dev/ttyACM0", 9600)
-
 	reset()
+
+	ss.StartBadgeWrangler()
 
 keyPressListenerLoop:
 	for {

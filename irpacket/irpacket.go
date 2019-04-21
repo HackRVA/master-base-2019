@@ -18,7 +18,7 @@ const Start = 1
 const Command = 1
 
 // BadgeIRGameAddress - Default Game Address until I understand what is going on.
-const BadgeIRGameAddress = 0x1A
+const BadgeIRGameAddress = 0x13
 
 // PayloadSpec - The data describing a payload type
 type PayloadSpec struct {
