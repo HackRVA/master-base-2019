@@ -6,8 +6,12 @@ import (
 	"time"
 
 	api "github.com/HackRVA/master-base-2019/baseapi"
+	log "github.com/HackRVA/master-base-2019/filelogging"
+	ss "github.com/HackRVA/master-base-2019/serverstartup"
 	"github.com/gorilla/mux"
 )
+
+var logger = log.Ger
 
 func sendToLeaderboard() {
 	ticker := time.NewTicker(180 * time.Second)
@@ -34,5 +38,6 @@ func main() {
 	http.Handle("/", r)
 	fmt.Println("running web server on port 8000")
 	sendToLeaderboard()
+	ss.StartBadgeWrangler()
 	http.ListenAndServe(":8000", nil)
 }
