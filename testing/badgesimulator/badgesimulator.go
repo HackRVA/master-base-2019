@@ -44,18 +44,25 @@ func main() {
 
 	status := ignoring
 
+	/*
+		gameData := &bw.GameData{
+			BadgeID: uint16(333),
+			GameID:  uint16(1234),
+			Hits: []*bw.Hit{
+				{BadgeID: uint16(101), Timestamp: uint16(33), Team: uint8(2)},
+				{BadgeID: uint16(101), Timestamp: uint16(103), Team: uint8(2)},
+				{BadgeID: uint16(101), Timestamp: uint16(203), Team: uint8(2)},
+				{BadgeID: uint16(101), Timestamp: uint16(303), Team: uint8(2)},
+				{BadgeID: uint16(101), Timestamp: uint16(403), Team: uint8(2)},
+				{BadgeID: uint16(101), Timestamp: uint16(503), Team: uint8(2)},
+				{BadgeID: uint16(101), Timestamp: uint16(603), Team: uint8(2)},
+				{BadgeID: uint16(101), Timestamp: uint16(703), Team: uint8(2)}}}
+	*/
+
 	gameData := &bw.GameData{
 		BadgeID: uint16(333),
 		GameID:  uint16(1234),
-		Hits: []*bw.Hit{
-			{BadgeID: uint16(101), Timestamp: uint16(33), Team: uint8(2)},
-			{BadgeID: uint16(101), Timestamp: uint16(103), Team: uint8(2)},
-			{BadgeID: uint16(101), Timestamp: uint16(203), Team: uint8(2)},
-			{BadgeID: uint16(101), Timestamp: uint16(303), Team: uint8(2)},
-			{BadgeID: uint16(101), Timestamp: uint16(403), Team: uint8(2)},
-			{BadgeID: uint16(101), Timestamp: uint16(503), Team: uint8(2)},
-			{BadgeID: uint16(101), Timestamp: uint16(603), Team: uint8(2)},
-			{BadgeID: uint16(101), Timestamp: uint16(703), Team: uint8(2)}}}
+		Hits:    []*bw.Hit{}}
 
 	go bw.BadgeHandlePackets(packetsIn, packetsOut, gameData)
 

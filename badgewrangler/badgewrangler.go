@@ -175,10 +175,20 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 				hitsRecorded = 0
 
 				gameData.Hits = make([]*Hit, hitCount)
-
-				expecting = BadgeID
-				if debug {
-					logger.Debug().Msgf("** Badge Record Count Received: %s", repr.Repr(hitCount))
+				if hitCount > 0 {
+					expecting = BadgeID
+					if debug {
+						logger.Debug().Msgf("** Badge Record Count Received: %s", repr.Repr(hitCount))
+					}
+				} else {
+					if debug {
+						logger.Debug().Msg("GameData Complete!")
+					}
+					gameDataOut <- gameData
+					hitsRecorded = 0
+					hitCount = 0
+					gameData = nil
+					expecting = SenderBadgeID
 				}
 			} else {
 				PrintUnexpectedPacketError(expecting, opcode)
