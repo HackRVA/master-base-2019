@@ -1,5 +1,9 @@
 # master-base
-Master Base Station coding
+Master Base Station has been built for the [RVASec](https://rvasec.com/) conference by members at [HackRVA](https://hackrva.org).
+
+The Master Base Station communicates with the RVASec conference attendees' badges over IR to schedule LaserTag Games.  Additionally, The Base Station can help attendees transmit code to their badge.
+
+## Connecting A badge over serial
 
 The Base station expects a badge to be connected over usb on `/dev/ttyACM0`
 
