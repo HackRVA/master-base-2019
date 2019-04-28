@@ -63,6 +63,7 @@ func GetNext() gm.Game {
 
 		// return the first game that is greater than now
 		if int64(t.Unix()) < game.AbsStart+int64(game.Duration) {
+			game.StartTime = int16(game.AbsStart - t.Unix())
 			return game
 		}
 	}

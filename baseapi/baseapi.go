@@ -28,7 +28,7 @@ func NextGame(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	next := GetNext()
 	if next.AbsStart == 0 {
-		j, _ := json.Marshal("There is no game scheduled")
+		j, _ := json.Marshal("There are no games scheduled")
 		w.Write(j)
 	} else {
 		j, _ := json.Marshal(next)
