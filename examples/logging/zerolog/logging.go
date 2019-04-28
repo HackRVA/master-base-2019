@@ -1,7 +1,7 @@
 package main
 
 import (
-	log "github.com/HackRVA/master-base-2019/logging"
+	log "github.com/HackRVA/master-base-2019/filelogging"
 	"github.com/rs/zerolog"
 )
 
@@ -12,7 +12,7 @@ func main() {
 }
 
 /*
-fund doit() {
+func doit() {
 	gameDataC := make(chan *GameData)
 	gameSpecC = make(chan *gameSpec)
 	beaconHoldC = make(chan *beaconHoldC)

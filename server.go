@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"os"
 
 	api "github.com/HackRVA/master-base-2019/baseapi"
 	log "github.com/HackRVA/master-base-2019/filelogging"
@@ -16,10 +15,7 @@ import (
 var logger = log.Ger
 
 func main() {
-	uri := os.Getenv("LEADERBOARD_API")
-	if uri == "" {
-		os.Setenv("LEADERBOARD_API", "http://localhost:5000/api/")
-	}
+	ss.InitConfiguration()
 
 	r := mux.NewRouter()
 	r.HandleFunc("/api/newgame", api.NewGame).Methods("POST")

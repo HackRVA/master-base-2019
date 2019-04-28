@@ -359,22 +359,22 @@ func BadgeHandlePackets(packetsIn chan *irp.Packet, packetsOut chan *irp.Packet,
 			gameData.TransmitBadgeDump(packetsOut)
 		// Game Start Time
 		case C.OPCODE_SET_GAME_START_TIME:
-			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
+			logger.Debug().Msgf("[%s] packet received, payload: %d", desc, data)
 		// Game Duration
 		case C.OPCODE_SET_GAME_DURATION:
-			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
+			logger.Debug().Msgf("[%s] packet received, payload: %d", desc, data)
 		// Game Variant
 		case C.OPCODE_SET_GAME_VARIANT:
-			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
+			logger.Debug().Msgf("[%s] packet received, payload: %d", desc, data)
 		// Game Team
 		case C.OPCODE_SET_BADGE_TEAM:
-			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
+			logger.Debug().Msgf("[%s] packet received, payload: %d", desc, data)
 		// Game ID
 		case C.OPCODE_GAME_ID:
-			logger.Debug().Msgf("\"%s\" packet received, payload: %d\n", desc, data)
+			logger.Debug().Msgf("[%s] packet received, payload: %d", desc, data)
 		default:
 			if debug {
-				logger.Debug().Msgf("\"%s\" packet not handled yet.\n", irp.GetPayloadSpecs(opcode).Description)
+				logger.Debug().Uint8("opcode", opcode).Msgf("[%s] packet not handled yet.", desc)
 			}
 		}
 	}

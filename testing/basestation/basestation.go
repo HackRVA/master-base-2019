@@ -25,6 +25,8 @@ func main() {
 
 	reset()
 
+	ss.InitConfiguration()
+
 	ss.StartBadgeWrangler()
 
 keyPressListenerLoop:

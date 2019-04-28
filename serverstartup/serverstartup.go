@@ -11,9 +11,8 @@ import (
 	"github.com/spf13/viper"
 )
 
-// StartBadgeWrangler - Start up the badge wrangler
-func StartBadgeWrangler() {
-
+// InitConfiguration - Initialize the configuration
+func InitConfiguration() {
 	// Config init
 	fmt.Println("Configuration Settings...")
 	viper.SetDefault("serialPort", "/dev/ttyACM0")
@@ -21,6 +20,9 @@ func StartBadgeWrangler() {
 	viper.SetDefault("ir", true)
 	viper.SetDefault("serialDebug", false)
 	viper.SetDefault("bwDebug", false)
+	viper.SetDefault("leaderBoard_API", "http://localhost:5000/api/")
+
+	viper.BindEnv("leaderBoard_API")
 
 	viper.SetConfigName("baseconfig")
 	viper.AddConfigPath("/etc/basestation")
@@ -35,6 +37,11 @@ func StartBadgeWrangler() {
 	fmt.Println("                ir:", viper.GetBool("ir"))
 	fmt.Println("       serialDebug:", viper.GetBool("serialDebug"))
 	fmt.Println("badgeWranglerDebug:", viper.GetBool("bwDebug"))
+	fmt.Println("leaderBoard_API", viper.GetString("leaderBoard_API"))
+}
+
+// StartBadgeWrangler - Start up the badge wrangler
+func StartBadgeWrangler() {
 
 	// Set up input a)nd output channels
 	packetsIn := make(chan *irp.Packet)

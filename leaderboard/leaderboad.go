@@ -5,14 +5,13 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	"os"
 	"strconv"
 	"strings"
 	"time"
 
 	api "github.com/HackRVA/master-base-2019/baseapi"
 	log "github.com/HackRVA/master-base-2019/filelogging"
-	"github.com/joho/godotenv"
+	"github.com/spf13/viper"
 )
 
 var logger = log.Ger
@@ -32,12 +31,8 @@ type UserScripts struct {
 
 // PostGameData -- sends gameData to the leaderboard
 func postGameData(gameData []string) {
-	err := godotenv.Load()
-	if err != nil {
-		logger.Error().Msg("Error loading .env file")
-	}
 
-	uri := os.Getenv("LEADERBOARD_API")
+	uri := viper.GetString("leaderBoard_API")
 
 	json := `{"data":[` + strings.Join(gameData, ",") + `]}`
 	var jsonStr = []byte(json)
@@ -50,19 +45,17 @@ func postGameData(gameData []string) {
 	resp, err := client.Do(req)
 	if err != nil {
 		logger.Error().Msgf("error connecting to Leaderboard: %s", err)
+		return
 	}
 
-	logger.Info().Msg("sending data to leaderboard")
+	logger.Info().Msg("sent data to leaderboard")
 	defer resp.Body.Close()
 }
 
 // FetchScripts -- fetch user's scripts from leaderboard api
 func FetchScripts(BadgeID uint16) {
-	err := godotenv.Load()
-	if err != nil {
-		logger.Error().Msg("Error loading .env file")
-	}
-	uri := os.Getenv("LEADERBOARD_API")
+
+	uri := viper.GetString("leaderBoard_API")
 
 	b := strconv.Itoa(int(BadgeID))
 
@@ -71,6 +64,7 @@ func FetchScripts(BadgeID uint16) {
 
 	if err != nil {
 		logger.Error().Msgf("error fetching user %d scripts", BadgeID)
+		return
 	}
 	defer resp.Body.Close()
 	body, err := ioutil.ReadAll(resp.Body)
@@ -81,7 +75,7 @@ func sendToLeaderboard(interval *time.Ticker, quit chan struct{}) {
 	for {
 		select {
 		case <-interval.C:
-			logger.Debug().Msg("sending data to leaderboard")
+			logger.Debug().Msg("attempt to send data to leaderboard")
 			postGameData(api.GetGameData())
 		case <-quit:
 			logger.Debug().Msg("stopping routine that sends data to leaderboard.")
