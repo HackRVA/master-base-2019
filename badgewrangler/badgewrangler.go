@@ -313,6 +313,11 @@ func TransmitNewGamePackets(packetsOut chan *irp.Packet, gameIn chan *gm.Game, b
 	for {
 		game := <-gameIn
 
+		if debug {
+			packetLogger := game.Logger(logger)
+			packetLogger.Debug().Msg("Send game to badge")
+		}
+
 		packetsOut <- BuildGameStartTime(game)
 		packetsOut <- BuildGameDuration(game)
 		packetsOut <- BuildGameVariant(game)

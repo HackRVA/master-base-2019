@@ -26,14 +26,14 @@ func ScheduleGame(game gm.Game) {
 
 // SaveGameData -- save game data to db
 func SaveGameData(data *bw.GameData) {
-	hash, err := structhash.Hash(&data, 1)
+	hash, err := structhash.Hash(data, 1)
 	if err != nil {
 		logger.Error().Msgf("error saving game data: %s", err)
 	}
 
 	db, _ := scribble.New("./data", nil)
 	logger.Info().Msg("saving game data")
-	db.Write("game_data", hash, &data)
+	db.Write("game_data", hash, data)
 }
 
 // GetGameData -- retrieves gamedata from the db
