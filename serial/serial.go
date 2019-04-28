@@ -84,12 +84,12 @@ func InitIR() {
 	if debug {
 		logger.Debug().Msg("Initializing IR")
 	}
-	byteCount, err := serialConn.Write([]byte("ZsYnC#"))
+	byteCount, err := serialConn.Write([]byte("ZsYnCxX#"))
 	if err != nil {
 		logger.Fatal().Err(err).Msg("Error initializing IR")
 	}
-	if byteCount != 6 {
-		logger.Fatal().Msg("IR init did not write 6 bytes")
+	if byteCount != 8 {
+		logger.Fatal().Msg("IR init did not write 8 bytes")
 	}
 
 	err = serialConn.Flush()
