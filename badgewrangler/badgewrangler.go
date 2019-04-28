@@ -318,16 +318,22 @@ func TransmitNewGamePackets(packetsOut chan *irp.Packet, gameIn chan *gm.Game, b
 			packetLogger.Debug().Msg("Send game to badge")
 		}
 
-		packetsOut <- BuildGameStartTime(game)
-		packetsOut <- BuildGameDuration(game)
-		packetsOut <- BuildGameVariant(game)
-		packetsOut <- BuildGameTeam(game)
-		packetsOut <- BuildGameID(game)
+		NewGamePackets(packetsOut, game)
+		NewGamePackets(packetsOut, game)
 
 		time.Sleep(beaconDelay)
 
 		beaconHold <- false
 	}
+}
+
+// NewGamePackets - Put the new game packets on the channel
+func NewGamePackets(packetsOut chan *irp.Packet, game *gm.Game) {
+	packetsOut <- BuildGameStartTime(game)
+	packetsOut <- BuildGameDuration(game)
+	packetsOut <- BuildGameVariant(game)
+	packetsOut <- BuildGameTeam(game)
+	packetsOut <- BuildGameID(game)
 }
 
 // TransmitBeacon - Transmits "beacon" packets to the badge to trigger gameData upload
