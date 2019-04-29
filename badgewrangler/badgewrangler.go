@@ -29,11 +29,17 @@ const (
 )
 
 var debug = false
+var irErr = false
 var logger = log.Ger.With().Str("pkg", "badgewrangler").Logger()
 
 // SetDebug - sets the debugging on and off
 func SetDebug(isDebug bool) {
 	debug = isDebug
+}
+
+// SetIrErr - sets IR error simulation on and off
+func SetIrErr(isIrErr bool) {
+	irErr = isIrErr
 }
 
 // Hit - The data comprising a Hit
@@ -81,7 +87,7 @@ func (gd *GameData) HitCountPacket(hitCount uint16) *irp.Packet {
 }
 
 // Packets - return a slice containing all the gameData packets
-func (gd *GameData) Packets() []*irp.Packet {
+func (gd *GameData) Packets(irErr bool) []*irp.Packet {
 	packetIndex := 0
 	packets := make([]*irp.Packet, len(gd.Hits)*3+3)
 	packets[packetIndex] = gd.BadgeIDPacket()
@@ -90,8 +96,12 @@ func (gd *GameData) Packets() []*irp.Packet {
 	packetIndex++
 	packets[packetIndex] = gd.HitCountPacket(uint16(len(gd.Hits)))
 	packetIndex++
-	for _, hit := range gd.Hits {
-		packets[packetIndex] = hit.BadgeIDPacket()
+	for i, hit := range gd.Hits {
+		if i == 1 && irErr {
+			packets[packetIndex] = irp.BuildPacket(uint16(0), C.OPCODE_SET_GAME_START_TIME<<12|uint16(19&0x0fff))
+		} else {
+			packets[packetIndex] = hit.BadgeIDPacket()
+		}
 		packetIndex++
 		packets[packetIndex] = hit.TimestampPacket()
 		packetIndex++
@@ -102,8 +112,8 @@ func (gd *GameData) Packets() []*irp.Packet {
 }
 
 // TransmitBadgeDump - place the gameData element's packets on an outbound *Packet channel
-func (gd *GameData) TransmitBadgeDump(packetsOut chan *irp.Packet) {
-	for _, packet := range gd.Packets() {
+func (gd *GameData) TransmitBadgeDump(packetsOut chan *irp.Packet, irErr bool) {
+	for _, packet := range gd.Packets(irErr) {
 		packetsOut <- packet
 	}
 }
@@ -126,18 +136,27 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 	var hitCount uint16
 	var hitsRecorded uint16
 	var startTime time.Time
+	var packet *irp.Packet
 
 	for {
 		if expecting != SenderBadgeID {
 			elapsedTime := time.Now()
 			timeoutInterval, _ := time.ParseDuration("2s")
 			if elapsedTime.Sub(startTime) > timeoutInterval {
+				if debug {
+					logger.Debug().Msg("Game dump timeout")
+				}
 				expecting = SenderBadgeID
 				beaconHoldOut <- false
 			}
 		}
 
-		packet := <-packetsIn
+		select {
+		case packet = <-packetsIn:
+		case <-time.After(1 * time.Second):
+			continue
+		}
+
 		fmt.Println()
 		irp.PrintPacket(packet)
 		opcode = packet.Opcode()
@@ -159,8 +178,6 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 			}
 		case C.OPCODE_GAME_ID:
 			if expecting == GameID {
-				beaconHoldOut <- true
-				startTime = time.Now()
 				gameData.GameID = uint16(packet.Payload & 0x0fff)
 				expecting = RecordCount
 				if debug {
@@ -341,9 +358,19 @@ func NewGamePackets(packetsOut chan *irp.Packet, game *gm.Game) {
 func TransmitBeacon(packetsOut chan *irp.Packet, beaconHoldIn chan bool) {
 
 	beaconHold := false
+	if debug {
+		logger.Debug().Msg("Beacon is on")
+	}
 	for {
 		select {
 		case beaconHold = <-beaconHoldIn:
+			if debug {
+				status := "on"
+				if beaconHold {
+					status = "off"
+				}
+				logger.Debug().Msg("Beacon is " + status)
+			}
 		default:
 		}
 		if !beaconHold {
@@ -367,7 +394,7 @@ func BadgeHandlePackets(packetsIn chan *irp.Packet, packetsOut chan *irp.Packet,
 
 		switch opcode {
 		case C.OPCODE_REQUEST_BADGE_DUMP:
-			gameData.TransmitBadgeDump(packetsOut)
+			gameData.TransmitBadgeDump(packetsOut, irErr)
 		// Game Start Time
 		case C.OPCODE_SET_GAME_START_TIME:
 			logger.Debug().Msgf("[%s] packet received, payload: %d", desc, data)
