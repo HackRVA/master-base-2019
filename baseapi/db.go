@@ -93,7 +93,7 @@ func DataInGameOut(gameDataIn chan *bw.GameData, gameDataOut chan *bw.GameData, 
 	for {
 		gameData := <-gameDataIn
 		fmt.Println(gameData.GameID)
-		gameDataOut <- gameData
+		//gameDataOut <- gameData
 		nextGame := GetNext()
 		gameOut <- &nextGame
 		SaveGameData(gameData)

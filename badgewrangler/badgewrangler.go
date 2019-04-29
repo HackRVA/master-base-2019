@@ -29,7 +29,7 @@ const (
 )
 
 var debug = false
-var logger = log.Ger
+var logger = log.Ger.With().Str("pkg", "badgewrangler").Logger()
 
 // SetDebug - sets the debugging on and off
 func SetDebug(isDebug bool) {
@@ -241,7 +241,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 			{
 			}
 			if debug {
-				logger.Debug().Msgf("** Opcode %s not handled yet", repr.Repr(opcode))
+				logger.Error().Msgf("** Opcode %s never expected", repr.Repr(opcode))
 			}
 		}
 	}

@@ -14,7 +14,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-var logger = log.Ger
+var logger = log.Ger.With().Str("pkg", "leaderboard").Logger()
 
 // an in browser editor exists on the leaderboard webserver
 // users scripts are fetched and queued up for transmitting to the badge
