@@ -21,9 +21,10 @@ func main() {
 	r.HandleFunc("/api/newgame", api.NewGame).Methods("POST")
 	r.HandleFunc("/api/nextgame", api.NextGame).Methods("GET")
 	r.HandleFunc("/api/games", api.AllGames).Methods("GET")
+	r.handleFunc("/api/info, api.Info").Methods("GET")
 	http.Handle("/", r)
 	fmt.Println("running web server on port 8000")
 	lb.StartLeaderboardLoop()
-	ss.StartBadgeWrangler()
+	//ss.StartBadgeWrangler()
 	http.ListenAndServe(":8000", nil)
 }

@@ -99,3 +99,61 @@ func DataInGameOut(gameDataIn chan *bw.GameData, gameDataOut chan *bw.GameData, 
 		SaveGameData(gameData)
 	}
 }
+
+func GetInfo() gm.GameInfo {
+     db, _ := scribble.New("./info", nil)
+     gameInfo, _ := db.Read("info", "info", nil)
+     
+     return gameInfo
+}
+
+func updateGameInfo(gameInfo GameInfo) {
+
+     // Establish driver connection
+     db, err = scribble.New("./info", nill)
+
+     if err != nil {
+     	logger.Error().Msgf("Unable to: %s", err)
+     	writeGameInfo(db, gameInfo)
+	return 
+     }
+
+     // retreive a single entry from info
+     info, err = db.Read("info", "info", nil)
+
+     if err != nil {
+     	logger.Warn().Msgf("game info update failed: %s", err)
+     	writeGameInfo(db, gameInfo)
+	return 
+     }
+     
+     // Backup entry
+     infoOld, err = db.Read("info","old",nil)
+
+     if err != nil {
+     	logger.Warn().Msgf("Reading game info backup failed: %s", err)
+     }
+     
+     err = db.Delete("info","old",nil)
+
+     if err != nil {
+     	logger.Warn().Msgf("Deleting backup failed: %s", err)
+     }
+
+     err = db.Write("info", "old", info)
+     if err != nil {
+     	logger.Error().Msgf("Writing Backup failed: %s", err)
+	return
+     }
+     
+     err = db.Delete("info","info",nil)
+
+     if err != nil {
+     	logger.Warn().Msgf("Deleting game info entry failed: %s", err)
+     }
+
+     err = db.Write("info", "info", info)
+     if err != nil {
+     	logger.Error().Msgf("Writing game info entry failed: %s", err)
+     }
+}
