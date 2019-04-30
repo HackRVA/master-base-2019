@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	beaconInterval = 1 * time.Second
+	beaconInterval = 2 * time.Second
 	beaconDelay    = 5 * time.Second
 )
 
