@@ -9,7 +9,7 @@ import (
 	"github.com/tarm/serial"
 )
 
-var logger = log.Ger
+var logger = log.Ger.With().Str("pkg", "serial").Logger()
 var debug = false
 var connected = true
 var serialConn *serial.Port

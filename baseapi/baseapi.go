@@ -10,7 +10,7 @@ import (
 	gm "github.com/HackRVA/master-base-2019/game"
 )
 
-var logger = log.Ger
+var logger = log.Ger.With().Str("pkg", "baseapi").Logger()
 
 // NewGame - function to schedule newgame
 func NewGame(w http.ResponseWriter, r *http.Request) {

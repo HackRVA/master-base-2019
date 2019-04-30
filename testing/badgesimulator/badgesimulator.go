@@ -17,6 +17,11 @@ const (
 	ignoring  = iota
 )
 
+const (
+	erroring = iota
+	correct  = iota
+)
+
 func reset() {
 	term.Sync() // cosmetic purpose?
 }
@@ -42,7 +47,10 @@ func main() {
 
 	defer term.Close()
 
-	status := ignoring
+	connStatus := ignoring
+	errStatus := correct
+	nextConnStatusLabel := "Listen"
+	nextErrStatusLabel := "IR Error"
 
 	gameData := &bw.GameData{
 		BadgeID: uint16(333),
@@ -69,15 +77,29 @@ func main() {
 	reset()
 keyPressListenerLoop:
 	for {
-		switch status {
+		switch connStatus {
 		case listening:
 			fmt.Println("Listening to base station")
 			serial.SetConnected(true)
+			nextConnStatusLabel = "Ignore"
 		case ignoring:
 			fmt.Println("Ignoring base station")
 			serial.SetConnected(false)
+			nextConnStatusLabel = "Listen"
 		}
-		fmt.Println("F5: Listen, F6: Ignore, Esc: Quit")
+
+		switch errStatus {
+		case correct:
+			fmt.Println("Sending Correct Data")
+			bw.SetIrErr(false)
+			nextErrStatusLabel = "IR Error"
+		case erroring:
+			fmt.Println("Simulating IR Error in Data")
+			bw.SetIrErr(true)
+			nextErrStatusLabel = "No Error"
+		}
+
+		fmt.Println("F5:", nextConnStatusLabel, " F6:", nextErrStatusLabel, " Esc: Quit")
 
 		switch ev := term.PollEvent(); ev.Type {
 		case term.EventKey:
@@ -85,9 +107,17 @@ keyPressListenerLoop:
 			case term.KeyEsc:
 				break keyPressListenerLoop
 			case term.KeyF5:
-				status = listening
+				if connStatus == listening {
+					connStatus = ignoring
+				} else {
+					connStatus = listening
+				}
 			case term.KeyF6:
-				status = ignoring
+				if errStatus == erroring {
+					errStatus = correct
+				} else {
+					errStatus = erroring
+				}
 			}
 
 		case term.EventError:
