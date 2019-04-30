@@ -76,7 +76,7 @@ func sendToLeaderboard(interval *time.Ticker, quit chan struct{}) {
 		select {
 		case <-interval.C:
 			logger.Debug().Msg("attempt to send data to leaderboard")
-			postGameData(api.GetGameData())
+			postGameData(api.StrGameData())
 		case <-quit:
 			logger.Debug().Msg("stopping routine that sends data to leaderboard.")
 			interval.Stop()
