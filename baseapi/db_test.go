@@ -47,5 +47,5 @@ func TestGetNext(t *testing.T) {
 }
 
 func TestZeroGameData(t *testing.T) {
-	zeroGameData()
+	ZeroGameData()
 }

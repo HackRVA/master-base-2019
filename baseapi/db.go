@@ -48,16 +48,15 @@ func killGameData() {
 	}
 }
 
-func zeroGameData() {
+// ZeroGameData -- Sets all game data as sent
+func ZeroGameData() {
 	gameData := GetGameData()
-	if gameData != nil {
-		killGameData()
-	}
 
 	db, _ := scribble.New("./data", nil)
 
 	for _, g := range gameData {
 		g.Sent = true
+		logger.Debug().Msgf("zeroing game_data for badgeID: %d", g.BadgeID)
 		hash, err := structhash.Hash(g, 1)
 		if err != nil {
 			logger.Error().Msgf("error saving zeroed game data: %s", err)
