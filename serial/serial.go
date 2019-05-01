@@ -132,3 +132,14 @@ func WriteSerial(packetsOut chan *irp.Packet) {
 		}
 	}
 }
+
+// IRFilter - filters out packets for other applications
+func IRFilter(packetsIn chan *irp.Packet, packetsOut chan *irp.Packet) {
+
+	for {
+		packet := <-packetsIn
+		if packet.Address == 0x13 {
+			packetsOut <- packet
+		}
+	}
+}
