@@ -14,7 +14,7 @@ var logger = log.Ger
 
 func main() {
 	fifteenMin := time.Now().Local().Add(time.Minute * time.Duration(15))
-	url := "http://localhost:8000/api/newgame"
+	url := "http://10.200.200.234:8000/api/newgame"
 
 	var jsonStr = []byte(fmt.Sprintf(`{
 		 	"body":123,
