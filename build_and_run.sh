@@ -1,8 +1,9 @@
 #!/bin/bash
-rm -rf /tmp/fifo-to-badge
-rm -rf /tmp/fifo-from-badge
+mkdir -p ~/etc/
 
-mkfifo /tmp/fifo-to-badge
-mkfifo /tmp/fifo-from-badge
-
+echo "serialPort: /dev/ttyACM0
+ir: true
+serialDebug: true
+bwDebug: true
+leaderBoard_API: \"http://10.200.200.161:5000/api/\"" > ~/etc/baseconfig.yaml
 go run server.go
