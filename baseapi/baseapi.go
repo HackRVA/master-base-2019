@@ -21,7 +21,7 @@ func NewGame(w http.ResponseWriter, r *http.Request) {
 	b, _ := ioutil.ReadAll(r.Body)
 	json.Unmarshal(b, &e)
 
-	var bit_mask uint64 = 0
+	var bit_mask int64 = 0
 
 	// Init mask
      	for i := 0; i < 16; i++{
@@ -58,7 +58,12 @@ func AllGames(w http.ResponseWriter, r *http.Request) {
 }
 
 func Info(w http.ResponseWriter, r *http.Request) {
+     var game gm.Game
      w.Header().Set("Content-Type", "application/json")
-     j, _ := json.Marshal(GetInfo())
-     w.write(j)
+
+     b, _ := ioutil.ReadAll(r.Body)
+     json.Unmarshal(b, &game)
+     
+     j, _ := json.Marshal(GetInfo(game.GameID))
+     w.Write(j)
 }
