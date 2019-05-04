@@ -5,9 +5,12 @@ import (
 	"io/ioutil"
 	"net/http"
 	"time"
+	"strconv"
 
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	gm "github.com/HackRVA/master-base-2019/game"
+	gi "github.com/HackRVA/master-base-2019/gameinfo"
+	mux "github.com/gorilla/mux"
 )
 
 var logger = log.Ger.With().Str("pkg", "baseapi").Logger()
@@ -32,6 +35,8 @@ func NewGame(w http.ResponseWriter, r *http.Request) {
 	e.GameID = (uint16)(currentTime * bit_mask)
 
 	ScheduleGame(e)
+	AddNewGameEntryToGameInfo(e)
+	
 
 	j, _ := json.Marshal(e)
 	w.Write(j)
@@ -41,6 +46,16 @@ func NewGame(w http.ResponseWriter, r *http.Request) {
 func NextGame(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	next := GetNext()
+	var gameInfo gi.GameInfo
+	AddNewGameEntryToGameInfo(next)
+
+	gameInfo = GetInfo(next.GameID)
+
+	logger.Info().Msgf("gameInfo ID: %s", next.GameID)
+     	if gameInfo.ID == 0 {
+     	   AddNewGameEntryToGameInfo(next)
+     	}
+     	
 	if next.AbsStart == 0 {
 		j, _ := json.Marshal("There are no games scheduled")
 		w.Write(j)
@@ -58,12 +73,32 @@ func AllGames(w http.ResponseWriter, r *http.Request) {
 }
 
 func Info(w http.ResponseWriter, r *http.Request) {
-     var game gm.Game
      w.Header().Set("Content-Type", "application/json")
-
+     
+     var game gm.Game
+     var gameInfo gi.GameInfo
+     
+     params := mux.Vars(r)
      b, _ := ioutil.ReadAll(r.Body)
      json.Unmarshal(b, &game)
-     
-     j, _ := json.Marshal(GetInfo(game.GameID))
+
+     gameIDFromRequest, err := strconv.ParseUint(params["id"], 10, 16)
+
+     if err != nil {
+     	logger.Error().Msgf("Info: %s", err)
+     }
+
+     gameInfo = GetInfo(uint16(gameIDFromRequest))
+     if gameInfo.ID == 0 {
+     	AddNewGameEntryToGameInfo(game)
+	gameInfo = GetInfo(game.GameID)
+     }
+     j, _ := json.Marshal(gameInfo)
+     w.Write(j)
+}
+
+func AllInfo(w http.ResponseWriter, r *http.Request) {
+     w.Header().Set("Content-Type", "application/json")
+     j, _ := json.Marshal(GetAllInfo())
      w.Write(j)
 }

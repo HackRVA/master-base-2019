@@ -104,18 +104,35 @@ func DataInGameOut(gameDataIn chan *bw.GameData, gameDataOut chan *bw.GameData, 
 
 
 // Overwrites the 'info' entry with the gameInfo 
-func writeGameInfo(db *scribble.Driver, gameInfo gi.GameInfo) {
-
+func WriteGameInfo(gameInfo gi.GameInfo) {
+     db, _ := scribble.New("./data", nil) 
      if err := db.Write("info", strconv.FormatInt(int64(gameInfo.ID), 10), gameInfo); err != nil {
      	logger.Error().Msgf("error writing to the database: %s", err)
      }
+}
+
+// GetAllInfo -- retrieves all info entries from the DB
+func GetAllInfo() []gi.GameInfo {
+	// create a new scribble database, providing a destination for the database to live
+	db, _ := scribble.New("./data", nil)
+	// Read the info table from the database
+	resultSet, _ := db.ReadAll("info")
+	// iterate over the info result-set
+	allInfo := []gi.GameInfo{}
+	for _, result := range resultSet{
+		info := gi.GameInfo{}
+		json.Unmarshal([]byte(result), &info)
+		allInfo = append(allInfo, info)
+	}
+
+	return allInfo
 }
 
 // GetInfo -- retreive game info from database
 func GetInfo(gameID uint16) gi.GameInfo {
      var gameInfo gi.GameInfo
 
-     db, _ := scribble.New("./info", nil)
+     db, _ := scribble.New("./data", nil)
      err := db.Read("info", strconv.FormatUint(uint64(gameID), 10), &gameInfo)
      if err != nil {
      	logger.Error().Msgf("Error reading: %s", err)
@@ -129,7 +146,7 @@ func GetOldInfo(gameID uint16) gi.GameInfo {
      var gameInfo gi.GameInfo
      var key string = strconv.FormatUint((uint64)(gameID), 10) + "old"
 
-     db, _ := scribble.New("./info", nil)
+     db, _ := scribble.New("./data", nil)
      err := db.Read("info", key, &gameInfo)
 
      if err != nil {
@@ -137,6 +154,40 @@ func GetOldInfo(gameID uint16) gi.GameInfo {
      }
      
      return gameInfo
+}
+
+func AddNewGameEntryToGameInfo(game gm.Game) {
+     var gameInfo gi.GameInfo
+     
+     // Establish driver connection
+     db, err := scribble.New("./data", nil) 
+     logger.Info().Msg("Adding new entry")
+     
+     if err != nil {
+     	logger.Error().Msgf("Driver failure: %s", err)
+	return 
+     }
+     
+     err = db.Read("info", strconv.FormatUint((uint64)(game.GameID), 10), gameInfo)
+
+     if err != nil {
+     	logger.Error().Msgf("Read error: %s", err)
+     }
+
+     // If no prior gameInfo information exists for this game
+     // Initialize gameInfo with game
+     if gameInfo.ID == 0 {
+     	gameInfo.ID = game.GameID
+	gameInfo.Details = game
+     } else {
+       	gameInfo.Details = game
+     }
+
+     err = db.Write("info", strconv.FormatInt((int64)(gameInfo.ID), 10), &gameInfo)
+     if err != nil {
+      	logger.Error().Msgf("error writing to the database: %s", err)
+     }
+
 }
 
 // UpdateGameInfo -- updates the game info present in the database
@@ -147,19 +198,19 @@ func UpdateGameInfo(gameInfo gi.GameInfo) {
      var oldGameInfo gi.GameInfo
      
      // Establish driver connection
-     db, err := scribble.New("./info", nil)
+     db, err := scribble.New("./data", nil)
 
      if err != nil {
      	logger.Error().Msgf("Driver failure: %s", err)
 	return 
      }
 
-     // retreive a single entry from info
+     // retrieve a single entry from info
      err = db.Read("info", strconv.FormatUint(uint64(gameInfo.ID), 10), &storedGameInfo)
 
      if err != nil {
      	logger.Warn().Msgf("game info update failed: %s", err)
-     	writeGameInfo(db, gameInfo)
+     	WriteGameInfo(gameInfo)
 	return 
      }
      

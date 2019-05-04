@@ -32,7 +32,7 @@ func NewGameInfo(game gm.Game) *GameInfo {
      return &g
 }
 
-func updateBadgeData(gameInfo GameInfo, gameData bw.GameData) GameInfo {
+func UpdateBadgeData(gameInfo GameInfo, gameData bw.GameData) GameInfo {
 
      // If gameData is empty return
      if len(gameData.Hits) == 0 && gameData.GameID == 0 {

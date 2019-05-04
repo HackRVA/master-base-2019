@@ -13,14 +13,15 @@ import (
 var logger = log.Ger
 
 func main() {
+     	// fifteenMin := time.Now().Local().Add(time.Minute * time.Duration(15))
 	fifteenMin := time.Now().Local().Add(time.Duration(1))
 	url := "http://localhost:8000/api/newgame"
 
 	var jsonStr = []byte(fmt.Sprintf(`{
 		 	"body":123,
 		 	"AbsStart": %d,
-		 	"Duration": 13,
-		 	"Variant": 1
+		 	"Duration": 120,
+		 	"Variant": 0
 			 }`, fifteenMin.Unix()))
 
 	req, err := http.NewRequest("POST", url, bytes.NewBuffer(jsonStr))
