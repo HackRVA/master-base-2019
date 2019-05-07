@@ -80,8 +80,8 @@ func TestSchedule(t *testing.T) {
 	if next.BadgeID != testGame.BadgeID {
 		t.Error("Test BadgeID does not match with next scheduled game")
 	}
-	if next.Team != testGame.Team {
-		t.Error("Test Team does not match with next scheduled game")
+	if next.Team > 2 && next.Team < 1 {
+		t.Error("Test Team is not within range for scheduled game")
 	}
 	if next.Duration != testGame.Duration {
 		t.Error("Test Duration does not match with next scheduled game")

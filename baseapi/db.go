@@ -11,6 +11,16 @@ import (
 	scribble "github.com/nanobox-io/golang-scribble"
 )
 
+var gamesSent = 0
+
+type patientZero struct {
+	gameID uint16
+}
+
+type zombieGames struct {
+	patientZero []patientZero
+}
+
 // ScheduleGame -- save gamespec to database
 func ScheduleGame(game gm.Game) {
 	hash, err := structhash.Hash(game, 1)
@@ -111,6 +121,38 @@ func GetGameData() []GameDataWithSent {
 	return pendingData
 }
 
+func determineTeam(variant uint8, gameID uint16) uint8 {
+	gamesSent++
+	switch variant {
+	case 0:
+		// "FREE FOR ALL",
+		return 1
+	case 1:
+		// "TEAM BATTLE",
+		return uint8(gamesSent%2 + 1)
+	case 2:
+		// "ZOMBIES!",
+		var z zombieGames
+		for _, c := range z.patientZero {
+			if c.gameID == gameID {
+				return 2
+			}
+		}
+		pZero := &patientZero{
+			gameID: gameID,
+		}
+
+		z.patientZero = append(z.patientZero, *pZero)
+
+		return 1
+	case 3:
+		// "CAPTURE BADGE",
+		return 1
+	}
+
+	return 1 // default return -- we should not use a zero value for team
+}
+
 // GetNext -- return the next game
 func GetNext() gm.Game {
 	t := time.Now()
@@ -127,6 +169,7 @@ func GetNext() gm.Game {
 
 		// return the first game that is greater than now
 		if int64(t.Unix()) < game.AbsStart+int64(game.Duration) {
+			game.Team = determineTeam(game.Variant, game.GameID)
 			game.StartTime = int16(game.AbsStart - t.Unix())
 			return game
 		}
