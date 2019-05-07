@@ -26,23 +26,89 @@ func ScheduleGame(game gm.Game) {
 
 // SaveGameData -- save game data to db
 func SaveGameData(data *bw.GameData) {
-	hash, err := structhash.Hash(data, 1)
+	d := &GameDataWithSent{}
+	d.GameData = *data
+	d.Sent = false
+	hash, err := structhash.Hash(d, 1)
 	if err != nil {
 		logger.Error().Msgf("error saving game data: %s", err)
 	}
 
 	db, _ := scribble.New("./data", nil)
 	logger.Info().Msg("saving game data")
-	db.Write("game_data", hash, data)
+	db.Write("game_data", hash, d)
+}
+
+func killGameData() {
+	db, _ := scribble.New("./data", nil)
+
+	// Delete all fish from the database
+	if err := db.Delete("game_data", ""); err != nil {
+		fmt.Println("Error", err)
+	}
+}
+
+// ZeroGameData -- Sets all game data as sent
+func ZeroGameData() {
+	gameData := GetGameData()
+
+	db, _ := scribble.New("./data", nil)
+
+	for _, g := range gameData {
+		g.Sent = true
+		logger.Debug().Msgf("zeroing game_data for badgeID: %d", g.BadgeID)
+		hash, err := structhash.Hash(g, 1)
+		if err != nil {
+			logger.Error().Msgf("error saving zeroed game data: %s", err)
+		}
+		db.Write("game_data", hash, g)
+		logger.Debug().Msg("zeroing game data")
+	}
+
+}
+
+func notSent(gd []GameDataWithSent, f func(GameDataWithSent) bool) []GameDataWithSent {
+	notSent := make([]GameDataWithSent, 0)
+	for _, g := range gd {
+		if f(g) {
+			notSent = append(notSent, g)
+		}
+	}
+	return notSent
+}
+
+// StrGameData -- GameData Returned as []String
+func StrGameData() []string {
+	var s []string
+
+	for _, c := range GetGameData() {
+		s = append(s, c.ToString())
+	}
+	return s
 }
 
 // GetGameData -- retrieves gamedata from the db
-func GetGameData() []string {
+func GetGameData() []GameDataWithSent {
 	// create a new scribble database, providing a destination for the database to live
 	db, _ := scribble.New("./data", nil)
+
 	// Read more games from the database
-	gameData, _ := db.ReadAll("game_data")
-	return gameData
+	records, _ := db.ReadAll("game_data")
+	games := []GameDataWithSent{}
+
+	for _, g := range records {
+		gameFound := GameDataWithSent{}
+		if err := json.Unmarshal([]byte(g), &gameFound); err != nil {
+			fmt.Println("Error", err)
+		}
+		games = append(games, gameFound)
+	}
+
+	pendingData := notSent(games, func(g GameDataWithSent) bool {
+		return g.Sent == false
+	})
+
+	return pendingData
 }
 
 // GetNext -- return the next game
@@ -53,12 +119,10 @@ func GetNext() gm.Game {
 
 	games := GetGames()
 	for _, game := range games {
-		fmt.Println(
-			"now: ",
+		logger.Debug().Msgf(
+			"now: %d \nnextGame: %d \nin the future: %t",
 			int64(t.Unix()),
-			"\nnextGame: ",
 			game.AbsStart,
-			"\nin the future:",
 			int64(t.Unix()) < game.AbsStart+int64(game.Duration))
 
 		// return the first game that is greater than now
