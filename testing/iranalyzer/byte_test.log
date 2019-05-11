@@ -1,0 +1,8224 @@
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ff2e00e6",
+  "time": "2019-05-05T14:21:01-04:00",
+  "message": "bytes in: [255 46 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "00c000e6",
+  "time": "2019-05-05T14:21:39-04:00",
+  "message": "bytes in: [0 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "01c000e6",
+  "time": "2019-05-05T14:22:13-04:00",
+  "message": "bytes in: [1 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "02c000e6",
+  "time": "2019-05-05T14:22:19-04:00",
+  "message": "bytes in: [2 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "03c000e6",
+  "time": "2019-05-05T14:22:21-04:00",
+  "message": "bytes in: [3 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "05c000e6",
+  "time": "2019-05-05T14:22:21-04:00",
+  "message": "bytes in: [5 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "06c000e6",
+  "time": "2019-05-05T14:22:21-04:00",
+  "message": "bytes in: [6 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "07c000e6",
+  "time": "2019-05-05T14:22:21-04:00",
+  "message": "bytes in: [7 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "07c000e6",
+  "time": "2019-05-05T14:22:21-04:00",
+  "message": "bytes in: [7 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "08c000e6",
+  "time": "2019-05-05T14:22:30-04:00",
+  "message": "bytes in: [8 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0ac000e6",
+  "time": "2019-05-05T14:22:30-04:00",
+  "message": "bytes in: [10 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0bc000e6",
+  "time": "2019-05-05T14:22:30-04:00",
+  "message": "bytes in: [11 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0bc000e6",
+  "time": "2019-05-05T14:22:30-04:00",
+  "message": "bytes in: [11 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0dc000e6",
+  "time": "2019-05-05T14:22:40-04:00",
+  "message": "bytes in: [13 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0dc000e6",
+  "time": "2019-05-05T14:22:40-04:00",
+  "message": "bytes in: [13 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0ec000e6",
+  "time": "2019-05-05T14:23:15-04:00",
+  "message": "bytes in: [14 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0fc000e6",
+  "time": "2019-05-05T14:23:20-04:00",
+  "message": "bytes in: [15 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "10c000e6",
+  "time": "2019-05-05T14:23:21-04:00",
+  "message": "bytes in: [16 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "11c000e6",
+  "time": "2019-05-05T14:23:25-04:00",
+  "message": "bytes in: [17 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "12c000e6",
+  "time": "2019-05-05T14:23:26-04:00",
+  "message": "bytes in: [18 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "13c000e6",
+  "time": "2019-05-05T14:23:27-04:00",
+  "message": "bytes in: [19 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "14c000e6",
+  "time": "2019-05-05T14:23:28-04:00",
+  "message": "bytes in: [20 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "15c000e6",
+  "time": "2019-05-05T14:23:28-04:00",
+  "message": "bytes in: [21 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "16c000e6",
+  "time": "2019-05-05T14:23:29-04:00",
+  "message": "bytes in: [22 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "17c000e6",
+  "time": "2019-05-05T14:23:30-04:00",
+  "message": "bytes in: [23 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "18c000e6",
+  "time": "2019-05-05T14:23:30-04:00",
+  "message": "bytes in: [24 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "19c000e6",
+  "time": "2019-05-05T14:23:31-04:00",
+  "message": "bytes in: [25 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1ac000e6",
+  "time": "2019-05-05T14:23:32-04:00",
+  "message": "bytes in: [26 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1bc000e6",
+  "time": "2019-05-05T14:23:32-04:00",
+  "message": "bytes in: [27 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1cc000e6",
+  "time": "2019-05-05T14:23:33-04:00",
+  "message": "bytes in: [28 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1dc000e6",
+  "time": "2019-05-05T14:23:34-04:00",
+  "message": "bytes in: [29 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1ec000e6",
+  "time": "2019-05-05T14:23:35-04:00",
+  "message": "bytes in: [30 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1fc000e6",
+  "time": "2019-05-05T14:23:35-04:00",
+  "message": "bytes in: [31 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "20c000e6",
+  "time": "2019-05-05T14:23:36-04:00",
+  "message": "bytes in: [32 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "21c000e6",
+  "time": "2019-05-05T14:23:37-04:00",
+  "message": "bytes in: [33 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "22c000e6",
+  "time": "2019-05-05T14:23:37-04:00",
+  "message": "bytes in: [34 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "23c000e6",
+  "time": "2019-05-05T14:23:38-04:00",
+  "message": "bytes in: [35 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "24c000e6",
+  "time": "2019-05-05T14:23:39-04:00",
+  "message": "bytes in: [36 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "26c000e6",
+  "time": "2019-05-05T14:23:39-04:00",
+  "message": "bytes in: [38 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "27c000e6",
+  "time": "2019-05-05T14:23:39-04:00",
+  "message": "bytes in: [39 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "27c000e6",
+  "time": "2019-05-05T14:23:39-04:00",
+  "message": "bytes in: [39 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "29c000e6",
+  "time": "2019-05-05T14:23:39-04:00",
+  "message": "bytes in: [41 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ac000e6",
+  "time": "2019-05-05T14:23:40-04:00",
+  "message": "bytes in: [42 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ac000e6",
+  "time": "2019-05-05T14:23:40-04:00",
+  "message": "bytes in: [42 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2bc000e6",
+  "time": "2019-05-05T14:23:41-04:00",
+  "message": "bytes in: [43 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2cc000e6",
+  "time": "2019-05-05T14:23:41-04:00",
+  "message": "bytes in: [44 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2dc000e6",
+  "time": "2019-05-05T14:23:42-04:00",
+  "message": "bytes in: [45 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ec000e6",
+  "time": "2019-05-05T14:23:43-04:00",
+  "message": "bytes in: [46 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2fc000e6",
+  "time": "2019-05-05T14:23:43-04:00",
+  "message": "bytes in: [47 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "30c000e6",
+  "time": "2019-05-05T14:23:44-04:00",
+  "message": "bytes in: [48 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "31c000e6",
+  "time": "2019-05-05T14:23:45-04:00",
+  "message": "bytes in: [49 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "32c000e6",
+  "time": "2019-05-05T14:23:46-04:00",
+  "message": "bytes in: [50 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "33c000e6",
+  "time": "2019-05-05T14:23:46-04:00",
+  "message": "bytes in: [51 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "34c000e6",
+  "time": "2019-05-05T14:23:46-04:00",
+  "message": "bytes in: [52 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "35c000e6",
+  "time": "2019-05-05T14:23:47-04:00",
+  "message": "bytes in: [53 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "36c000e6",
+  "time": "2019-05-05T14:23:48-04:00",
+  "message": "bytes in: [54 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "37c000e6",
+  "time": "2019-05-05T14:23:49-04:00",
+  "message": "bytes in: [55 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "38c000e6",
+  "time": "2019-05-05T14:23:50-04:00",
+  "message": "bytes in: [56 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "39c000e6",
+  "time": "2019-05-05T14:23:51-04:00",
+  "message": "bytes in: [57 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3ac000e6",
+  "time": "2019-05-05T14:23:52-04:00",
+  "message": "bytes in: [58 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3bc000e6",
+  "time": "2019-05-05T14:23:52-04:00",
+  "message": "bytes in: [59 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3cc000e6",
+  "time": "2019-05-05T14:23:53-04:00",
+  "message": "bytes in: [60 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3dc000e6",
+  "time": "2019-05-05T14:23:54-04:00",
+  "message": "bytes in: [61 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3ec000e6",
+  "time": "2019-05-05T14:23:54-04:00",
+  "message": "bytes in: [62 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3fc000e6",
+  "time": "2019-05-05T14:23:55-04:00",
+  "message": "bytes in: [63 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "40c000e6",
+  "time": "2019-05-05T14:23:56-04:00",
+  "message": "bytes in: [64 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "41c000e6",
+  "time": "2019-05-05T14:23:56-04:00",
+  "message": "bytes in: [65 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "42c000e6",
+  "time": "2019-05-05T14:23:57-04:00",
+  "message": "bytes in: [66 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "43c000e6",
+  "time": "2019-05-05T14:23:58-04:00",
+  "message": "bytes in: [67 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "44c000e6",
+  "time": "2019-05-05T14:23:59-04:00",
+  "message": "bytes in: [68 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "45c000e6",
+  "time": "2019-05-05T14:23:59-04:00",
+  "message": "bytes in: [69 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "46c000e6",
+  "time": "2019-05-05T14:24:00-04:00",
+  "message": "bytes in: [70 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "47c000e6",
+  "time": "2019-05-05T14:24:01-04:00",
+  "message": "bytes in: [71 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "48c000e6",
+  "time": "2019-05-05T14:24:01-04:00",
+  "message": "bytes in: [72 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "49c000e6",
+  "time": "2019-05-05T14:24:02-04:00",
+  "message": "bytes in: [73 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4ac000e6",
+  "time": "2019-05-05T14:24:03-04:00",
+  "message": "bytes in: [74 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4bc000e6",
+  "time": "2019-05-05T14:24:03-04:00",
+  "message": "bytes in: [75 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4cc000e6",
+  "time": "2019-05-05T14:24:04-04:00",
+  "message": "bytes in: [76 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4dc000e6",
+  "time": "2019-05-05T14:24:04-04:00",
+  "message": "bytes in: [77 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4ec000e6",
+  "time": "2019-05-05T14:24:05-04:00",
+  "message": "bytes in: [78 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4fc000e6",
+  "time": "2019-05-05T14:24:06-04:00",
+  "message": "bytes in: [79 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "50c000e6",
+  "time": "2019-05-05T14:24:06-04:00",
+  "message": "bytes in: [80 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "51c000e6",
+  "time": "2019-05-05T14:24:07-04:00",
+  "message": "bytes in: [81 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "52c000e6",
+  "time": "2019-05-05T14:24:08-04:00",
+  "message": "bytes in: [82 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "53c000e6",
+  "time": "2019-05-05T14:24:08-04:00",
+  "message": "bytes in: [83 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "54c000e6",
+  "time": "2019-05-05T14:24:09-04:00",
+  "message": "bytes in: [84 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "55c000e6",
+  "time": "2019-05-05T14:24:10-04:00",
+  "message": "bytes in: [85 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "56c000e6",
+  "time": "2019-05-05T14:24:10-04:00",
+  "message": "bytes in: [86 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "57c000e6",
+  "time": "2019-05-05T14:24:11-04:00",
+  "message": "bytes in: [87 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "58c000e6",
+  "time": "2019-05-05T14:24:11-04:00",
+  "message": "bytes in: [88 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "59c000e6",
+  "time": "2019-05-05T14:24:12-04:00",
+  "message": "bytes in: [89 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5ac000e6",
+  "time": "2019-05-05T14:24:13-04:00",
+  "message": "bytes in: [90 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5bc000e6",
+  "time": "2019-05-05T14:24:13-04:00",
+  "message": "bytes in: [91 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5cc000e6",
+  "time": "2019-05-05T14:24:14-04:00",
+  "message": "bytes in: [92 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5dc000e6",
+  "time": "2019-05-05T14:24:14-04:00",
+  "message": "bytes in: [93 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5ec000e6",
+  "time": "2019-05-05T14:24:15-04:00",
+  "message": "bytes in: [94 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5fc000e6",
+  "time": "2019-05-05T14:24:15-04:00",
+  "message": "bytes in: [95 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "60c000e6",
+  "time": "2019-05-05T14:24:16-04:00",
+  "message": "bytes in: [96 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "61c000e6",
+  "time": "2019-05-05T14:24:17-04:00",
+  "message": "bytes in: [97 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "62c000e6",
+  "time": "2019-05-05T14:24:17-04:00",
+  "message": "bytes in: [98 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "63c000e6",
+  "time": "2019-05-05T14:24:18-04:00",
+  "message": "bytes in: [99 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "64c000e6",
+  "time": "2019-05-05T14:24:19-04:00",
+  "message": "bytes in: [100 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "65c000e6",
+  "time": "2019-05-05T14:24:19-04:00",
+  "message": "bytes in: [101 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "66c000e6",
+  "time": "2019-05-05T14:24:20-04:00",
+  "message": "bytes in: [102 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "67c000e6",
+  "time": "2019-05-05T14:24:21-04:00",
+  "message": "bytes in: [103 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "68c000e6",
+  "time": "2019-05-05T14:24:21-04:00",
+  "message": "bytes in: [104 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "69c000e6",
+  "time": "2019-05-05T14:24:22-04:00",
+  "message": "bytes in: [105 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6ac000e6",
+  "time": "2019-05-05T14:24:23-04:00",
+  "message": "bytes in: [106 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6bc000e6",
+  "time": "2019-05-05T14:24:23-04:00",
+  "message": "bytes in: [107 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6cc000e6",
+  "time": "2019-05-05T14:24:24-04:00",
+  "message": "bytes in: [108 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6dc000e6",
+  "time": "2019-05-05T14:24:24-04:00",
+  "message": "bytes in: [109 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6ec000e6",
+  "time": "2019-05-05T14:24:25-04:00",
+  "message": "bytes in: [110 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6fc000e6",
+  "time": "2019-05-05T14:24:26-04:00",
+  "message": "bytes in: [111 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "71c000e6",
+  "time": "2019-05-05T14:24:26-04:00",
+  "message": "bytes in: [113 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "71c000e6",
+  "time": "2019-05-05T14:24:26-04:00",
+  "message": "bytes in: [113 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "72c000e6",
+  "time": "2019-05-05T14:24:27-04:00",
+  "message": "bytes in: [114 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "73c000e6",
+  "time": "2019-05-05T14:24:28-04:00",
+  "message": "bytes in: [115 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "74c000e6",
+  "time": "2019-05-05T14:24:29-04:00",
+  "message": "bytes in: [116 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "75c000e6",
+  "time": "2019-05-05T14:24:33-04:00",
+  "message": "bytes in: [117 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "76c000e6",
+  "time": "2019-05-05T14:24:35-04:00",
+  "message": "bytes in: [118 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "77c000e6",
+  "time": "2019-05-05T14:24:36-04:00",
+  "message": "bytes in: [119 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "78c000e6",
+  "time": "2019-05-05T14:24:37-04:00",
+  "message": "bytes in: [120 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "79c000e6",
+  "time": "2019-05-05T14:24:38-04:00",
+  "message": "bytes in: [121 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7ac000e6",
+  "time": "2019-05-05T14:24:39-04:00",
+  "message": "bytes in: [122 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7bc000e6",
+  "time": "2019-05-05T14:24:40-04:00",
+  "message": "bytes in: [123 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7cc000e6",
+  "time": "2019-05-05T14:24:40-04:00",
+  "message": "bytes in: [124 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7dc000e6",
+  "time": "2019-05-05T14:24:41-04:00",
+  "message": "bytes in: [125 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7ec000e6",
+  "time": "2019-05-05T14:24:42-04:00",
+  "message": "bytes in: [126 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7fc000e6",
+  "time": "2019-05-05T14:24:43-04:00",
+  "message": "bytes in: [127 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "80c000e6",
+  "time": "2019-05-05T14:24:43-04:00",
+  "message": "bytes in: [128 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "81c000e6",
+  "time": "2019-05-05T14:24:44-04:00",
+  "message": "bytes in: [129 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "82c000e6",
+  "time": "2019-05-05T14:24:45-04:00",
+  "message": "bytes in: [130 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "83c000e6",
+  "time": "2019-05-05T14:24:46-04:00",
+  "message": "bytes in: [131 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "84c000e6",
+  "time": "2019-05-05T14:24:46-04:00",
+  "message": "bytes in: [132 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "85c000e6",
+  "time": "2019-05-05T14:24:47-04:00",
+  "message": "bytes in: [133 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "86c000e6",
+  "time": "2019-05-05T14:24:48-04:00",
+  "message": "bytes in: [134 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "87c000e6",
+  "time": "2019-05-05T14:24:48-04:00",
+  "message": "bytes in: [135 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "88c000e6",
+  "time": "2019-05-05T14:24:49-04:00",
+  "message": "bytes in: [136 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "89c000e6",
+  "time": "2019-05-05T14:24:49-04:00",
+  "message": "bytes in: [137 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8ac000e6",
+  "time": "2019-05-05T14:24:50-04:00",
+  "message": "bytes in: [138 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8bc000e6",
+  "time": "2019-05-05T14:24:50-04:00",
+  "message": "bytes in: [139 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8cc000e6",
+  "time": "2019-05-05T14:24:51-04:00",
+  "message": "bytes in: [140 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8dc000e6",
+  "time": "2019-05-05T14:24:52-04:00",
+  "message": "bytes in: [141 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8ec000e6",
+  "time": "2019-05-05T14:24:52-04:00",
+  "message": "bytes in: [142 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8fc000e6",
+  "time": "2019-05-05T14:24:53-04:00",
+  "message": "bytes in: [143 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "90c000e6",
+  "time": "2019-05-05T14:24:54-04:00",
+  "message": "bytes in: [144 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "91c000e6",
+  "time": "2019-05-05T14:24:55-04:00",
+  "message": "bytes in: [145 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "92c000e6",
+  "time": "2019-05-05T14:24:55-04:00",
+  "message": "bytes in: [146 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "93c000e6",
+  "time": "2019-05-05T14:24:56-04:00",
+  "message": "bytes in: [147 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "94c000e6",
+  "time": "2019-05-05T14:24:57-04:00",
+  "message": "bytes in: [148 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "95c000e6",
+  "time": "2019-05-05T14:24:57-04:00",
+  "message": "bytes in: [149 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "96c000e6",
+  "time": "2019-05-05T14:24:58-04:00",
+  "message": "bytes in: [150 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "97c000e6",
+  "time": "2019-05-05T14:24:59-04:00",
+  "message": "bytes in: [151 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "98c000e6",
+  "time": "2019-05-05T14:24:59-04:00",
+  "message": "bytes in: [152 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "99c000e6",
+  "time": "2019-05-05T14:25:00-04:00",
+  "message": "bytes in: [153 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9ac000e6",
+  "time": "2019-05-05T14:25:01-04:00",
+  "message": "bytes in: [154 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9bc000e6",
+  "time": "2019-05-05T14:25:01-04:00",
+  "message": "bytes in: [155 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9cc000e6",
+  "time": "2019-05-05T14:25:02-04:00",
+  "message": "bytes in: [156 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9dc000e6",
+  "time": "2019-05-05T14:25:03-04:00",
+  "message": "bytes in: [157 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9ec000e6",
+  "time": "2019-05-05T14:25:03-04:00",
+  "message": "bytes in: [158 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9fc000e6",
+  "time": "2019-05-05T14:25:04-04:00",
+  "message": "bytes in: [159 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a0c000e6",
+  "time": "2019-05-05T14:25:04-04:00",
+  "message": "bytes in: [160 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a1c000e6",
+  "time": "2019-05-05T14:25:05-04:00",
+  "message": "bytes in: [161 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a2c000e6",
+  "time": "2019-05-05T14:25:06-04:00",
+  "message": "bytes in: [162 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a3c000e6",
+  "time": "2019-05-05T14:25:06-04:00",
+  "message": "bytes in: [163 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a4c000e6",
+  "time": "2019-05-05T14:25:07-04:00",
+  "message": "bytes in: [164 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a5c000e6",
+  "time": "2019-05-05T14:25:08-04:00",
+  "message": "bytes in: [165 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a6c000e6",
+  "time": "2019-05-05T14:25:08-04:00",
+  "message": "bytes in: [166 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a7c000e6",
+  "time": "2019-05-05T14:25:10-04:00",
+  "message": "bytes in: [167 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a8c000e6",
+  "time": "2019-05-05T14:25:11-04:00",
+  "message": "bytes in: [168 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a9c000e6",
+  "time": "2019-05-05T14:25:11-04:00",
+  "message": "bytes in: [169 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "aac000e6",
+  "time": "2019-05-05T14:25:12-04:00",
+  "message": "bytes in: [170 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "abc000e6",
+  "time": "2019-05-05T14:25:13-04:00",
+  "message": "bytes in: [171 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "acc000e6",
+  "time": "2019-05-05T14:25:13-04:00",
+  "message": "bytes in: [172 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "adc000e6",
+  "time": "2019-05-05T14:25:14-04:00",
+  "message": "bytes in: [173 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "aec000e6",
+  "time": "2019-05-05T14:25:15-04:00",
+  "message": "bytes in: [174 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "afc000e6",
+  "time": "2019-05-05T14:25:15-04:00",
+  "message": "bytes in: [175 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b0c000e6",
+  "time": "2019-05-05T14:25:16-04:00",
+  "message": "bytes in: [176 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b1c000e6",
+  "time": "2019-05-05T14:25:17-04:00",
+  "message": "bytes in: [177 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b2c000e6",
+  "time": "2019-05-05T14:25:18-04:00",
+  "message": "bytes in: [178 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b3c000e6",
+  "time": "2019-05-05T14:25:18-04:00",
+  "message": "bytes in: [179 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b4c000e6",
+  "time": "2019-05-05T14:25:19-04:00",
+  "message": "bytes in: [180 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b5c000e6",
+  "time": "2019-05-05T14:25:19-04:00",
+  "message": "bytes in: [181 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b6c000e6",
+  "time": "2019-05-05T14:25:20-04:00",
+  "message": "bytes in: [182 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b7c000e6",
+  "time": "2019-05-05T14:25:21-04:00",
+  "message": "bytes in: [183 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b8c000e6",
+  "time": "2019-05-05T14:25:22-04:00",
+  "message": "bytes in: [184 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b9c000e6",
+  "time": "2019-05-05T14:25:22-04:00",
+  "message": "bytes in: [185 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bac000e6",
+  "time": "2019-05-05T14:25:23-04:00",
+  "message": "bytes in: [186 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bbc000e6",
+  "time": "2019-05-05T14:25:24-04:00",
+  "message": "bytes in: [187 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bcc000e6",
+  "time": "2019-05-05T14:25:24-04:00",
+  "message": "bytes in: [188 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bdc000e6",
+  "time": "2019-05-05T14:25:25-04:00",
+  "message": "bytes in: [189 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bec000e6",
+  "time": "2019-05-05T14:25:26-04:00",
+  "message": "bytes in: [190 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bfc000e6",
+  "time": "2019-05-05T14:25:27-04:00",
+  "message": "bytes in: [191 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c0c000e6",
+  "time": "2019-05-05T14:25:27-04:00",
+  "message": "bytes in: [192 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c1c000e6",
+  "time": "2019-05-05T14:25:28-04:00",
+  "message": "bytes in: [193 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c2c000e6",
+  "time": "2019-05-05T14:25:29-04:00",
+  "message": "bytes in: [194 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c3c000e6",
+  "time": "2019-05-05T14:25:29-04:00",
+  "message": "bytes in: [195 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c4c000e6",
+  "time": "2019-05-05T14:25:30-04:00",
+  "message": "bytes in: [196 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c5c000e6",
+  "time": "2019-05-05T14:25:31-04:00",
+  "message": "bytes in: [197 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c6c000e6",
+  "time": "2019-05-05T14:25:31-04:00",
+  "message": "bytes in: [198 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c7c000e6",
+  "time": "2019-05-05T14:25:32-04:00",
+  "message": "bytes in: [199 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c8c000e6",
+  "time": "2019-05-05T14:25:33-04:00",
+  "message": "bytes in: [200 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c9c000e6",
+  "time": "2019-05-05T14:25:33-04:00",
+  "message": "bytes in: [201 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cac000e6",
+  "time": "2019-05-05T14:25:34-04:00",
+  "message": "bytes in: [202 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cbc000e6",
+  "time": "2019-05-05T14:25:35-04:00",
+  "message": "bytes in: [203 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ccc000e6",
+  "time": "2019-05-05T14:25:35-04:00",
+  "message": "bytes in: [204 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cdc000e6",
+  "time": "2019-05-05T14:25:36-04:00",
+  "message": "bytes in: [205 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cec000e6",
+  "time": "2019-05-05T14:25:37-04:00",
+  "message": "bytes in: [206 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cfc000e6",
+  "time": "2019-05-05T14:25:37-04:00",
+  "message": "bytes in: [207 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d0c000e6",
+  "time": "2019-05-05T14:25:38-04:00",
+  "message": "bytes in: [208 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d1c000e6",
+  "time": "2019-05-05T14:25:39-04:00",
+  "message": "bytes in: [209 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d2c000e6",
+  "time": "2019-05-05T14:25:40-04:00",
+  "message": "bytes in: [210 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d3c000e6",
+  "time": "2019-05-05T14:25:40-04:00",
+  "message": "bytes in: [211 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d4c000e6",
+  "time": "2019-05-05T14:25:41-04:00",
+  "message": "bytes in: [212 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d5c000e6",
+  "time": "2019-05-05T14:25:42-04:00",
+  "message": "bytes in: [213 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d6c000e6",
+  "time": "2019-05-05T14:25:42-04:00",
+  "message": "bytes in: [214 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d7c000e6",
+  "time": "2019-05-05T14:25:43-04:00",
+  "message": "bytes in: [215 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d8c000e6",
+  "time": "2019-05-05T14:25:43-04:00",
+  "message": "bytes in: [216 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d9c000e6",
+  "time": "2019-05-05T14:25:44-04:00",
+  "message": "bytes in: [217 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dac000e6",
+  "time": "2019-05-05T14:25:44-04:00",
+  "message": "bytes in: [218 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dbc000e6",
+  "time": "2019-05-05T14:25:45-04:00",
+  "message": "bytes in: [219 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dcc000e6",
+  "time": "2019-05-05T14:25:46-04:00",
+  "message": "bytes in: [220 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ddc000e6",
+  "time": "2019-05-05T14:25:46-04:00",
+  "message": "bytes in: [221 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dec000e6",
+  "time": "2019-05-05T14:25:47-04:00",
+  "message": "bytes in: [222 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dfc000e6",
+  "time": "2019-05-05T14:25:48-04:00",
+  "message": "bytes in: [223 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e0c000e6",
+  "time": "2019-05-05T14:25:48-04:00",
+  "message": "bytes in: [224 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e1c000e6",
+  "time": "2019-05-05T14:25:49-04:00",
+  "message": "bytes in: [225 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e2c000e6",
+  "time": "2019-05-05T14:25:50-04:00",
+  "message": "bytes in: [226 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e3c000e6",
+  "time": "2019-05-05T14:25:50-04:00",
+  "message": "bytes in: [227 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e4c000e6",
+  "time": "2019-05-05T14:25:51-04:00",
+  "message": "bytes in: [228 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e5c000e6",
+  "time": "2019-05-05T14:25:51-04:00",
+  "message": "bytes in: [229 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e6c000e6",
+  "time": "2019-05-05T14:25:52-04:00",
+  "message": "bytes in: [230 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e7c000e6",
+  "time": "2019-05-05T14:25:52-04:00",
+  "message": "bytes in: [231 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e8c000e6",
+  "time": "2019-05-05T14:25:53-04:00",
+  "message": "bytes in: [232 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e9c000e6",
+  "time": "2019-05-05T14:25:53-04:00",
+  "message": "bytes in: [233 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "eac000e6",
+  "time": "2019-05-05T14:25:54-04:00",
+  "message": "bytes in: [234 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ebc000e6",
+  "time": "2019-05-05T14:25:54-04:00",
+  "message": "bytes in: [235 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ecc000e6",
+  "time": "2019-05-05T14:25:55-04:00",
+  "message": "bytes in: [236 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "edc000e6",
+  "time": "2019-05-05T14:25:56-04:00",
+  "message": "bytes in: [237 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "eec000e6",
+  "time": "2019-05-05T14:25:56-04:00",
+  "message": "bytes in: [238 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "efc000e6",
+  "time": "2019-05-05T14:25:57-04:00",
+  "message": "bytes in: [239 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f0c000e6",
+  "time": "2019-05-05T14:25:58-04:00",
+  "message": "bytes in: [240 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f1c000e6",
+  "time": "2019-05-05T14:25:59-04:00",
+  "message": "bytes in: [241 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f2c000e6",
+  "time": "2019-05-05T14:26:00-04:00",
+  "message": "bytes in: [242 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f3c000e6",
+  "time": "2019-05-05T14:26:01-04:00",
+  "message": "bytes in: [243 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f4c000e6",
+  "time": "2019-05-05T14:26:01-04:00",
+  "message": "bytes in: [244 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f5c000e6",
+  "time": "2019-05-05T14:26:02-04:00",
+  "message": "bytes in: [245 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f6c000e6",
+  "time": "2019-05-05T14:26:02-04:00",
+  "message": "bytes in: [246 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f7c000e6",
+  "time": "2019-05-05T14:26:03-04:00",
+  "message": "bytes in: [247 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f8c000e6",
+  "time": "2019-05-05T14:26:03-04:00",
+  "message": "bytes in: [248 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f9c000e6",
+  "time": "2019-05-05T14:26:04-04:00",
+  "message": "bytes in: [249 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fac000e6",
+  "time": "2019-05-05T14:26:05-04:00",
+  "message": "bytes in: [250 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fbc000e6",
+  "time": "2019-05-05T14:26:06-04:00",
+  "message": "bytes in: [251 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fcc000e6",
+  "time": "2019-05-05T14:26:06-04:00",
+  "message": "bytes in: [252 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fdc000e6",
+  "time": "2019-05-05T14:26:07-04:00",
+  "message": "bytes in: [253 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fec000e6",
+  "time": "2019-05-05T14:26:08-04:00",
+  "message": "bytes in: [254 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ffc000e6",
+  "time": "2019-05-05T14:26:08-04:00",
+  "message": "bytes in: [255 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "00c000e6",
+  "time": "2019-05-05T14:26:09-04:00",
+  "message": "bytes in: [0 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "01c000e6",
+  "time": "2019-05-05T14:26:11-04:00",
+  "message": "bytes in: [1 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "02c000e6",
+  "time": "2019-05-05T14:26:13-04:00",
+  "message": "bytes in: [2 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "03c000e6",
+  "time": "2019-05-05T14:26:14-04:00",
+  "message": "bytes in: [3 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "04c000e6",
+  "time": "2019-05-05T14:26:15-04:00",
+  "message": "bytes in: [4 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "05c000e6",
+  "time": "2019-05-05T14:26:16-04:00",
+  "message": "bytes in: [5 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "06c000e6",
+  "time": "2019-05-05T14:26:16-04:00",
+  "message": "bytes in: [6 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "08c000e6",
+  "time": "2019-05-05T14:26:17-04:00",
+  "message": "bytes in: [8 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "08c000e6",
+  "time": "2019-05-05T14:26:17-04:00",
+  "message": "bytes in: [8 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "09c000e6",
+  "time": "2019-05-05T14:26:18-04:00",
+  "message": "bytes in: [9 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0ac000e6",
+  "time": "2019-05-05T14:26:23-04:00",
+  "message": "bytes in: [10 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0bc000e6",
+  "time": "2019-05-05T14:26:59-04:00",
+  "message": "bytes in: [11 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0cc000e6",
+  "time": "2019-05-05T14:27:02-04:00",
+  "message": "bytes in: [12 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0dc000e6",
+  "time": "2019-05-05T14:27:02-04:00",
+  "message": "bytes in: [13 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0ec000e6",
+  "time": "2019-05-05T14:27:09-04:00",
+  "message": "bytes in: [14 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0fc000e6",
+  "time": "2019-05-05T14:27:13-04:00",
+  "message": "bytes in: [15 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "10c000e6",
+  "time": "2019-05-05T14:27:14-04:00",
+  "message": "bytes in: [16 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "11c000e6",
+  "time": "2019-05-05T14:27:16-04:00",
+  "message": "bytes in: [17 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "12c000e6",
+  "time": "2019-05-05T14:27:18-04:00",
+  "message": "bytes in: [18 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "13c000e6",
+  "time": "2019-05-05T14:27:19-04:00",
+  "message": "bytes in: [19 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "14c000e6",
+  "time": "2019-05-05T14:27:20-04:00",
+  "message": "bytes in: [20 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "15c000e6",
+  "time": "2019-05-05T14:27:20-04:00",
+  "message": "bytes in: [21 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "16c000e6",
+  "time": "2019-05-05T14:27:21-04:00",
+  "message": "bytes in: [22 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "17c000e6",
+  "time": "2019-05-05T14:27:21-04:00",
+  "message": "bytes in: [23 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "18c000e6",
+  "time": "2019-05-05T14:27:22-04:00",
+  "message": "bytes in: [24 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "19c000e6",
+  "time": "2019-05-05T14:27:23-04:00",
+  "message": "bytes in: [25 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1ac000e6",
+  "time": "2019-05-05T14:27:23-04:00",
+  "message": "bytes in: [26 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1bc000e6",
+  "time": "2019-05-05T14:27:24-04:00",
+  "message": "bytes in: [27 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1cc000e6",
+  "time": "2019-05-05T14:27:25-04:00",
+  "message": "bytes in: [28 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1dc000e6",
+  "time": "2019-05-05T14:27:25-04:00",
+  "message": "bytes in: [29 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1ec000e6",
+  "time": "2019-05-05T14:27:26-04:00",
+  "message": "bytes in: [30 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1fc000e6",
+  "time": "2019-05-05T14:27:27-04:00",
+  "message": "bytes in: [31 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "20c000e6",
+  "time": "2019-05-05T14:27:27-04:00",
+  "message": "bytes in: [32 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "21c000e6",
+  "time": "2019-05-05T14:27:28-04:00",
+  "message": "bytes in: [33 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "22c000e6",
+  "time": "2019-05-05T14:27:29-04:00",
+  "message": "bytes in: [34 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "23c000e6",
+  "time": "2019-05-05T14:27:29-04:00",
+  "message": "bytes in: [35 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "24c000e6",
+  "time": "2019-05-05T14:27:30-04:00",
+  "message": "bytes in: [36 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "25c000e6",
+  "time": "2019-05-05T14:27:31-04:00",
+  "message": "bytes in: [37 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "26c000e6",
+  "time": "2019-05-05T14:27:31-04:00",
+  "message": "bytes in: [38 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "27c000e6",
+  "time": "2019-05-05T14:27:32-04:00",
+  "message": "bytes in: [39 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "28c000e6",
+  "time": "2019-05-05T14:27:33-04:00",
+  "message": "bytes in: [40 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "29c000e6",
+  "time": "2019-05-05T14:27:33-04:00",
+  "message": "bytes in: [41 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ac000e6",
+  "time": "2019-05-05T14:27:34-04:00",
+  "message": "bytes in: [42 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2bc000e6",
+  "time": "2019-05-05T14:27:35-04:00",
+  "message": "bytes in: [43 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2cc000e6",
+  "time": "2019-05-05T14:27:35-04:00",
+  "message": "bytes in: [44 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2dc000e6",
+  "time": "2019-05-05T14:27:36-04:00",
+  "message": "bytes in: [45 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ec000e6",
+  "time": "2019-05-05T14:27:36-04:00",
+  "message": "bytes in: [46 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2fc000e6",
+  "time": "2019-05-05T14:27:37-04:00",
+  "message": "bytes in: [47 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "30c000e6",
+  "time": "2019-05-05T14:27:38-04:00",
+  "message": "bytes in: [48 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "31c000e6",
+  "time": "2019-05-05T14:27:38-04:00",
+  "message": "bytes in: [49 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "32c000e6",
+  "time": "2019-05-05T14:27:39-04:00",
+  "message": "bytes in: [50 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "33c000e6",
+  "time": "2019-05-05T14:27:40-04:00",
+  "message": "bytes in: [51 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "34c000e6",
+  "time": "2019-05-05T14:27:40-04:00",
+  "message": "bytes in: [52 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "35c000e6",
+  "time": "2019-05-05T14:27:41-04:00",
+  "message": "bytes in: [53 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "36c000e6",
+  "time": "2019-05-05T14:27:41-04:00",
+  "message": "bytes in: [54 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "37c000e6",
+  "time": "2019-05-05T14:27:42-04:00",
+  "message": "bytes in: [55 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "38c000e6",
+  "time": "2019-05-05T14:27:43-04:00",
+  "message": "bytes in: [56 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "39c000e6",
+  "time": "2019-05-05T14:27:43-04:00",
+  "message": "bytes in: [57 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3ac000e6",
+  "time": "2019-05-05T14:27:44-04:00",
+  "message": "bytes in: [58 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3bc000e6",
+  "time": "2019-05-05T14:27:44-04:00",
+  "message": "bytes in: [59 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3cc000e6",
+  "time": "2019-05-05T14:27:45-04:00",
+  "message": "bytes in: [60 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3dc000e6",
+  "time": "2019-05-05T14:27:46-04:00",
+  "message": "bytes in: [61 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3ec000e6",
+  "time": "2019-05-05T14:27:46-04:00",
+  "message": "bytes in: [62 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3fc000e6",
+  "time": "2019-05-05T14:27:47-04:00",
+  "message": "bytes in: [63 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "40c000e6",
+  "time": "2019-05-05T14:27:47-04:00",
+  "message": "bytes in: [64 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "41c000e6",
+  "time": "2019-05-05T14:27:48-04:00",
+  "message": "bytes in: [65 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "42c000e6",
+  "time": "2019-05-05T14:27:49-04:00",
+  "message": "bytes in: [66 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "43c000e6",
+  "time": "2019-05-05T14:27:49-04:00",
+  "message": "bytes in: [67 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "44c000e6",
+  "time": "2019-05-05T14:27:50-04:00",
+  "message": "bytes in: [68 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "45c000e6",
+  "time": "2019-05-05T14:27:50-04:00",
+  "message": "bytes in: [69 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "46c000e6",
+  "time": "2019-05-05T14:27:51-04:00",
+  "message": "bytes in: [70 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "47c000e6",
+  "time": "2019-05-05T14:29:07-04:00",
+  "message": "bytes in: [71 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "48c000e6",
+  "time": "2019-05-05T14:29:08-04:00",
+  "message": "bytes in: [72 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "49c000e6",
+  "time": "2019-05-05T14:29:09-04:00",
+  "message": "bytes in: [73 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4ac000e6",
+  "time": "2019-05-05T14:29:10-04:00",
+  "message": "bytes in: [74 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4bc000e6",
+  "time": "2019-05-05T14:29:11-04:00",
+  "message": "bytes in: [75 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4cc000e6",
+  "time": "2019-05-05T14:29:11-04:00",
+  "message": "bytes in: [76 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4dc000e6",
+  "time": "2019-05-05T14:29:12-04:00",
+  "message": "bytes in: [77 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4ec000e6",
+  "time": "2019-05-05T14:29:13-04:00",
+  "message": "bytes in: [78 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4fc000e6",
+  "time": "2019-05-05T14:29:14-04:00",
+  "message": "bytes in: [79 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "50c000e6",
+  "time": "2019-05-05T14:29:14-04:00",
+  "message": "bytes in: [80 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "51c000e6",
+  "time": "2019-05-05T14:29:15-04:00",
+  "message": "bytes in: [81 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "52c000e6",
+  "time": "2019-05-05T14:29:16-04:00",
+  "message": "bytes in: [82 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "53c000e6",
+  "time": "2019-05-05T14:29:16-04:00",
+  "message": "bytes in: [83 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "54c000e6",
+  "time": "2019-05-05T14:29:17-04:00",
+  "message": "bytes in: [84 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "55c000e6",
+  "time": "2019-05-05T14:29:18-04:00",
+  "message": "bytes in: [85 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "56c000e6",
+  "time": "2019-05-05T14:29:18-04:00",
+  "message": "bytes in: [86 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "57c000e6",
+  "time": "2019-05-05T14:29:18-04:00",
+  "message": "bytes in: [87 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "58c000e6",
+  "time": "2019-05-05T14:29:19-04:00",
+  "message": "bytes in: [88 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "59c000e6",
+  "time": "2019-05-05T14:29:21-04:00",
+  "message": "bytes in: [89 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5ac000e6",
+  "time": "2019-05-05T14:29:22-04:00",
+  "message": "bytes in: [90 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5bc000e6",
+  "time": "2019-05-05T14:29:23-04:00",
+  "message": "bytes in: [91 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5cc000e6",
+  "time": "2019-05-05T14:29:24-04:00",
+  "message": "bytes in: [92 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5dc000e6",
+  "time": "2019-05-05T14:29:24-04:00",
+  "message": "bytes in: [93 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "04c000e6",
+  "time": "2019-05-05T14:29:40-04:00",
+  "message": "bytes in: [4 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "04c000e6",
+  "time": "2019-05-05T14:29:40-04:00",
+  "message": "bytes in: [4 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "06c000e6",
+  "time": "2019-05-05T14:29:41-04:00",
+  "message": "bytes in: [6 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "06c000e6",
+  "time": "2019-05-05T14:29:41-04:00",
+  "message": "bytes in: [6 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "07c000e6",
+  "time": "2019-05-05T14:29:41-04:00",
+  "message": "bytes in: [7 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5ec000e6",
+  "time": "2019-05-05T14:31:21-04:00",
+  "message": "bytes in: [94 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5fc000e6",
+  "time": "2019-05-05T14:31:22-04:00",
+  "message": "bytes in: [95 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "60c000e6",
+  "time": "2019-05-05T14:31:24-04:00",
+  "message": "bytes in: [96 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "61c000e6",
+  "time": "2019-05-05T14:31:25-04:00",
+  "message": "bytes in: [97 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "62c000e6",
+  "time": "2019-05-05T14:31:25-04:00",
+  "message": "bytes in: [98 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "63c000e6",
+  "time": "2019-05-05T14:31:26-04:00",
+  "message": "bytes in: [99 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "64c000e6",
+  "time": "2019-05-05T14:31:27-04:00",
+  "message": "bytes in: [100 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "65c000e6",
+  "time": "2019-05-05T14:31:28-04:00",
+  "message": "bytes in: [101 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "66c000e6",
+  "time": "2019-05-05T14:31:28-04:00",
+  "message": "bytes in: [102 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "67c000e6",
+  "time": "2019-05-05T14:31:29-04:00",
+  "message": "bytes in: [103 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "68c000e6",
+  "time": "2019-05-05T14:31:30-04:00",
+  "message": "bytes in: [104 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "69c000e6",
+  "time": "2019-05-05T14:31:31-04:00",
+  "message": "bytes in: [105 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6ac000e6",
+  "time": "2019-05-05T14:31:31-04:00",
+  "message": "bytes in: [106 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6bc000e6",
+  "time": "2019-05-05T14:31:32-04:00",
+  "message": "bytes in: [107 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6cc000e6",
+  "time": "2019-05-05T14:31:33-04:00",
+  "message": "bytes in: [108 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6dc000e6",
+  "time": "2019-05-05T14:31:33-04:00",
+  "message": "bytes in: [109 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6ec000e6",
+  "time": "2019-05-05T14:31:34-04:00",
+  "message": "bytes in: [110 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6fc000e6",
+  "time": "2019-05-05T14:31:35-04:00",
+  "message": "bytes in: [111 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "70c000e6",
+  "time": "2019-05-05T14:31:36-04:00",
+  "message": "bytes in: [112 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "71c000e6",
+  "time": "2019-05-05T14:31:37-04:00",
+  "message": "bytes in: [113 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "72c000e6",
+  "time": "2019-05-05T14:31:39-04:00",
+  "message": "bytes in: [114 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "73c000e6",
+  "time": "2019-05-05T14:31:40-04:00",
+  "message": "bytes in: [115 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "74c000e6",
+  "time": "2019-05-05T14:31:40-04:00",
+  "message": "bytes in: [116 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "76c000e6",
+  "time": "2019-05-05T14:31:41-04:00",
+  "message": "bytes in: [118 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "77c000e6",
+  "time": "2019-05-05T14:31:41-04:00",
+  "message": "bytes in: [119 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "78c000e6",
+  "time": "2019-05-05T14:31:41-04:00",
+  "message": "bytes in: [120 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "78c000e6",
+  "time": "2019-05-05T14:31:41-04:00",
+  "message": "bytes in: [120 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7ac000e6",
+  "time": "2019-05-05T14:31:48-04:00",
+  "message": "bytes in: [122 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7ac000e6",
+  "time": "2019-05-05T14:31:48-04:00",
+  "message": "bytes in: [122 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7bc000e6",
+  "time": "2019-05-05T14:31:49-04:00",
+  "message": "bytes in: [123 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7cc000e6",
+  "time": "2019-05-05T14:31:50-04:00",
+  "message": "bytes in: [124 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7dc000e6",
+  "time": "2019-05-05T14:31:51-04:00",
+  "message": "bytes in: [125 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7fc000e6",
+  "time": "2019-05-05T14:31:51-04:00",
+  "message": "bytes in: [127 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "80c000e6",
+  "time": "2019-05-05T14:31:51-04:00",
+  "message": "bytes in: [128 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "81c000e6",
+  "time": "2019-05-05T14:31:51-04:00",
+  "message": "bytes in: [129 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "82c000e6",
+  "time": "2019-05-05T14:31:51-04:00",
+  "message": "bytes in: [130 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "83c000e6",
+  "time": "2019-05-05T14:31:52-04:00",
+  "message": "bytes in: [131 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "84c000e6",
+  "time": "2019-05-05T14:31:52-04:00",
+  "message": "bytes in: [132 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "85c000e6",
+  "time": "2019-05-05T14:31:52-04:00",
+  "message": "bytes in: [133 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "89c000e6",
+  "time": "2019-05-05T14:31:52-04:00",
+  "message": "bytes in: [137 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "040000f4",
+  "time": "2019-05-05T14:31:52-04:00",
+  "message": "bytes in: [4 0 0 244]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "040000f4",
+  "time": "2019-05-05T14:31:52-04:00",
+  "message": "bytes in: [4 0 0 244]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8bc000e6",
+  "time": "2019-05-05T14:31:59-04:00",
+  "message": "bytes in: [139 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8cc000e6",
+  "time": "2019-05-05T14:32:06-04:00",
+  "message": "bytes in: [140 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8dc000e6",
+  "time": "2019-05-05T14:32:08-04:00",
+  "message": "bytes in: [141 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8ec000e6",
+  "time": "2019-05-05T14:32:09-04:00",
+  "message": "bytes in: [142 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8fc000e6",
+  "time": "2019-05-05T14:32:10-04:00",
+  "message": "bytes in: [143 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "90c000e6",
+  "time": "2019-05-05T14:32:11-04:00",
+  "message": "bytes in: [144 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "91c000e6",
+  "time": "2019-05-05T14:32:12-04:00",
+  "message": "bytes in: [145 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "92c000e6",
+  "time": "2019-05-05T14:32:13-04:00",
+  "message": "bytes in: [146 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "93c000e6",
+  "time": "2019-05-05T14:32:13-04:00",
+  "message": "bytes in: [147 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "94c000e6",
+  "time": "2019-05-05T14:32:14-04:00",
+  "message": "bytes in: [148 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "95c000e6",
+  "time": "2019-05-05T14:32:15-04:00",
+  "message": "bytes in: [149 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "96c000e6",
+  "time": "2019-05-05T14:32:15-04:00",
+  "message": "bytes in: [150 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "97c000e6",
+  "time": "2019-05-05T14:32:15-04:00",
+  "message": "bytes in: [151 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "98c000e6",
+  "time": "2019-05-05T14:32:16-04:00",
+  "message": "bytes in: [152 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "99c000e6",
+  "time": "2019-05-05T14:32:17-04:00",
+  "message": "bytes in: [153 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9ac000e6",
+  "time": "2019-05-05T14:32:17-04:00",
+  "message": "bytes in: [154 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9bc000e6",
+  "time": "2019-05-05T14:32:18-04:00",
+  "message": "bytes in: [155 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9cc000e6",
+  "time": "2019-05-05T14:32:19-04:00",
+  "message": "bytes in: [156 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9dc000e6",
+  "time": "2019-05-05T14:32:19-04:00",
+  "message": "bytes in: [157 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9ec000e6",
+  "time": "2019-05-05T14:32:20-04:00",
+  "message": "bytes in: [158 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9fc000e6",
+  "time": "2019-05-05T14:32:21-04:00",
+  "message": "bytes in: [159 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a0c000e6",
+  "time": "2019-05-05T14:32:21-04:00",
+  "message": "bytes in: [160 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a1c000e6",
+  "time": "2019-05-05T14:32:22-04:00",
+  "message": "bytes in: [161 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a2c000e6",
+  "time": "2019-05-05T14:32:23-04:00",
+  "message": "bytes in: [162 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a3c000e6",
+  "time": "2019-05-05T14:32:23-04:00",
+  "message": "bytes in: [163 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a4c000e6",
+  "time": "2019-05-05T14:32:24-04:00",
+  "message": "bytes in: [164 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a5c000e6",
+  "time": "2019-05-05T14:32:25-04:00",
+  "message": "bytes in: [165 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a6c000e6",
+  "time": "2019-05-05T14:32:26-04:00",
+  "message": "bytes in: [166 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a7c000e6",
+  "time": "2019-05-05T14:32:26-04:00",
+  "message": "bytes in: [167 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a8c000e6",
+  "time": "2019-05-05T14:32:27-04:00",
+  "message": "bytes in: [168 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a9c000e6",
+  "time": "2019-05-05T14:32:28-04:00",
+  "message": "bytes in: [169 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "aac000e6",
+  "time": "2019-05-05T14:32:28-04:00",
+  "message": "bytes in: [170 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "abc000e6",
+  "time": "2019-05-05T14:32:29-04:00",
+  "message": "bytes in: [171 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "acc000e6",
+  "time": "2019-05-05T14:32:30-04:00",
+  "message": "bytes in: [172 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "adc000e6",
+  "time": "2019-05-05T14:32:30-04:00",
+  "message": "bytes in: [173 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "aec000e6",
+  "time": "2019-05-05T14:32:31-04:00",
+  "message": "bytes in: [174 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "afc000e6",
+  "time": "2019-05-05T14:32:33-04:00",
+  "message": "bytes in: [175 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b0c000e6",
+  "time": "2019-05-05T14:32:33-04:00",
+  "message": "bytes in: [176 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b1c000e6",
+  "time": "2019-05-05T14:32:34-04:00",
+  "message": "bytes in: [177 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b2c000e6",
+  "time": "2019-05-05T14:32:35-04:00",
+  "message": "bytes in: [178 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b3c000e6",
+  "time": "2019-05-05T14:32:36-04:00",
+  "message": "bytes in: [179 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b4c000e6",
+  "time": "2019-05-05T14:32:36-04:00",
+  "message": "bytes in: [180 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b5c000e6",
+  "time": "2019-05-05T14:32:38-04:00",
+  "message": "bytes in: [181 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b6c000e6",
+  "time": "2019-05-05T14:32:39-04:00",
+  "message": "bytes in: [182 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b7c000e6",
+  "time": "2019-05-05T14:32:39-04:00",
+  "message": "bytes in: [183 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b8c000e6",
+  "time": "2019-05-05T14:32:40-04:00",
+  "message": "bytes in: [184 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b9c000e6",
+  "time": "2019-05-05T14:32:41-04:00",
+  "message": "bytes in: [185 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bac000e6",
+  "time": "2019-05-05T14:32:41-04:00",
+  "message": "bytes in: [186 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bbc000e6",
+  "time": "2019-05-05T14:32:42-04:00",
+  "message": "bytes in: [187 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bcc000e6",
+  "time": "2019-05-05T14:32:43-04:00",
+  "message": "bytes in: [188 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bdc000e6",
+  "time": "2019-05-05T14:32:43-04:00",
+  "message": "bytes in: [189 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bec000e6",
+  "time": "2019-05-05T14:32:44-04:00",
+  "message": "bytes in: [190 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bfc000e6",
+  "time": "2019-05-05T14:32:45-04:00",
+  "message": "bytes in: [191 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c0c000e6",
+  "time": "2019-05-05T14:32:45-04:00",
+  "message": "bytes in: [192 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c1c000e6",
+  "time": "2019-05-05T14:32:46-04:00",
+  "message": "bytes in: [193 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c2c000e6",
+  "time": "2019-05-05T14:32:46-04:00",
+  "message": "bytes in: [194 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c3c000e6",
+  "time": "2019-05-05T14:32:47-04:00",
+  "message": "bytes in: [195 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c4c000e6",
+  "time": "2019-05-05T14:32:48-04:00",
+  "message": "bytes in: [196 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c5c000e6",
+  "time": "2019-05-05T14:32:49-04:00",
+  "message": "bytes in: [197 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c6c000e6",
+  "time": "2019-05-05T14:32:49-04:00",
+  "message": "bytes in: [198 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c7c000e6",
+  "time": "2019-05-05T14:32:50-04:00",
+  "message": "bytes in: [199 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c8c000e6",
+  "time": "2019-05-05T14:32:51-04:00",
+  "message": "bytes in: [200 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c9c000e6",
+  "time": "2019-05-05T14:32:51-04:00",
+  "message": "bytes in: [201 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cac000e6",
+  "time": "2019-05-05T14:32:52-04:00",
+  "message": "bytes in: [202 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cbc000e6",
+  "time": "2019-05-05T14:32:52-04:00",
+  "message": "bytes in: [203 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cdc000e6",
+  "time": "2019-05-05T14:32:53-04:00",
+  "message": "bytes in: [205 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cdc000e6",
+  "time": "2019-05-05T14:32:53-04:00",
+  "message": "bytes in: [205 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cec000e6",
+  "time": "2019-05-05T14:32:53-04:00",
+  "message": "bytes in: [206 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cfc000e6",
+  "time": "2019-05-05T14:32:54-04:00",
+  "message": "bytes in: [207 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d0c000e6",
+  "time": "2019-05-05T14:32:55-04:00",
+  "message": "bytes in: [208 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d1c000e6",
+  "time": "2019-05-05T14:32:55-04:00",
+  "message": "bytes in: [209 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d2c000e6",
+  "time": "2019-05-05T14:32:56-04:00",
+  "message": "bytes in: [210 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d3c000e6",
+  "time": "2019-05-05T14:32:56-04:00",
+  "message": "bytes in: [211 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d4c000e6",
+  "time": "2019-05-05T14:32:57-04:00",
+  "message": "bytes in: [212 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d5c000e6",
+  "time": "2019-05-05T14:32:57-04:00",
+  "message": "bytes in: [213 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d6c000e6",
+  "time": "2019-05-05T14:32:58-04:00",
+  "message": "bytes in: [214 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d7c000e6",
+  "time": "2019-05-05T14:32:58-04:00",
+  "message": "bytes in: [215 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d8c000e6",
+  "time": "2019-05-05T14:32:59-04:00",
+  "message": "bytes in: [216 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d9c000e6",
+  "time": "2019-05-05T14:32:59-04:00",
+  "message": "bytes in: [217 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dac000e6",
+  "time": "2019-05-05T14:33:00-04:00",
+  "message": "bytes in: [218 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dbc000e6",
+  "time": "2019-05-05T14:33:00-04:00",
+  "message": "bytes in: [219 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dcc000e6",
+  "time": "2019-05-05T14:33:01-04:00",
+  "message": "bytes in: [220 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ddc000e6",
+  "time": "2019-05-05T14:33:01-04:00",
+  "message": "bytes in: [221 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dec000e6",
+  "time": "2019-05-05T14:33:02-04:00",
+  "message": "bytes in: [222 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dfc000e6",
+  "time": "2019-05-05T14:33:02-04:00",
+  "message": "bytes in: [223 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e0c000e6",
+  "time": "2019-05-05T14:33:03-04:00",
+  "message": "bytes in: [224 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e1c000e6",
+  "time": "2019-05-05T14:33:03-04:00",
+  "message": "bytes in: [225 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e2c000e6",
+  "time": "2019-05-05T14:33:04-04:00",
+  "message": "bytes in: [226 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e3c000e6",
+  "time": "2019-05-05T14:33:04-04:00",
+  "message": "bytes in: [227 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e4c000e6",
+  "time": "2019-05-05T14:33:05-04:00",
+  "message": "bytes in: [228 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e5c000e6",
+  "time": "2019-05-05T14:33:05-04:00",
+  "message": "bytes in: [229 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e6c000e6",
+  "time": "2019-05-05T14:33:06-04:00",
+  "message": "bytes in: [230 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e7c000e6",
+  "time": "2019-05-05T14:33:06-04:00",
+  "message": "bytes in: [231 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e8c000e6",
+  "time": "2019-05-05T14:33:07-04:00",
+  "message": "bytes in: [232 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e9c000e6",
+  "time": "2019-05-05T14:33:08-04:00",
+  "message": "bytes in: [233 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "eac000e6",
+  "time": "2019-05-05T14:33:08-04:00",
+  "message": "bytes in: [234 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ecc000e6",
+  "time": "2019-05-05T14:33:09-04:00",
+  "message": "bytes in: [236 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ecc000e6",
+  "time": "2019-05-05T14:33:09-04:00",
+  "message": "bytes in: [236 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "edc000e6",
+  "time": "2019-05-05T14:33:09-04:00",
+  "message": "bytes in: [237 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "eec000e6",
+  "time": "2019-05-05T14:33:10-04:00",
+  "message": "bytes in: [238 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "efc000e6",
+  "time": "2019-05-05T14:33:10-04:00",
+  "message": "bytes in: [239 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f0c000e6",
+  "time": "2019-05-05T14:33:11-04:00",
+  "message": "bytes in: [240 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f1c000e6",
+  "time": "2019-05-05T14:33:12-04:00",
+  "message": "bytes in: [241 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f2c000e6",
+  "time": "2019-05-05T14:33:12-04:00",
+  "message": "bytes in: [242 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f3c000e6",
+  "time": "2019-05-05T14:33:13-04:00",
+  "message": "bytes in: [243 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f4c000e6",
+  "time": "2019-05-05T14:33:13-04:00",
+  "message": "bytes in: [244 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f5c000e6",
+  "time": "2019-05-05T14:33:13-04:00",
+  "message": "bytes in: [245 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f6c000e6",
+  "time": "2019-05-05T14:33:14-04:00",
+  "message": "bytes in: [246 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f7c000e6",
+  "time": "2019-05-05T14:33:15-04:00",
+  "message": "bytes in: [247 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f8c000e6",
+  "time": "2019-05-05T14:33:15-04:00",
+  "message": "bytes in: [248 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f9c000e6",
+  "time": "2019-05-05T14:33:16-04:00",
+  "message": "bytes in: [249 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fac000e6",
+  "time": "2019-05-05T14:33:16-04:00",
+  "message": "bytes in: [250 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fbc000e6",
+  "time": "2019-05-05T14:33:17-04:00",
+  "message": "bytes in: [251 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fcc000e6",
+  "time": "2019-05-05T14:33:17-04:00",
+  "message": "bytes in: [252 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fdc000e6",
+  "time": "2019-05-05T14:33:18-04:00",
+  "message": "bytes in: [253 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fec000e6",
+  "time": "2019-05-05T14:33:18-04:00",
+  "message": "bytes in: [254 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ffc000e6",
+  "time": "2019-05-05T14:33:19-04:00",
+  "message": "bytes in: [255 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "00c000e6",
+  "time": "2019-05-05T14:33:20-04:00",
+  "message": "bytes in: [0 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "01c000e6",
+  "time": "2019-05-05T14:33:20-04:00",
+  "message": "bytes in: [1 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "02c000e6",
+  "time": "2019-05-05T14:33:38-04:00",
+  "message": "bytes in: [2 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "03c000e6",
+  "time": "2019-05-05T14:33:39-04:00",
+  "message": "bytes in: [3 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "04c000e6",
+  "time": "2019-05-05T14:33:40-04:00",
+  "message": "bytes in: [4 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "05c000e6",
+  "time": "2019-05-05T14:33:40-04:00",
+  "message": "bytes in: [5 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "06c000e6",
+  "time": "2019-05-05T14:33:41-04:00",
+  "message": "bytes in: [6 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "07c000e6",
+  "time": "2019-05-05T14:33:42-04:00",
+  "message": "bytes in: [7 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "08c000e6",
+  "time": "2019-05-05T14:33:42-04:00",
+  "message": "bytes in: [8 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "09c000e6",
+  "time": "2019-05-05T14:33:43-04:00",
+  "message": "bytes in: [9 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0ac000e6",
+  "time": "2019-05-05T14:33:43-04:00",
+  "message": "bytes in: [10 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0bc000e6",
+  "time": "2019-05-05T14:33:44-04:00",
+  "message": "bytes in: [11 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0cc000e6",
+  "time": "2019-05-05T14:33:45-04:00",
+  "message": "bytes in: [12 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0dc000e6",
+  "time": "2019-05-05T14:33:45-04:00",
+  "message": "bytes in: [13 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0ec000e6",
+  "time": "2019-05-05T14:33:46-04:00",
+  "message": "bytes in: [14 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0fc000e6",
+  "time": "2019-05-05T14:33:46-04:00",
+  "message": "bytes in: [15 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "10c000e6",
+  "time": "2019-05-05T14:33:47-04:00",
+  "message": "bytes in: [16 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "12c000e6",
+  "time": "2019-05-05T14:33:48-04:00",
+  "message": "bytes in: [18 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "12c000e6",
+  "time": "2019-05-05T14:33:48-04:00",
+  "message": "bytes in: [18 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "13c000e6",
+  "time": "2019-05-05T14:33:48-04:00",
+  "message": "bytes in: [19 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "14c000e6",
+  "time": "2019-05-05T14:33:50-04:00",
+  "message": "bytes in: [20 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "15c000e6",
+  "time": "2019-05-05T14:33:51-04:00",
+  "message": "bytes in: [21 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "16c000e6",
+  "time": "2019-05-05T14:33:52-04:00",
+  "message": "bytes in: [22 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "17c000e6",
+  "time": "2019-05-05T14:33:53-04:00",
+  "message": "bytes in: [23 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "18c000e6",
+  "time": "2019-05-05T14:33:53-04:00",
+  "message": "bytes in: [24 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "19c000e6",
+  "time": "2019-05-05T14:33:54-04:00",
+  "message": "bytes in: [25 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1ac000e6",
+  "time": "2019-05-05T14:33:55-04:00",
+  "message": "bytes in: [26 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1bc000e6",
+  "time": "2019-05-05T14:33:55-04:00",
+  "message": "bytes in: [27 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1cc000e6",
+  "time": "2019-05-05T14:33:56-04:00",
+  "message": "bytes in: [28 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1dc000e6",
+  "time": "2019-05-05T14:33:57-04:00",
+  "message": "bytes in: [29 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1ec000e6",
+  "time": "2019-05-05T14:33:57-04:00",
+  "message": "bytes in: [30 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1fc000e6",
+  "time": "2019-05-05T14:33:58-04:00",
+  "message": "bytes in: [31 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "20c000e6",
+  "time": "2019-05-05T14:33:58-04:00",
+  "message": "bytes in: [32 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "21c000e6",
+  "time": "2019-05-05T14:33:59-04:00",
+  "message": "bytes in: [33 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "22c000e6",
+  "time": "2019-05-05T14:34:00-04:00",
+  "message": "bytes in: [34 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "23c000e6",
+  "time": "2019-05-05T14:34:00-04:00",
+  "message": "bytes in: [35 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "25c000e6",
+  "time": "2019-05-05T14:34:01-04:00",
+  "message": "bytes in: [37 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "26c000e6",
+  "time": "2019-05-05T14:34:01-04:00",
+  "message": "bytes in: [38 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "27c000e6",
+  "time": "2019-05-05T14:34:01-04:00",
+  "message": "bytes in: [39 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "28c000e6",
+  "time": "2019-05-05T14:34:02-04:00",
+  "message": "bytes in: [40 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "29c000e6",
+  "time": "2019-05-05T14:34:02-04:00",
+  "message": "bytes in: [41 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ac000e6",
+  "time": "2019-05-05T14:34:02-04:00",
+  "message": "bytes in: [42 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ac000e6",
+  "time": "2019-05-05T14:34:02-04:00",
+  "message": "bytes in: [42 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2bc000e6",
+  "time": "2019-05-05T14:34:03-04:00",
+  "message": "bytes in: [43 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2cc000e6",
+  "time": "2019-05-05T14:34:04-04:00",
+  "message": "bytes in: [44 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2dc000e6",
+  "time": "2019-05-05T14:34:05-04:00",
+  "message": "bytes in: [45 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ec000e6",
+  "time": "2019-05-05T14:34:05-04:00",
+  "message": "bytes in: [46 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2fc000e6",
+  "time": "2019-05-05T14:34:06-04:00",
+  "message": "bytes in: [47 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "30c000e6",
+  "time": "2019-05-05T14:34:06-04:00",
+  "message": "bytes in: [48 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "31c000e6",
+  "time": "2019-05-05T14:34:07-04:00",
+  "message": "bytes in: [49 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "32c000e6",
+  "time": "2019-05-05T14:34:08-04:00",
+  "message": "bytes in: [50 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "33c000e6",
+  "time": "2019-05-05T14:34:08-04:00",
+  "message": "bytes in: [51 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "34c000e6",
+  "time": "2019-05-05T14:34:09-04:00",
+  "message": "bytes in: [52 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "35c000e6",
+  "time": "2019-05-05T14:34:10-04:00",
+  "message": "bytes in: [53 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "36c000e6",
+  "time": "2019-05-05T14:34:10-04:00",
+  "message": "bytes in: [54 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "37c000e6",
+  "time": "2019-05-05T14:34:11-04:00",
+  "message": "bytes in: [55 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "38c000e6",
+  "time": "2019-05-05T14:34:12-04:00",
+  "message": "bytes in: [56 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "39c000e6",
+  "time": "2019-05-05T14:34:12-04:00",
+  "message": "bytes in: [57 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3ac000e6",
+  "time": "2019-05-05T14:34:13-04:00",
+  "message": "bytes in: [58 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3bc000e6",
+  "time": "2019-05-05T14:34:13-04:00",
+  "message": "bytes in: [59 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3cc000e6",
+  "time": "2019-05-05T14:34:14-04:00",
+  "message": "bytes in: [60 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3dc000e6",
+  "time": "2019-05-05T14:34:15-04:00",
+  "message": "bytes in: [61 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3ec000e6",
+  "time": "2019-05-05T14:34:15-04:00",
+  "message": "bytes in: [62 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3fc000e6",
+  "time": "2019-05-05T14:34:16-04:00",
+  "message": "bytes in: [63 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "40c000e6",
+  "time": "2019-05-05T14:34:17-04:00",
+  "message": "bytes in: [64 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "41c000e6",
+  "time": "2019-05-05T14:34:17-04:00",
+  "message": "bytes in: [65 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "42c000e6",
+  "time": "2019-05-05T14:34:18-04:00",
+  "message": "bytes in: [66 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "43c000e6",
+  "time": "2019-05-05T14:34:18-04:00",
+  "message": "bytes in: [67 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "44c000e6",
+  "time": "2019-05-05T14:34:19-04:00",
+  "message": "bytes in: [68 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "45c000e6",
+  "time": "2019-05-05T14:34:20-04:00",
+  "message": "bytes in: [69 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "46c000e6",
+  "time": "2019-05-05T14:34:20-04:00",
+  "message": "bytes in: [70 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "47c000e6",
+  "time": "2019-05-05T14:34:21-04:00",
+  "message": "bytes in: [71 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "48c000e6",
+  "time": "2019-05-05T14:34:22-04:00",
+  "message": "bytes in: [72 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "49c000e6",
+  "time": "2019-05-05T14:34:22-04:00",
+  "message": "bytes in: [73 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4ac000e6",
+  "time": "2019-05-05T14:34:23-04:00",
+  "message": "bytes in: [74 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4bc000e6",
+  "time": "2019-05-05T14:34:24-04:00",
+  "message": "bytes in: [75 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4cc000e6",
+  "time": "2019-05-05T14:34:24-04:00",
+  "message": "bytes in: [76 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4dc000e6",
+  "time": "2019-05-05T14:34:25-04:00",
+  "message": "bytes in: [77 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4ec000e6",
+  "time": "2019-05-05T14:34:26-04:00",
+  "message": "bytes in: [78 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4fc000e6",
+  "time": "2019-05-05T14:34:26-04:00",
+  "message": "bytes in: [79 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "50c000e6",
+  "time": "2019-05-05T14:34:27-04:00",
+  "message": "bytes in: [80 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "51c000e6",
+  "time": "2019-05-05T14:34:28-04:00",
+  "message": "bytes in: [81 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "52c000e6",
+  "time": "2019-05-05T14:34:29-04:00",
+  "message": "bytes in: [82 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "53c000e6",
+  "time": "2019-05-05T14:34:30-04:00",
+  "message": "bytes in: [83 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "54c000e6",
+  "time": "2019-05-05T14:34:31-04:00",
+  "message": "bytes in: [84 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "55c000e6",
+  "time": "2019-05-05T14:34:31-04:00",
+  "message": "bytes in: [85 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "56c000e6",
+  "time": "2019-05-05T14:34:32-04:00",
+  "message": "bytes in: [86 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "57c000e6",
+  "time": "2019-05-05T14:34:33-04:00",
+  "message": "bytes in: [87 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "58c000e6",
+  "time": "2019-05-05T14:34:34-04:00",
+  "message": "bytes in: [88 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "59c000e6",
+  "time": "2019-05-05T14:34:35-04:00",
+  "message": "bytes in: [89 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5ac000e6",
+  "time": "2019-05-05T14:34:35-04:00",
+  "message": "bytes in: [90 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5bc000e6",
+  "time": "2019-05-05T14:34:36-04:00",
+  "message": "bytes in: [91 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5cc000e6",
+  "time": "2019-05-05T14:34:37-04:00",
+  "message": "bytes in: [92 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5dc000e6",
+  "time": "2019-05-05T14:34:38-04:00",
+  "message": "bytes in: [93 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5ec000e6",
+  "time": "2019-05-05T14:34:39-04:00",
+  "message": "bytes in: [94 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5fc000e6",
+  "time": "2019-05-05T14:34:40-04:00",
+  "message": "bytes in: [95 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "60c000e6",
+  "time": "2019-05-05T14:34:40-04:00",
+  "message": "bytes in: [96 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "61c000e6",
+  "time": "2019-05-05T14:34:41-04:00",
+  "message": "bytes in: [97 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "62c000e6",
+  "time": "2019-05-05T14:34:42-04:00",
+  "message": "bytes in: [98 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "63c000e6",
+  "time": "2019-05-05T14:34:43-04:00",
+  "message": "bytes in: [99 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "64c000e6",
+  "time": "2019-05-05T14:34:44-04:00",
+  "message": "bytes in: [100 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "65c000e6",
+  "time": "2019-05-05T14:34:45-04:00",
+  "message": "bytes in: [101 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "66c000e6",
+  "time": "2019-05-05T14:34:45-04:00",
+  "message": "bytes in: [102 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "67c000e6",
+  "time": "2019-05-05T14:34:46-04:00",
+  "message": "bytes in: [103 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "68c000e6",
+  "time": "2019-05-05T14:34:47-04:00",
+  "message": "bytes in: [104 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "69c000e6",
+  "time": "2019-05-05T14:34:48-04:00",
+  "message": "bytes in: [105 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6ac000e6",
+  "time": "2019-05-05T14:34:49-04:00",
+  "message": "bytes in: [106 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6bc000e6",
+  "time": "2019-05-05T14:34:49-04:00",
+  "message": "bytes in: [107 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6cc000e6",
+  "time": "2019-05-05T14:34:50-04:00",
+  "message": "bytes in: [108 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6dc000e6",
+  "time": "2019-05-05T14:34:51-04:00",
+  "message": "bytes in: [109 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6ec000e6",
+  "time": "2019-05-05T14:34:51-04:00",
+  "message": "bytes in: [110 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6fc000e6",
+  "time": "2019-05-05T14:34:52-04:00",
+  "message": "bytes in: [111 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "70c000e6",
+  "time": "2019-05-05T14:34:53-04:00",
+  "message": "bytes in: [112 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "71c000e6",
+  "time": "2019-05-05T14:34:53-04:00",
+  "message": "bytes in: [113 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "72c000e6",
+  "time": "2019-05-05T14:34:54-04:00",
+  "message": "bytes in: [114 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "73c000e6",
+  "time": "2019-05-05T14:34:55-04:00",
+  "message": "bytes in: [115 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "74c000e6",
+  "time": "2019-05-05T14:34:55-04:00",
+  "message": "bytes in: [116 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "75c000e6",
+  "time": "2019-05-05T14:34:56-04:00",
+  "message": "bytes in: [117 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "76c000e6",
+  "time": "2019-05-05T14:34:57-04:00",
+  "message": "bytes in: [118 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "77c000e6",
+  "time": "2019-05-05T14:34:57-04:00",
+  "message": "bytes in: [119 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "78c000e6",
+  "time": "2019-05-05T14:34:58-04:00",
+  "message": "bytes in: [120 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "79c000e6",
+  "time": "2019-05-05T14:34:58-04:00",
+  "message": "bytes in: [121 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7ac000e6",
+  "time": "2019-05-05T14:34:59-04:00",
+  "message": "bytes in: [122 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7bc000e6",
+  "time": "2019-05-05T14:34:59-04:00",
+  "message": "bytes in: [123 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7cc000e6",
+  "time": "2019-05-05T14:35:00-04:00",
+  "message": "bytes in: [124 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7dc000e6",
+  "time": "2019-05-05T14:35:00-04:00",
+  "message": "bytes in: [125 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7ec000e6",
+  "time": "2019-05-05T14:35:01-04:00",
+  "message": "bytes in: [126 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7fc000e6",
+  "time": "2019-05-05T14:35:02-04:00",
+  "message": "bytes in: [127 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "80c000e6",
+  "time": "2019-05-05T14:35:02-04:00",
+  "message": "bytes in: [128 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "81c000e6",
+  "time": "2019-05-05T14:35:03-04:00",
+  "message": "bytes in: [129 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "82c000e6",
+  "time": "2019-05-05T14:35:03-04:00",
+  "message": "bytes in: [130 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "83c000e6",
+  "time": "2019-05-05T14:35:04-04:00",
+  "message": "bytes in: [131 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "84c000e6",
+  "time": "2019-05-05T14:35:04-04:00",
+  "message": "bytes in: [132 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "85c000e6",
+  "time": "2019-05-05T14:35:05-04:00",
+  "message": "bytes in: [133 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "86c000e6",
+  "time": "2019-05-05T14:35:05-04:00",
+  "message": "bytes in: [134 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "87c000e6",
+  "time": "2019-05-05T14:35:06-04:00",
+  "message": "bytes in: [135 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "88c000e6",
+  "time": "2019-05-05T14:35:07-04:00",
+  "message": "bytes in: [136 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "89c000e6",
+  "time": "2019-05-05T14:35:07-04:00",
+  "message": "bytes in: [137 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8ac000e6",
+  "time": "2019-05-05T14:35:08-04:00",
+  "message": "bytes in: [138 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8bc000e6",
+  "time": "2019-05-05T14:35:08-04:00",
+  "message": "bytes in: [139 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8cc000e6",
+  "time": "2019-05-05T14:35:09-04:00",
+  "message": "bytes in: [140 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8dc000e6",
+  "time": "2019-05-05T14:35:09-04:00",
+  "message": "bytes in: [141 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8ec000e6",
+  "time": "2019-05-05T14:35:10-04:00",
+  "message": "bytes in: [142 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8fc000e6",
+  "time": "2019-05-05T14:35:10-04:00",
+  "message": "bytes in: [143 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "90c000e6",
+  "time": "2019-05-05T14:35:11-04:00",
+  "message": "bytes in: [144 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "91c000e6",
+  "time": "2019-05-05T14:35:12-04:00",
+  "message": "bytes in: [145 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "92c000e6",
+  "time": "2019-05-05T14:35:12-04:00",
+  "message": "bytes in: [146 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "93c000e6",
+  "time": "2019-05-05T14:35:13-04:00",
+  "message": "bytes in: [147 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "94c000e6",
+  "time": "2019-05-05T14:35:13-04:00",
+  "message": "bytes in: [148 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "95c000e6",
+  "time": "2019-05-05T14:35:14-04:00",
+  "message": "bytes in: [149 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "96c000e6",
+  "time": "2019-05-05T14:35:14-04:00",
+  "message": "bytes in: [150 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "97c000e6",
+  "time": "2019-05-05T14:35:15-04:00",
+  "message": "bytes in: [151 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "98c000e6",
+  "time": "2019-05-05T14:35:15-04:00",
+  "message": "bytes in: [152 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "99c000e6",
+  "time": "2019-05-05T14:35:16-04:00",
+  "message": "bytes in: [153 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9ac000e6",
+  "time": "2019-05-05T14:35:17-04:00",
+  "message": "bytes in: [154 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9bc000e6",
+  "time": "2019-05-05T14:35:17-04:00",
+  "message": "bytes in: [155 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9cc000e6",
+  "time": "2019-05-05T14:35:18-04:00",
+  "message": "bytes in: [156 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9dc000e6",
+  "time": "2019-05-05T14:35:18-04:00",
+  "message": "bytes in: [157 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9ec000e6",
+  "time": "2019-05-05T14:35:19-04:00",
+  "message": "bytes in: [158 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9fc000e6",
+  "time": "2019-05-05T14:35:19-04:00",
+  "message": "bytes in: [159 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a0c000e6",
+  "time": "2019-05-05T14:35:20-04:00",
+  "message": "bytes in: [160 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a1c000e6",
+  "time": "2019-05-05T14:35:20-04:00",
+  "message": "bytes in: [161 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a2c000e6",
+  "time": "2019-05-05T14:35:21-04:00",
+  "message": "bytes in: [162 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a3c000e6",
+  "time": "2019-05-05T14:35:21-04:00",
+  "message": "bytes in: [163 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a4c000e6",
+  "time": "2019-05-05T14:35:22-04:00",
+  "message": "bytes in: [164 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a5c000e6",
+  "time": "2019-05-05T14:35:23-04:00",
+  "message": "bytes in: [165 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a6c000e6",
+  "time": "2019-05-05T14:35:23-04:00",
+  "message": "bytes in: [166 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a7c000e6",
+  "time": "2019-05-05T14:35:24-04:00",
+  "message": "bytes in: [167 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a8c000e6",
+  "time": "2019-05-05T14:35:24-04:00",
+  "message": "bytes in: [168 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a9c000e6",
+  "time": "2019-05-05T14:35:25-04:00",
+  "message": "bytes in: [169 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "aac000e6",
+  "time": "2019-05-05T14:35:25-04:00",
+  "message": "bytes in: [170 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "abc000e6",
+  "time": "2019-05-05T14:35:26-04:00",
+  "message": "bytes in: [171 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "acc000e6",
+  "time": "2019-05-05T14:35:26-04:00",
+  "message": "bytes in: [172 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "adc000e6",
+  "time": "2019-05-05T14:35:27-04:00",
+  "message": "bytes in: [173 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "aec000e6",
+  "time": "2019-05-05T14:35:28-04:00",
+  "message": "bytes in: [174 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "afc000e6",
+  "time": "2019-05-05T14:35:28-04:00",
+  "message": "bytes in: [175 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b0c000e6",
+  "time": "2019-05-05T14:35:29-04:00",
+  "message": "bytes in: [176 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b1c000e6",
+  "time": "2019-05-05T14:35:29-04:00",
+  "message": "bytes in: [177 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b2c000e6",
+  "time": "2019-05-05T14:35:30-04:00",
+  "message": "bytes in: [178 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b3c000e6",
+  "time": "2019-05-05T14:35:30-04:00",
+  "message": "bytes in: [179 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b4c000e6",
+  "time": "2019-05-05T14:35:31-04:00",
+  "message": "bytes in: [180 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b5c000e6",
+  "time": "2019-05-05T14:35:31-04:00",
+  "message": "bytes in: [181 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b6c000e6",
+  "time": "2019-05-05T14:35:32-04:00",
+  "message": "bytes in: [182 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b7c000e6",
+  "time": "2019-05-05T14:35:32-04:00",
+  "message": "bytes in: [183 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b8c000e6",
+  "time": "2019-05-05T14:35:33-04:00",
+  "message": "bytes in: [184 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b9c000e6",
+  "time": "2019-05-05T14:35:33-04:00",
+  "message": "bytes in: [185 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bac000e6",
+  "time": "2019-05-05T14:35:34-04:00",
+  "message": "bytes in: [186 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bbc000e6",
+  "time": "2019-05-05T14:35:35-04:00",
+  "message": "bytes in: [187 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bcc000e6",
+  "time": "2019-05-05T14:35:35-04:00",
+  "message": "bytes in: [188 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bdc000e6",
+  "time": "2019-05-05T14:35:36-04:00",
+  "message": "bytes in: [189 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bec000e6",
+  "time": "2019-05-05T14:35:36-04:00",
+  "message": "bytes in: [190 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bfc000e6",
+  "time": "2019-05-05T14:35:37-04:00",
+  "message": "bytes in: [191 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c0c000e6",
+  "time": "2019-05-05T14:35:37-04:00",
+  "message": "bytes in: [192 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c1c000e6",
+  "time": "2019-05-05T14:35:38-04:00",
+  "message": "bytes in: [193 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c2c000e6",
+  "time": "2019-05-05T14:35:38-04:00",
+  "message": "bytes in: [194 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c3c000e6",
+  "time": "2019-05-05T14:35:39-04:00",
+  "message": "bytes in: [195 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c4c000e6",
+  "time": "2019-05-05T14:35:39-04:00",
+  "message": "bytes in: [196 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c5c000e6",
+  "time": "2019-05-05T14:35:40-04:00",
+  "message": "bytes in: [197 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c7c000e6",
+  "time": "2019-05-05T14:35:41-04:00",
+  "message": "bytes in: [199 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c7c000e6",
+  "time": "2019-05-05T14:35:41-04:00",
+  "message": "bytes in: [199 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c8c000e6",
+  "time": "2019-05-05T14:35:41-04:00",
+  "message": "bytes in: [200 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c9c000e6",
+  "time": "2019-05-05T14:35:42-04:00",
+  "message": "bytes in: [201 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cac000e6",
+  "time": "2019-05-05T14:35:42-04:00",
+  "message": "bytes in: [202 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cbc000e6",
+  "time": "2019-05-05T14:35:43-04:00",
+  "message": "bytes in: [203 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ccc000e6",
+  "time": "2019-05-05T14:35:43-04:00",
+  "message": "bytes in: [204 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cdc000e6",
+  "time": "2019-05-05T14:35:44-04:00",
+  "message": "bytes in: [205 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cec000e6",
+  "time": "2019-05-05T14:35:44-04:00",
+  "message": "bytes in: [206 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cfc000e6",
+  "time": "2019-05-05T14:35:45-04:00",
+  "message": "bytes in: [207 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d0c000e6",
+  "time": "2019-05-05T14:35:45-04:00",
+  "message": "bytes in: [208 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d1c000e6",
+  "time": "2019-05-05T14:35:46-04:00",
+  "message": "bytes in: [209 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d2c000e6",
+  "time": "2019-05-05T14:35:47-04:00",
+  "message": "bytes in: [210 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d3c000e6",
+  "time": "2019-05-05T14:35:47-04:00",
+  "message": "bytes in: [211 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d4c000e6",
+  "time": "2019-05-05T14:35:48-04:00",
+  "message": "bytes in: [212 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d5c000e6",
+  "time": "2019-05-05T14:35:49-04:00",
+  "message": "bytes in: [213 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d6c000e6",
+  "time": "2019-05-05T14:35:49-04:00",
+  "message": "bytes in: [214 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d7c000e6",
+  "time": "2019-05-05T14:35:50-04:00",
+  "message": "bytes in: [215 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d8c000e6",
+  "time": "2019-05-05T14:35:50-04:00",
+  "message": "bytes in: [216 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d9c000e6",
+  "time": "2019-05-05T14:35:51-04:00",
+  "message": "bytes in: [217 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dac000e6",
+  "time": "2019-05-05T14:35:52-04:00",
+  "message": "bytes in: [218 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dbc000e6",
+  "time": "2019-05-05T14:35:52-04:00",
+  "message": "bytes in: [219 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dcc000e6",
+  "time": "2019-05-05T14:35:53-04:00",
+  "message": "bytes in: [220 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ddc000e6",
+  "time": "2019-05-05T14:35:53-04:00",
+  "message": "bytes in: [221 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dec000e6",
+  "time": "2019-05-05T14:35:54-04:00",
+  "message": "bytes in: [222 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e0c000e6",
+  "time": "2019-05-05T14:35:54-04:00",
+  "message": "bytes in: [224 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e1c000e6",
+  "time": "2019-05-05T14:35:54-04:00",
+  "message": "bytes in: [225 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e1c000e6",
+  "time": "2019-05-05T14:35:54-04:00",
+  "message": "bytes in: [225 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e3c000e6",
+  "time": "2019-05-05T14:35:55-04:00",
+  "message": "bytes in: [227 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e3c000e6",
+  "time": "2019-05-05T14:35:55-04:00",
+  "message": "bytes in: [227 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e5c000e6",
+  "time": "2019-05-05T14:35:55-04:00",
+  "message": "bytes in: [229 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e5c000e6",
+  "time": "2019-05-05T14:35:55-04:00",
+  "message": "bytes in: [229 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e6c000e6",
+  "time": "2019-05-05T14:35:56-04:00",
+  "message": "bytes in: [230 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e7c000e6",
+  "time": "2019-05-05T14:35:56-04:00",
+  "message": "bytes in: [231 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e9c000e6",
+  "time": "2019-05-05T14:35:56-04:00",
+  "message": "bytes in: [233 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e9c000e6",
+  "time": "2019-05-05T14:35:56-04:00",
+  "message": "bytes in: [233 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ebc000e6",
+  "time": "2019-05-05T14:35:57-04:00",
+  "message": "bytes in: [235 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ebc000e6",
+  "time": "2019-05-05T14:35:57-04:00",
+  "message": "bytes in: [235 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "edc000e6",
+  "time": "2019-05-05T14:35:58-04:00",
+  "message": "bytes in: [237 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "edc000e6",
+  "time": "2019-05-05T14:35:58-04:00",
+  "message": "bytes in: [237 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "efc000e6",
+  "time": "2019-05-05T14:35:58-04:00",
+  "message": "bytes in: [239 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "efc000e6",
+  "time": "2019-05-05T14:35:58-04:00",
+  "message": "bytes in: [239 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f0c000e6",
+  "time": "2019-05-05T14:35:59-04:00",
+  "message": "bytes in: [240 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f2c000e6",
+  "time": "2019-05-05T14:35:59-04:00",
+  "message": "bytes in: [242 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f3c000e6",
+  "time": "2019-05-05T14:35:59-04:00",
+  "message": "bytes in: [243 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f3c000e6",
+  "time": "2019-05-05T14:35:59-04:00",
+  "message": "bytes in: [243 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f5c000e6",
+  "time": "2019-05-05T14:36:00-04:00",
+  "message": "bytes in: [245 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f5c000e6",
+  "time": "2019-05-05T14:36:00-04:00",
+  "message": "bytes in: [245 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f7c000e6",
+  "time": "2019-05-05T14:36:00-04:00",
+  "message": "bytes in: [247 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f7c000e6",
+  "time": "2019-05-05T14:36:00-04:00",
+  "message": "bytes in: [247 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f9c000e6",
+  "time": "2019-05-05T14:36:01-04:00",
+  "message": "bytes in: [249 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f9c000e6",
+  "time": "2019-05-05T14:36:01-04:00",
+  "message": "bytes in: [249 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fbc000e6",
+  "time": "2019-05-05T14:36:01-04:00",
+  "message": "bytes in: [251 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fbc000e6",
+  "time": "2019-05-05T14:36:01-04:00",
+  "message": "bytes in: [251 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fdc000e6",
+  "time": "2019-05-05T14:36:02-04:00",
+  "message": "bytes in: [253 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fdc000e6",
+  "time": "2019-05-05T14:36:02-04:00",
+  "message": "bytes in: [253 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fec000e6",
+  "time": "2019-05-05T14:36:03-04:00",
+  "message": "bytes in: [254 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ffc000e6",
+  "time": "2019-05-05T14:36:04-04:00",
+  "message": "bytes in: [255 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "01c000e6",
+  "time": "2019-05-05T14:36:05-04:00",
+  "message": "bytes in: [1 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "01c000e6",
+  "time": "2019-05-05T14:36:05-04:00",
+  "message": "bytes in: [1 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "02c000e6",
+  "time": "2019-05-05T14:36:27-04:00",
+  "message": "bytes in: [2 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "03c000e6",
+  "time": "2019-05-05T14:36:27-04:00",
+  "message": "bytes in: [3 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "05c000e6",
+  "time": "2019-05-05T14:36:28-04:00",
+  "message": "bytes in: [5 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "05c000e6",
+  "time": "2019-05-05T14:36:28-04:00",
+  "message": "bytes in: [5 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "06c000e6",
+  "time": "2019-05-05T14:36:29-04:00",
+  "message": "bytes in: [6 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "07c000e6",
+  "time": "2019-05-05T14:36:29-04:00",
+  "message": "bytes in: [7 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "09c000e6",
+  "time": "2019-05-05T14:36:29-04:00",
+  "message": "bytes in: [9 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "09c000e6",
+  "time": "2019-05-05T14:36:29-04:00",
+  "message": "bytes in: [9 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0ac000e6",
+  "time": "2019-05-05T14:36:30-04:00",
+  "message": "bytes in: [10 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0bc000e6",
+  "time": "2019-05-05T14:36:30-04:00",
+  "message": "bytes in: [11 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0cc000e6",
+  "time": "2019-05-05T14:36:31-04:00",
+  "message": "bytes in: [12 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0dc000e6",
+  "time": "2019-05-05T14:36:31-04:00",
+  "message": "bytes in: [13 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "0fc000e6",
+  "time": "2019-05-05T14:36:32-04:00",
+  "message": "bytes in: [15 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "10c000e6",
+  "time": "2019-05-05T14:36:32-04:00",
+  "message": "bytes in: [16 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "10c000e6",
+  "time": "2019-05-05T14:36:32-04:00",
+  "message": "bytes in: [16 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "11c000e6",
+  "time": "2019-05-05T14:36:33-04:00",
+  "message": "bytes in: [17 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "12c000e6",
+  "time": "2019-05-05T14:36:34-04:00",
+  "message": "bytes in: [18 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "13c000e6",
+  "time": "2019-05-05T14:36:34-04:00",
+  "message": "bytes in: [19 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "14c000e6",
+  "time": "2019-05-05T14:36:35-04:00",
+  "message": "bytes in: [20 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "15c000e6",
+  "time": "2019-05-05T14:36:36-04:00",
+  "message": "bytes in: [21 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "16c000e6",
+  "time": "2019-05-05T14:36:37-04:00",
+  "message": "bytes in: [22 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "17c000e6",
+  "time": "2019-05-05T14:36:37-04:00",
+  "message": "bytes in: [23 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "18c000e6",
+  "time": "2019-05-05T14:36:39-04:00",
+  "message": "bytes in: [24 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "19c000e6",
+  "time": "2019-05-05T14:36:39-04:00",
+  "message": "bytes in: [25 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1ac000e6",
+  "time": "2019-05-05T14:36:41-04:00",
+  "message": "bytes in: [26 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1bc000e6",
+  "time": "2019-05-05T14:36:42-04:00",
+  "message": "bytes in: [27 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1cc000e6",
+  "time": "2019-05-05T14:36:43-04:00",
+  "message": "bytes in: [28 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1dc000e6",
+  "time": "2019-05-05T14:36:43-04:00",
+  "message": "bytes in: [29 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1ec000e6",
+  "time": "2019-05-05T14:36:44-04:00",
+  "message": "bytes in: [30 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "1fc000e6",
+  "time": "2019-05-05T14:36:45-04:00",
+  "message": "bytes in: [31 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "20c000e6",
+  "time": "2019-05-05T14:36:45-04:00",
+  "message": "bytes in: [32 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "21c000e6",
+  "time": "2019-05-05T14:36:46-04:00",
+  "message": "bytes in: [33 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "22c000e6",
+  "time": "2019-05-05T14:36:47-04:00",
+  "message": "bytes in: [34 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "24c000e6",
+  "time": "2019-05-05T14:36:48-04:00",
+  "message": "bytes in: [36 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "24c000e6",
+  "time": "2019-05-05T14:36:48-04:00",
+  "message": "bytes in: [36 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "25c000e6",
+  "time": "2019-05-05T14:36:48-04:00",
+  "message": "bytes in: [37 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "26c000e6",
+  "time": "2019-05-05T14:36:49-04:00",
+  "message": "bytes in: [38 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "27c000e6",
+  "time": "2019-05-05T14:36:49-04:00",
+  "message": "bytes in: [39 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "28c000e6",
+  "time": "2019-05-05T14:36:50-04:00",
+  "message": "bytes in: [40 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "29c000e6",
+  "time": "2019-05-05T14:36:51-04:00",
+  "message": "bytes in: [41 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ac000e6",
+  "time": "2019-05-05T14:36:51-04:00",
+  "message": "bytes in: [42 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2bc000e6",
+  "time": "2019-05-05T14:36:51-04:00",
+  "message": "bytes in: [43 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2cc000e6",
+  "time": "2019-05-05T14:36:52-04:00",
+  "message": "bytes in: [44 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2dc000e6",
+  "time": "2019-05-05T14:36:53-04:00",
+  "message": "bytes in: [45 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2ec000e6",
+  "time": "2019-05-05T14:36:53-04:00",
+  "message": "bytes in: [46 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "2fc000e6",
+  "time": "2019-05-05T14:36:54-04:00",
+  "message": "bytes in: [47 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "30c000e6",
+  "time": "2019-05-05T14:36:55-04:00",
+  "message": "bytes in: [48 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "31c000e6",
+  "time": "2019-05-05T14:36:55-04:00",
+  "message": "bytes in: [49 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "32c000e6",
+  "time": "2019-05-05T14:36:56-04:00",
+  "message": "bytes in: [50 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "33c000e6",
+  "time": "2019-05-05T14:36:56-04:00",
+  "message": "bytes in: [51 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "34c000e6",
+  "time": "2019-05-05T14:36:57-04:00",
+  "message": "bytes in: [52 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "35c000e6",
+  "time": "2019-05-05T14:36:57-04:00",
+  "message": "bytes in: [53 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "36c000e6",
+  "time": "2019-05-05T14:36:59-04:00",
+  "message": "bytes in: [54 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "37c000e6",
+  "time": "2019-05-05T14:37:00-04:00",
+  "message": "bytes in: [55 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "38c000e6",
+  "time": "2019-05-05T14:37:00-04:00",
+  "message": "bytes in: [56 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "39c000e6",
+  "time": "2019-05-05T14:37:01-04:00",
+  "message": "bytes in: [57 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3ac000e6",
+  "time": "2019-05-05T14:37:02-04:00",
+  "message": "bytes in: [58 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3bc000e6",
+  "time": "2019-05-05T14:37:03-04:00",
+  "message": "bytes in: [59 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3cc000e6",
+  "time": "2019-05-05T14:37:03-04:00",
+  "message": "bytes in: [60 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3dc000e6",
+  "time": "2019-05-05T14:37:04-04:00",
+  "message": "bytes in: [61 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3ec000e6",
+  "time": "2019-05-05T14:37:05-04:00",
+  "message": "bytes in: [62 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "3fc000e6",
+  "time": "2019-05-05T14:37:05-04:00",
+  "message": "bytes in: [63 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "40c000e6",
+  "time": "2019-05-05T14:37:06-04:00",
+  "message": "bytes in: [64 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "41c000e6",
+  "time": "2019-05-05T14:37:06-04:00",
+  "message": "bytes in: [65 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "42c000e6",
+  "time": "2019-05-05T14:37:07-04:00",
+  "message": "bytes in: [66 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "43c000e6",
+  "time": "2019-05-05T14:37:08-04:00",
+  "message": "bytes in: [67 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "45c000e6",
+  "time": "2019-05-05T14:37:08-04:00",
+  "message": "bytes in: [69 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "45c000e6",
+  "time": "2019-05-05T14:37:08-04:00",
+  "message": "bytes in: [69 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "46c000e6",
+  "time": "2019-05-05T14:37:09-04:00",
+  "message": "bytes in: [70 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "47c000e6",
+  "time": "2019-05-05T14:37:09-04:00",
+  "message": "bytes in: [71 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "48c000e6",
+  "time": "2019-05-05T14:37:10-04:00",
+  "message": "bytes in: [72 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "49c000e6",
+  "time": "2019-05-05T14:37:11-04:00",
+  "message": "bytes in: [73 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4ac000e6",
+  "time": "2019-05-05T14:37:11-04:00",
+  "message": "bytes in: [74 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4bc000e6",
+  "time": "2019-05-05T14:37:11-04:00",
+  "message": "bytes in: [75 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4dc000e6",
+  "time": "2019-05-05T14:37:12-04:00",
+  "message": "bytes in: [77 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4ec000e6",
+  "time": "2019-05-05T14:37:12-04:00",
+  "message": "bytes in: [78 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4ec000e6",
+  "time": "2019-05-05T14:37:12-04:00",
+  "message": "bytes in: [78 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "4fc000e6",
+  "time": "2019-05-05T14:37:13-04:00",
+  "message": "bytes in: [79 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "50c000e6",
+  "time": "2019-05-05T14:37:13-04:00",
+  "message": "bytes in: [80 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "51c000e6",
+  "time": "2019-05-05T14:37:14-04:00",
+  "message": "bytes in: [81 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "52c000e6",
+  "time": "2019-05-05T14:37:15-04:00",
+  "message": "bytes in: [82 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "54c000e6",
+  "time": "2019-05-05T14:37:16-04:00",
+  "message": "bytes in: [84 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "54c000e6",
+  "time": "2019-05-05T14:37:16-04:00",
+  "message": "bytes in: [84 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "55c000e6",
+  "time": "2019-05-05T14:37:16-04:00",
+  "message": "bytes in: [85 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "57c000e6",
+  "time": "2019-05-05T14:37:17-04:00",
+  "message": "bytes in: [87 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "57c000e6",
+  "time": "2019-05-05T14:37:17-04:00",
+  "message": "bytes in: [87 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "59c000e6",
+  "time": "2019-05-05T14:37:17-04:00",
+  "message": "bytes in: [89 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "59c000e6",
+  "time": "2019-05-05T14:37:17-04:00",
+  "message": "bytes in: [89 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5ac000e6",
+  "time": "2019-05-05T14:37:17-04:00",
+  "message": "bytes in: [90 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5bc000e6",
+  "time": "2019-05-05T14:37:18-04:00",
+  "message": "bytes in: [91 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5cc000e6",
+  "time": "2019-05-05T14:37:18-04:00",
+  "message": "bytes in: [92 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5dc000e6",
+  "time": "2019-05-05T14:37:18-04:00",
+  "message": "bytes in: [93 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5ec000e6",
+  "time": "2019-05-05T14:37:19-04:00",
+  "message": "bytes in: [94 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "5fc000e6",
+  "time": "2019-05-05T14:37:19-04:00",
+  "message": "bytes in: [95 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "60c000e6",
+  "time": "2019-05-05T14:37:19-04:00",
+  "message": "bytes in: [96 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "61c000e6",
+  "time": "2019-05-05T14:37:20-04:00",
+  "message": "bytes in: [97 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "62c000e6",
+  "time": "2019-05-05T14:37:20-04:00",
+  "message": "bytes in: [98 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "63c000e6",
+  "time": "2019-05-05T14:37:20-04:00",
+  "message": "bytes in: [99 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "64c000e6",
+  "time": "2019-05-05T14:37:21-04:00",
+  "message": "bytes in: [100 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "65c000e6",
+  "time": "2019-05-05T14:37:21-04:00",
+  "message": "bytes in: [101 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "67c000e6",
+  "time": "2019-05-05T14:37:21-04:00",
+  "message": "bytes in: [103 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "67c000e6",
+  "time": "2019-05-05T14:37:21-04:00",
+  "message": "bytes in: [103 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "68c000e6",
+  "time": "2019-05-05T14:37:22-04:00",
+  "message": "bytes in: [104 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "69c000e6",
+  "time": "2019-05-05T14:37:22-04:00",
+  "message": "bytes in: [105 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6ac000e6",
+  "time": "2019-05-05T14:37:22-04:00",
+  "message": "bytes in: [106 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6bc000e6",
+  "time": "2019-05-05T14:37:23-04:00",
+  "message": "bytes in: [107 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6cc000e6",
+  "time": "2019-05-05T14:37:23-04:00",
+  "message": "bytes in: [108 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6dc000e6",
+  "time": "2019-05-05T14:37:23-04:00",
+  "message": "bytes in: [109 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6ec000e6",
+  "time": "2019-05-05T14:37:23-04:00",
+  "message": "bytes in: [110 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "6fc000e6",
+  "time": "2019-05-05T14:37:24-04:00",
+  "message": "bytes in: [111 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "70c000e6",
+  "time": "2019-05-05T14:37:24-04:00",
+  "message": "bytes in: [112 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "71c000e6",
+  "time": "2019-05-05T14:37:24-04:00",
+  "message": "bytes in: [113 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "72c000e6",
+  "time": "2019-05-05T14:37:25-04:00",
+  "message": "bytes in: [114 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "73c000e6",
+  "time": "2019-05-05T14:37:25-04:00",
+  "message": "bytes in: [115 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "74c000e6",
+  "time": "2019-05-05T14:37:25-04:00",
+  "message": "bytes in: [116 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "75c000e6",
+  "time": "2019-05-05T14:37:26-04:00",
+  "message": "bytes in: [117 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "76c000e6",
+  "time": "2019-05-05T14:37:26-04:00",
+  "message": "bytes in: [118 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "77c000e6",
+  "time": "2019-05-05T14:37:26-04:00",
+  "message": "bytes in: [119 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "78c000e6",
+  "time": "2019-05-05T14:37:26-04:00",
+  "message": "bytes in: [120 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7ac000e6",
+  "time": "2019-05-05T14:37:27-04:00",
+  "message": "bytes in: [122 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7ac000e6",
+  "time": "2019-05-05T14:37:27-04:00",
+  "message": "bytes in: [122 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7bc000e6",
+  "time": "2019-05-05T14:37:27-04:00",
+  "message": "bytes in: [123 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7cc000e6",
+  "time": "2019-05-05T14:37:27-04:00",
+  "message": "bytes in: [124 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7dc000e6",
+  "time": "2019-05-05T14:37:28-04:00",
+  "message": "bytes in: [125 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7ec000e6",
+  "time": "2019-05-05T14:37:28-04:00",
+  "message": "bytes in: [126 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "7fc000e6",
+  "time": "2019-05-05T14:37:28-04:00",
+  "message": "bytes in: [127 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "80c000e6",
+  "time": "2019-05-05T14:37:29-04:00",
+  "message": "bytes in: [128 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "81c000e6",
+  "time": "2019-05-05T14:37:29-04:00",
+  "message": "bytes in: [129 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "82c000e6",
+  "time": "2019-05-05T14:37:29-04:00",
+  "message": "bytes in: [130 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "83c000e6",
+  "time": "2019-05-05T14:37:30-04:00",
+  "message": "bytes in: [131 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "84c000e6",
+  "time": "2019-05-05T14:37:30-04:00",
+  "message": "bytes in: [132 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "85c000e6",
+  "time": "2019-05-05T14:37:30-04:00",
+  "message": "bytes in: [133 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "86c000e6",
+  "time": "2019-05-05T14:37:30-04:00",
+  "message": "bytes in: [134 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "87c000e6",
+  "time": "2019-05-05T14:37:31-04:00",
+  "message": "bytes in: [135 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "89c000e6",
+  "time": "2019-05-05T14:37:31-04:00",
+  "message": "bytes in: [137 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "89c000e6",
+  "time": "2019-05-05T14:37:31-04:00",
+  "message": "bytes in: [137 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8ac000e6",
+  "time": "2019-05-05T14:37:31-04:00",
+  "message": "bytes in: [138 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8bc000e6",
+  "time": "2019-05-05T14:37:32-04:00",
+  "message": "bytes in: [139 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8dc000e6",
+  "time": "2019-05-05T14:37:32-04:00",
+  "message": "bytes in: [141 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8ec000e6",
+  "time": "2019-05-05T14:37:32-04:00",
+  "message": "bytes in: [142 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "8fc000e6",
+  "time": "2019-05-05T14:37:32-04:00",
+  "message": "bytes in: [143 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "90c000e6",
+  "time": "2019-05-05T14:37:32-04:00",
+  "message": "bytes in: [144 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "91c000e6",
+  "time": "2019-05-05T14:37:32-04:00",
+  "message": "bytes in: [145 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "92c000e6",
+  "time": "2019-05-05T14:37:32-04:00",
+  "message": "bytes in: [146 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "93c000e6",
+  "time": "2019-05-05T14:37:33-04:00",
+  "message": "bytes in: [147 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "93c000e6",
+  "time": "2019-05-05T14:37:33-04:00",
+  "message": "bytes in: [147 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "94c000e6",
+  "time": "2019-05-05T14:37:33-04:00",
+  "message": "bytes in: [148 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "95c000e6",
+  "time": "2019-05-05T14:37:33-04:00",
+  "message": "bytes in: [149 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "96c000e6",
+  "time": "2019-05-05T14:37:33-04:00",
+  "message": "bytes in: [150 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "97c000e6",
+  "time": "2019-05-05T14:37:34-04:00",
+  "message": "bytes in: [151 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "99c000e6",
+  "time": "2019-05-05T14:37:34-04:00",
+  "message": "bytes in: [153 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "99c000e6",
+  "time": "2019-05-05T14:37:34-04:00",
+  "message": "bytes in: [153 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9ac000e6",
+  "time": "2019-05-05T14:37:34-04:00",
+  "message": "bytes in: [154 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9bc000e6",
+  "time": "2019-05-05T14:37:35-04:00",
+  "message": "bytes in: [155 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9cc000e6",
+  "time": "2019-05-05T14:37:35-04:00",
+  "message": "bytes in: [156 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9dc000e6",
+  "time": "2019-05-05T14:37:35-04:00",
+  "message": "bytes in: [157 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9ec000e6",
+  "time": "2019-05-05T14:37:36-04:00",
+  "message": "bytes in: [158 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "9fc000e6",
+  "time": "2019-05-05T14:37:36-04:00",
+  "message": "bytes in: [159 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a0c000e6",
+  "time": "2019-05-05T14:37:36-04:00",
+  "message": "bytes in: [160 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a1c000e6",
+  "time": "2019-05-05T14:37:37-04:00",
+  "message": "bytes in: [161 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a2c000e6",
+  "time": "2019-05-05T14:37:37-04:00",
+  "message": "bytes in: [162 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a3c000e6",
+  "time": "2019-05-05T14:37:37-04:00",
+  "message": "bytes in: [163 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a4c000e6",
+  "time": "2019-05-05T14:37:38-04:00",
+  "message": "bytes in: [164 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a5c000e6",
+  "time": "2019-05-05T14:37:38-04:00",
+  "message": "bytes in: [165 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a6c000e6",
+  "time": "2019-05-05T14:37:38-04:00",
+  "message": "bytes in: [166 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a7c000e6",
+  "time": "2019-05-05T14:37:38-04:00",
+  "message": "bytes in: [167 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a8c000e6",
+  "time": "2019-05-05T14:37:39-04:00",
+  "message": "bytes in: [168 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "a9c000e6",
+  "time": "2019-05-05T14:37:39-04:00",
+  "message": "bytes in: [169 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "aac000e6",
+  "time": "2019-05-05T14:37:39-04:00",
+  "message": "bytes in: [170 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "acc000e6",
+  "time": "2019-05-05T14:37:40-04:00",
+  "message": "bytes in: [172 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "acc000e6",
+  "time": "2019-05-05T14:37:40-04:00",
+  "message": "bytes in: [172 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "aec000e6",
+  "time": "2019-05-05T14:37:40-04:00",
+  "message": "bytes in: [174 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "afc000e6",
+  "time": "2019-05-05T14:37:40-04:00",
+  "message": "bytes in: [175 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "afc000e6",
+  "time": "2019-05-05T14:37:40-04:00",
+  "message": "bytes in: [175 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b0c000e6",
+  "time": "2019-05-05T14:37:40-04:00",
+  "message": "bytes in: [176 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b2c000e6",
+  "time": "2019-05-05T14:37:41-04:00",
+  "message": "bytes in: [178 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b3c000e6",
+  "time": "2019-05-05T14:37:41-04:00",
+  "message": "bytes in: [179 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b3c000e6",
+  "time": "2019-05-05T14:37:41-04:00",
+  "message": "bytes in: [179 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b4c000e6",
+  "time": "2019-05-05T14:37:41-04:00",
+  "message": "bytes in: [180 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b5c000e6",
+  "time": "2019-05-05T14:37:42-04:00",
+  "message": "bytes in: [181 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b6c000e6",
+  "time": "2019-05-05T14:37:42-04:00",
+  "message": "bytes in: [182 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b7c000e6",
+  "time": "2019-05-05T14:37:42-04:00",
+  "message": "bytes in: [183 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b8c000e6",
+  "time": "2019-05-05T14:37:42-04:00",
+  "message": "bytes in: [184 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "b9c000e6",
+  "time": "2019-05-05T14:37:43-04:00",
+  "message": "bytes in: [185 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bbc000e6",
+  "time": "2019-05-05T14:37:43-04:00",
+  "message": "bytes in: [187 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bbc000e6",
+  "time": "2019-05-05T14:37:43-04:00",
+  "message": "bytes in: [187 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bdc000e6",
+  "time": "2019-05-05T14:37:43-04:00",
+  "message": "bytes in: [189 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bdc000e6",
+  "time": "2019-05-05T14:37:43-04:00",
+  "message": "bytes in: [189 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "bec000e6",
+  "time": "2019-05-05T14:37:44-04:00",
+  "message": "bytes in: [190 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c0c000e6",
+  "time": "2019-05-05T14:37:44-04:00",
+  "message": "bytes in: [192 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c0c000e6",
+  "time": "2019-05-05T14:37:44-04:00",
+  "message": "bytes in: [192 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c2c000e6",
+  "time": "2019-05-05T14:37:44-04:00",
+  "message": "bytes in: [194 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c2c000e6",
+  "time": "2019-05-05T14:37:44-04:00",
+  "message": "bytes in: [194 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c3c000e6",
+  "time": "2019-05-05T14:37:44-04:00",
+  "message": "bytes in: [195 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c5c000e6",
+  "time": "2019-05-05T14:37:45-04:00",
+  "message": "bytes in: [197 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c5c000e6",
+  "time": "2019-05-05T14:37:45-04:00",
+  "message": "bytes in: [197 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c6c000e6",
+  "time": "2019-05-05T14:37:45-04:00",
+  "message": "bytes in: [198 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c7c000e6",
+  "time": "2019-05-05T14:37:45-04:00",
+  "message": "bytes in: [199 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c9c000e6",
+  "time": "2019-05-05T14:37:46-04:00",
+  "message": "bytes in: [201 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "c9c000e6",
+  "time": "2019-05-05T14:37:46-04:00",
+  "message": "bytes in: [201 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cbc000e6",
+  "time": "2019-05-05T14:37:46-04:00",
+  "message": "bytes in: [203 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cbc000e6",
+  "time": "2019-05-05T14:37:46-04:00",
+  "message": "bytes in: [203 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ccc000e6",
+  "time": "2019-05-05T14:37:46-04:00",
+  "message": "bytes in: [204 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cec000e6",
+  "time": "2019-05-05T14:37:46-04:00",
+  "message": "bytes in: [206 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "cec000e6",
+  "time": "2019-05-05T14:37:46-04:00",
+  "message": "bytes in: [206 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d0c000e6",
+  "time": "2019-05-05T14:37:47-04:00",
+  "message": "bytes in: [208 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d1c000e6",
+  "time": "2019-05-05T14:37:47-04:00",
+  "message": "bytes in: [209 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d2c000e6",
+  "time": "2019-05-05T14:37:47-04:00",
+  "message": "bytes in: [210 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d2c000e6",
+  "time": "2019-05-05T14:37:47-04:00",
+  "message": "bytes in: [210 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d3c000e6",
+  "time": "2019-05-05T14:37:47-04:00",
+  "message": "bytes in: [211 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d4c000e6",
+  "time": "2019-05-05T14:37:47-04:00",
+  "message": "bytes in: [212 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d6c000e6",
+  "time": "2019-05-05T14:37:48-04:00",
+  "message": "bytes in: [214 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d6c000e6",
+  "time": "2019-05-05T14:37:48-04:00",
+  "message": "bytes in: [214 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d7c000e6",
+  "time": "2019-05-05T14:37:48-04:00",
+  "message": "bytes in: [215 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d9c000e6",
+  "time": "2019-05-05T14:37:48-04:00",
+  "message": "bytes in: [217 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "d9c000e6",
+  "time": "2019-05-05T14:37:48-04:00",
+  "message": "bytes in: [217 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dac000e6",
+  "time": "2019-05-05T14:37:49-04:00",
+  "message": "bytes in: [218 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dbc000e6",
+  "time": "2019-05-05T14:37:49-04:00",
+  "message": "bytes in: [219 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ddc000e6",
+  "time": "2019-05-05T14:37:49-04:00",
+  "message": "bytes in: [221 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ddc000e6",
+  "time": "2019-05-05T14:37:49-04:00",
+  "message": "bytes in: [221 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dec000e6",
+  "time": "2019-05-05T14:37:49-04:00",
+  "message": "bytes in: [222 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "dfc000e6",
+  "time": "2019-05-05T14:37:49-04:00",
+  "message": "bytes in: [223 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e1c000e6",
+  "time": "2019-05-05T14:37:50-04:00",
+  "message": "bytes in: [225 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e1c000e6",
+  "time": "2019-05-05T14:37:50-04:00",
+  "message": "bytes in: [225 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e2c000e6",
+  "time": "2019-05-05T14:37:50-04:00",
+  "message": "bytes in: [226 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e3c000e6",
+  "time": "2019-05-05T14:37:50-04:00",
+  "message": "bytes in: [227 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e4c000e6",
+  "time": "2019-05-05T14:37:50-04:00",
+  "message": "bytes in: [228 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e5c000e6",
+  "time": "2019-05-05T14:37:50-04:00",
+  "message": "bytes in: [229 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e7c000e6",
+  "time": "2019-05-05T14:37:51-04:00",
+  "message": "bytes in: [231 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e7c000e6",
+  "time": "2019-05-05T14:37:51-04:00",
+  "message": "bytes in: [231 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e8c000e6",
+  "time": "2019-05-05T14:37:51-04:00",
+  "message": "bytes in: [232 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "e9c000e6",
+  "time": "2019-05-05T14:37:51-04:00",
+  "message": "bytes in: [233 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "eac000e6",
+  "time": "2019-05-05T14:37:51-04:00",
+  "message": "bytes in: [234 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ecc000e6",
+  "time": "2019-05-05T14:37:52-04:00",
+  "message": "bytes in: [236 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ecc000e6",
+  "time": "2019-05-05T14:37:52-04:00",
+  "message": "bytes in: [236 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "edc000e6",
+  "time": "2019-05-05T14:37:52-04:00",
+  "message": "bytes in: [237 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "eec000e6",
+  "time": "2019-05-05T14:37:52-04:00",
+  "message": "bytes in: [238 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "efc000e6",
+  "time": "2019-05-05T14:37:53-04:00",
+  "message": "bytes in: [239 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f0c000e6",
+  "time": "2019-05-05T14:37:53-04:00",
+  "message": "bytes in: [240 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f1c000e6",
+  "time": "2019-05-05T14:37:53-04:00",
+  "message": "bytes in: [241 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f3c000e6",
+  "time": "2019-05-05T14:37:54-04:00",
+  "message": "bytes in: [243 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f4c000e6",
+  "time": "2019-05-05T14:37:54-04:00",
+  "message": "bytes in: [244 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f4c000e6",
+  "time": "2019-05-05T14:37:54-04:00",
+  "message": "bytes in: [244 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f5c000e6",
+  "time": "2019-05-05T14:37:54-04:00",
+  "message": "bytes in: [245 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f6c000e6",
+  "time": "2019-05-05T14:37:54-04:00",
+  "message": "bytes in: [246 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f7c000e6",
+  "time": "2019-05-05T14:37:55-04:00",
+  "message": "bytes in: [247 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f8c000e6",
+  "time": "2019-05-05T14:37:56-04:00",
+  "message": "bytes in: [248 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "f9c000e6",
+  "time": "2019-05-05T14:37:56-04:00",
+  "message": "bytes in: [249 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fac000e6",
+  "time": "2019-05-05T14:37:57-04:00",
+  "message": "bytes in: [250 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fbc000e6",
+  "time": "2019-05-05T14:37:57-04:00",
+  "message": "bytes in: [251 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fdc000e6",
+  "time": "2019-05-05T14:37:57-04:00",
+  "message": "bytes in: [253 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fdc000e6",
+  "time": "2019-05-05T14:37:57-04:00",
+  "message": "bytes in: [253 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "fec000e6",
+  "time": "2019-05-05T14:37:58-04:00",
+  "message": "bytes in: [254 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "ffc000e6",
+  "time": "2019-05-05T14:37:58-04:00",
+  "message": "bytes in: [255 192 0 230]"
+}
+{
+  "level": "debug",
+  "pkg": "serial",
+  "bytes": "in",
+  "packet bytes": "00c000e6",
+  "time": "2019-05-05T14:38:00-04:00",
+  "message": "bytes in: [0 192 0 230]"
+}
