@@ -46,22 +46,30 @@ func postGameData(gameData []string) {
 	req.Header.Add("Content-Type", "application/json")
 
 	res, sendErr := http.DefaultClient.Do(req)
+	defer closeResponse(res)
+
 	if sendErr != nil {
 		logger.Error().Msg("error sending to leaderboard")
+	} else {
+
+		var g GameDataResponse
+		body, _ := ioutil.ReadAll(res.Body)
+
+		err := json.Unmarshal(body, &g)
+		if err != nil {
+			logger.Error().Msg("error unmarshalling Json response from leaderboard")
+		}
+
+		if g.Status == "ok" {
+			logger.Info().Msg("sent data to leaderboard")
+			api.ZeroGameData()
+		}
 	}
+}
 
-	defer res.Body.Close()
-	var g GameDataResponse
-	body, _ := ioutil.ReadAll(res.Body)
-
-	err := json.Unmarshal(body, &g)
-	if err != nil {
-		logger.Error().Msg("error unmarshalling Json response from leaderboard")
-	}
-
-	if g.Status == "ok" {
-		logger.Info().Msg("sent data to leaderboard")
-		api.ZeroGameData()
+func closeResponse(res *http.Response) {
+	if res != nil {
+		res.Body.Close()
 	}
 }
 
