@@ -13,7 +13,7 @@ import (
 var logger = log.Ger
 
 func main() {
-	waitDuration, _ := time.ParseDuration("4m")
+	waitDuration, _ := time.ParseDuration("2m")
 	startTime := time.Now().Local().Add(waitDuration)
 	url := "http://10.200.200.234:8000/api/newgame"
 
