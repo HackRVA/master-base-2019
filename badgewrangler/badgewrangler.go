@@ -68,9 +68,10 @@ func (h *Hit) TeamPacket() *irp.Packet {
 
 // GameData - The game data dump from a badge
 type GameData struct {
-	BadgeID uint16
-	GameID  uint16
-	Hits    []*Hit
+	BadgeID  uint16
+	GameID   uint16
+	Hits     []*Hit
+	UserName string
 }
 
 // BadgeIDPacket - return gameData's BadgeID packet
