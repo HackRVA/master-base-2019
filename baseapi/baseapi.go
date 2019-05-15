@@ -5,7 +5,6 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strconv"
-	"time"
 
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	gm "github.com/HackRVA/master-base-2019/game"
@@ -19,20 +18,9 @@ var logger = log.Ger.With().Str("pkg", "baseapi").Logger()
 func NewGame(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	var e gm.Game
-	currentTime := time.Now().UTC().UnixNano()
 
 	b, _ := ioutil.ReadAll(r.Body)
 	json.Unmarshal(b, &e)
-
-	var bitMask int64
-
-	// Init mask
-	for i := 0; i < 16; i++ {
-		bitMask++
-		bitMask <<= 1
-	}
-
-	e.GameID = (uint16)(currentTime * bitMask)
 
 	ScheduleGame(e)
 	AddNewGameEntryToGameInfo(e)

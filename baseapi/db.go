@@ -3,8 +3,8 @@ package baseapi
 import (
 	"encoding/json"
 	"fmt"
-	"time"
 	"strconv"
+	"time"
 
 	bw "github.com/HackRVA/master-base-2019/badgewrangler"
 	gm "github.com/HackRVA/master-base-2019/game"
@@ -29,6 +29,18 @@ func ScheduleGame(game gm.Game) {
 	if err != nil {
 		logger.Error().Msgf("error scheduling game: %s", err)
 	}
+
+	currentTime := time.Now().UTC().UnixNano()
+
+	var bitMask int64
+
+	// Init mask
+	for i := 0; i < 16; i++ {
+		bitMask++
+		bitMask <<= 1
+	}
+
+	game.GameID = (uint16)(currentTime * bitMask)
 
 	// create a new scribble database, providing a destination for the database to live
 	db, _ := scribble.New("./data", nil)
@@ -209,13 +221,12 @@ func DataInGameOut(gameDataIn chan *bw.GameData, gameDataOut chan *bw.GameData, 
 	}
 }
 
-
-// Overwrites the 'info' entry with the gameInfo 
+// Overwrites the 'info' entry with the gameInfo
 func WriteGameInfo(gameInfo gi.GameInfo) {
-     db, _ := scribble.New("./data", nil) 
-     if err := db.Write("info", strconv.FormatInt(int64(gameInfo.ID), 10), gameInfo); err != nil {
-     	logger.Error().Msgf("error writing to the database: %s", err)
-     }
+	db, _ := scribble.New("./data", nil)
+	if err := db.Write("info", strconv.FormatInt(int64(gameInfo.ID), 10), gameInfo); err != nil {
+		logger.Error().Msgf("error writing to the database: %s", err)
+	}
 }
 
 // GetAllInfo -- retrieves all info entries from the DB
@@ -226,7 +237,7 @@ func GetAllInfo() []gi.GameInfo {
 	resultSet, _ := db.ReadAll("info")
 	// iterate over the info result-set
 	allInfo := []gi.GameInfo{}
-	for _, result := range resultSet{
+	for _, result := range resultSet {
 		info := gi.GameInfo{}
 		json.Unmarshal([]byte(result), &info)
 		allInfo = append(allInfo, info)
@@ -237,63 +248,63 @@ func GetAllInfo() []gi.GameInfo {
 
 // GetInfo -- retreive game info from database
 func GetInfo(gameID uint16) gi.GameInfo {
-     var gameInfo gi.GameInfo
+	var gameInfo gi.GameInfo
 
-     db, _ := scribble.New("./data", nil)
-     err := db.Read("info", strconv.FormatUint(uint64(gameID), 10), &gameInfo)
-     if err != nil {
-     	logger.Error().Msgf("Error reading: %s", err)
-     }
-     
-     return gameInfo
+	db, _ := scribble.New("./data", nil)
+	err := db.Read("info", strconv.FormatUint(uint64(gameID), 10), &gameInfo)
+	if err != nil {
+		logger.Error().Msgf("Error reading: %s", err)
+	}
+
+	return gameInfo
 }
 
 // GetOldInfo -- retreive old game info from database
 func GetOldInfo(gameID uint16) gi.GameInfo {
-     var gameInfo gi.GameInfo
-     var key string = strconv.FormatUint((uint64)(gameID), 10) + "old"
+	var gameInfo gi.GameInfo
+	var key string = strconv.FormatUint((uint64)(gameID), 10) + "old"
 
-     db, _ := scribble.New("./data", nil)
-     err := db.Read("info", key, &gameInfo)
+	db, _ := scribble.New("./data", nil)
+	err := db.Read("info", key, &gameInfo)
 
-     if err != nil {
-     	logger.Error().Msgf("Error reading: %s", err)
-     }
-     
-     return gameInfo
+	if err != nil {
+		logger.Error().Msgf("Error reading: %s", err)
+	}
+
+	return gameInfo
 }
 
 func AddNewGameEntryToGameInfo(game gm.Game) {
-     var gameInfo gi.GameInfo
-     
-     // Establish driver connection
-     db, err := scribble.New("./data", nil) 
-     logger.Info().Msg("Adding new entry")
-     
-     if err != nil {
-     	logger.Error().Msgf("Driver failure: %s", err)
-	return 
-     }
-     
-     err = db.Read("info", strconv.FormatUint((uint64)(game.GameID), 10), gameInfo)
+	var gameInfo gi.GameInfo
 
-     if err != nil {
-     	logger.Error().Msgf("Read error: %s", err)
-     }
+	// Establish driver connection
+	db, err := scribble.New("./data", nil)
+	logger.Info().Msg("Adding new entry")
 
-     // If no prior gameInfo information exists for this game
-     // Initialize gameInfo with game
-     if gameInfo.ID == 0 {
-     	gameInfo.ID = game.GameID
-	gameInfo.Details = game
-     } else {
-       	gameInfo.Details = game
-     }
+	if err != nil {
+		logger.Error().Msgf("Driver failure: %s", err)
+		return
+	}
 
-     err = db.Write("info", strconv.FormatInt((int64)(gameInfo.ID), 10), &gameInfo)
-     if err != nil {
-      	logger.Error().Msgf("error writing to the database: %s", err)
-     }
+	err = db.Read("info", strconv.FormatUint((uint64)(game.GameID), 10), gameInfo)
+
+	if err != nil {
+		logger.Error().Msgf("Read error: %s", err)
+	}
+
+	// If no prior gameInfo information exists for this game
+	// Initialize gameInfo with game
+	if gameInfo.ID == 0 {
+		gameInfo.ID = game.GameID
+		gameInfo.Details = game
+	} else {
+		gameInfo.Details = game
+	}
+
+	err = db.Write("info", strconv.FormatInt((int64)(gameInfo.ID), 10), &gameInfo)
+	if err != nil {
+		logger.Error().Msgf("error writing to the database: %s", err)
+	}
 
 }
 
@@ -301,47 +312,47 @@ func AddNewGameEntryToGameInfo(game gm.Game) {
 // this function writes a new record if there isn't already
 // a record present
 func UpdateGameInfo(gameInfo gi.GameInfo) {
-     var storedGameInfo gi.GameInfo
-     var oldGameInfo gi.GameInfo
-     
-     // Establish driver connection
-     db, err := scribble.New("./data", nil)
+	var storedGameInfo gi.GameInfo
+	var oldGameInfo gi.GameInfo
 
-     if err != nil {
-     	logger.Error().Msgf("Driver failure: %s", err)
-	return 
-     }
+	// Establish driver connection
+	db, err := scribble.New("./data", nil)
 
-     // retrieve a single entry from info
-     err = db.Read("info", strconv.FormatUint(uint64(gameInfo.ID), 10), &storedGameInfo)
+	if err != nil {
+		logger.Error().Msgf("Driver failure: %s", err)
+		return
+	}
 
-     if err != nil {
-     	logger.Warn().Msgf("game info update failed: %s", err)
-     	WriteGameInfo(gameInfo)
-	return 
-     }
-     
-     // Backup entry
-     err = db.Read("info", strconv.FormatUint((uint64)(oldGameInfo.ID), 10) + "old", &oldGameInfo)
+	// retrieve a single entry from info
+	err = db.Read("info", strconv.FormatUint(uint64(gameInfo.ID), 10), &storedGameInfo)
 
-     if err != nil {
-     	logger.Warn().Msgf("Reading game info backup failed: %s", err)
-     }
-     
-     err = db.Delete("info", strconv.FormatUint((uint64)(oldGameInfo.ID), 10) + "old")
+	if err != nil {
+		logger.Warn().Msgf("game info update failed: %s", err)
+		WriteGameInfo(gameInfo)
+		return
+	}
 
-     if err != nil {
-     	logger.Warn().Msgf("Deleting backup failed: %s", err)
-     }
+	// Backup entry
+	err = db.Read("info", strconv.FormatUint((uint64)(oldGameInfo.ID), 10)+"old", &oldGameInfo)
 
-     err = db.Write("info", strconv.FormatUint((uint64)(storedGameInfo.ID), 10) + "old", storedGameInfo)
-     if err != nil {
-     	logger.Error().Msgf("Writing Backup failed: %s", err)
-	return
-     }
-     
-     err = db.Write("info", strconv.FormatUint((uint64)(gameInfo.ID), 10) , gameInfo)
-     if err != nil {
-     	logger.Error().Msgf("Writing game info entry failed: %s", err)
-     }
+	if err != nil {
+		logger.Warn().Msgf("Reading game info backup failed: %s", err)
+	}
+
+	err = db.Delete("info", strconv.FormatUint((uint64)(oldGameInfo.ID), 10)+"old")
+
+	if err != nil {
+		logger.Warn().Msgf("Deleting backup failed: %s", err)
+	}
+
+	err = db.Write("info", strconv.FormatUint((uint64)(storedGameInfo.ID), 10)+"old", storedGameInfo)
+	if err != nil {
+		logger.Error().Msgf("Writing Backup failed: %s", err)
+		return
+	}
+
+	err = db.Write("info", strconv.FormatUint((uint64)(gameInfo.ID), 10), gameInfo)
+	if err != nil {
+		logger.Error().Msgf("Writing game info entry failed: %s", err)
+	}
 }
