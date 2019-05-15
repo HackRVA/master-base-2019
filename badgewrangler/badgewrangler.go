@@ -238,7 +238,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 		case C.OPCODE_SET_BADGE_TEAM:
 			if expecting == Team && hitsRecorded < hitCount {
 				startTime = time.Now()
-				gameData.Hits[hitsRecorded].Team = uint8(packet.Payload & 0x0fff)
+				gameData.Hits[hitsRecorded].Team = uint8(packet.Payload & 0x07)
 				if debug {
 					logger.Debug().Msgf("** Badge Upload Hit Record Team Received: %s", repr.Repr(gameData.Hits[hitsRecorded].Team))
 				}
@@ -315,7 +315,7 @@ func BuildBadgeUploadHitRecordBadgeID(hitBadgeID uint16) *irp.Packet {
 
 // BuildBadgeUploadHitRecordTeam - Build the team packet for the hit record
 func BuildBadgeUploadHitRecordTeam(team uint8) *irp.Packet {
-	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_SET_BADGE_TEAM<<12|uint16(team&0x0f))
+	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_SET_BADGE_TEAM<<12|uint16(team&0x07))
 }
 
 // BuildBadgeUploadHitRecordTimestamp - Build the timestamp packet for the hit record
