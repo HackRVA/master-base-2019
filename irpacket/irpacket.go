@@ -31,8 +31,8 @@ type PayloadSpec struct {
 var payloadSpecList = []PayloadSpec{
 	{C.OPCODE_SET_GAME_START_TIME, "Set Game Start Time", 0x0fff},
 	{C.OPCODE_SET_GAME_DURATION, "St Game Duration", 0x0fff},
-	{C.OPCODE_HIT, "Badge Hit (team)", 0x0f},
-	{C.OPCODE_SET_BADGE_TEAM, "Set Badge Team", 0x0f},
+	{C.OPCODE_HIT, "Badge Hit (team)", 0x07},
+	{C.OPCODE_SET_BADGE_TEAM, "Set Badge Team", 0x07},
 	{C.OPCODE_REQUEST_BADGE_DUMP, "Request Badge Dump", 0x0},
 	{C.OPCODE_SET_GAME_VARIANT, "Set Game Variant", 0x0f},
 	{C.OPCODE_BADGE_RECORD_COUNT, "Badge Record Count", 0x0fff},

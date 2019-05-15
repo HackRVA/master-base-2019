@@ -27,6 +27,7 @@ const (
 	BadgeID       = C.OPCODE_BADGE_UPLOAD_HIT_RECORD_BADGE_ID
 	Timestamp     = C.OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP
 	Team          = C.OPCODE_SET_BADGE_TEAM
+	UserName      = C.OPCODE_USERNAME_DATA
 )
 
 var debug = false
@@ -138,6 +139,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 	var hitsRecorded uint16
 	var startTime time.Time
 	var packet *irp.Packet
+	var letters uint8
 
 	for {
 		if expecting != SenderBadgeID {
@@ -199,14 +201,8 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 						logger.Debug().Msgf("** Badge Record Count Received: %s", repr.Repr(hitCount))
 					}
 				} else {
-					if debug {
-						logger.Debug().Msg("GameData Complete!")
-					}
-					gameDataOut <- gameData
-					hitsRecorded = 0
-					hitCount = 0
-					gameData = nil
-					expecting = SenderBadgeID
+					expecting = UserName
+					letters = 0
 				}
 			} else {
 				PrintUnexpectedPacketError(expecting, opcode)
@@ -243,6 +239,22 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 					logger.Debug().Msgf("** Badge Upload Hit Record Team Received: %s", repr.Repr(gameData.Hits[hitsRecorded].Team))
 				}
 				if hitsRecorded++; hitsRecorded == hitCount {
+					expecting = UserName
+					letters = 0
+				} else {
+					expecting = BadgeID
+				}
+			} else {
+				PrintUnexpectedPacketError(expecting, opcode)
+			}
+		case C.OPCODE_USERNAME_DATA:
+			if expecting == UserName && letters < 10 {
+				startTime = time.Now()
+				if debug {
+					logger.Debug().Msgf("** Badge User Name Letters Received: %d", letters)
+				}
+
+				if letters += 2; letters == 10 {
 					if debug {
 						logger.Debug().Msg("GameData Complete!")
 					}
@@ -251,13 +263,9 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 					hitCount = 0
 					gameData = nil
 					expecting = SenderBadgeID
-				} else {
-					expecting = BadgeID
 				}
-			} else {
-				PrintUnexpectedPacketError(expecting, opcode)
-
 			}
+
 		default:
 			{
 			}
