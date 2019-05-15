@@ -21,7 +21,8 @@ func InitConfiguration() {
 	viper.SetDefault("serialDebug", false)
 	viper.SetDefault("bwDebug", false)
 	viper.SetDefault("leaderBoard_API", "http://localhost:5000/api/")
-
+	viper.SetDefault("isMaster", true)
+	viper.SetDefault("master_URL", "http://10.200.200.234:8000")
 	viper.BindEnv("leaderBoard_API")
 
 	viper.SetConfigName("baseconfig")
@@ -37,7 +38,9 @@ func InitConfiguration() {
 	fmt.Println("                ir:", viper.GetBool("ir"))
 	fmt.Println("       serialDebug:", viper.GetBool("serialDebug"))
 	fmt.Println("badgeWranglerDebug:", viper.GetBool("bwDebug"))
-	fmt.Println("leaderBoard_API", viper.GetString("leaderBoard_API"))
+	fmt.Println("   leaderBoard_API:", viper.GetString("leaderBoard_API"))
+	fmt.Println("          isMaster:", viper.GetBool("isMaster"))
+	fmt.Println("        master_URL:", viper.GetString("master_URL"))
 }
 
 // StartBadgeWrangler - Start up the badge wrangler

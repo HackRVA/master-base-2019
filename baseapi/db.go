@@ -13,6 +13,16 @@ import (
 	scribble "github.com/nanobox-io/golang-scribble"
 )
 
+var gamesSent = 0
+
+type patientZero struct {
+	gameID uint16
+}
+
+type zombieGames struct {
+	patientZero []patientZero
+}
+
 // ScheduleGame -- save gamespec to database
 func ScheduleGame(game gm.Game) {
 	hash, err := structhash.Hash(game, 1)
@@ -28,23 +38,121 @@ func ScheduleGame(game gm.Game) {
 
 // SaveGameData -- save game data to db
 func SaveGameData(data *bw.GameData) {
-	hash, err := structhash.Hash(data, 1)
+	d := &GameDataWithSent{}
+	d.GameData = *data
+	d.Sent = false
+	hash, err := structhash.Hash(d, 1)
 	if err != nil {
 		logger.Error().Msgf("error saving game data: %s", err)
 	}
 
 	db, _ := scribble.New("./data", nil)
 	logger.Info().Msg("saving game data")
-	db.Write("game_data", hash, data)
+	db.Write("game_data", hash, d)
+}
+
+func killGameData() {
+	db, _ := scribble.New("./data", nil)
+
+	// Delete all fish from the database
+	if err := db.Delete("game_data", ""); err != nil {
+		fmt.Println("Error", err)
+	}
+}
+
+// ZeroGameData -- Sets all game data as sent
+func ZeroGameData() {
+	gameData := GetGameData()
+
+	db, _ := scribble.New("./data", nil)
+
+	for _, g := range gameData {
+		g.Sent = true
+		logger.Debug().Msgf("zeroing game_data for badgeID: %d", g.BadgeID)
+		hash, err := structhash.Hash(g, 1)
+		if err != nil {
+			logger.Error().Msgf("error saving zeroed game data: %s", err)
+		}
+		db.Write("game_data", hash, g)
+		logger.Debug().Msg("zeroing game data")
+	}
+
+}
+
+func notSent(gd []GameDataWithSent, f func(GameDataWithSent) bool) []GameDataWithSent {
+	notSent := make([]GameDataWithSent, 0)
+	for _, g := range gd {
+		if f(g) {
+			notSent = append(notSent, g)
+		}
+	}
+	return notSent
+}
+
+// StrGameData -- GameData Returned as []String
+func StrGameData() []string {
+	var s []string
+
+	for _, c := range GetGameData() {
+		s = append(s, c.ToString())
+	}
+	return s
 }
 
 // GetGameData -- retrieves gamedata from the db
-func GetGameData() []string {
+func GetGameData() []GameDataWithSent {
 	// create a new scribble database, providing a destination for the database to live
 	db, _ := scribble.New("./data", nil)
+
 	// Read more games from the database
-	gameData, _ := db.ReadAll("game_data")
-	return gameData
+	records, _ := db.ReadAll("game_data")
+	games := []GameDataWithSent{}
+
+	for _, g := range records {
+		gameFound := GameDataWithSent{}
+		if err := json.Unmarshal([]byte(g), &gameFound); err != nil {
+			fmt.Println("Error", err)
+		}
+		games = append(games, gameFound)
+	}
+
+	pendingData := notSent(games, func(g GameDataWithSent) bool {
+		return g.Sent == false
+	})
+
+	return pendingData
+}
+
+func determineTeam(variant uint8, gameID uint16) uint8 {
+	gamesSent++
+	switch variant {
+	case 0:
+		// "FREE FOR ALL",
+		return 1
+	case 1:
+		// "TEAM BATTLE",
+		return uint8(gamesSent%2 + 1)
+	case 2:
+		// "ZOMBIES!",
+		var z zombieGames
+		for _, c := range z.patientZero {
+			if c.gameID == gameID {
+				return 2
+			}
+		}
+		pZero := &patientZero{
+			gameID: gameID,
+		}
+
+		z.patientZero = append(z.patientZero, *pZero)
+
+		return 1
+	case 3:
+		// "CAPTURE BADGE",
+		return 1
+	}
+
+	return 1 // default return -- we should not use a zero value for team
 }
 
 // GetNext -- return the next game
@@ -55,16 +163,15 @@ func GetNext() gm.Game {
 
 	games := GetGames()
 	for _, game := range games {
-		fmt.Println(
-			"now: ",
+		logger.Debug().Msgf(
+			"now: %d \nnextGame: %d \nin the future: %t",
 			int64(t.Unix()),
-			"\nnextGame: ",
 			game.AbsStart,
-			"\nin the future:",
 			int64(t.Unix()) < game.AbsStart+int64(game.Duration))
 
 		// return the first game that is greater than now
 		if int64(t.Unix()) < game.AbsStart+int64(game.Duration) {
+			game.Team = determineTeam(game.Variant, game.GameID)
 			game.StartTime = int16(game.AbsStart - t.Unix())
 			return game
 		}

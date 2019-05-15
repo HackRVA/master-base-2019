@@ -1,7 +1,7 @@
 package leaderboard
 
 import (
-	"bytes"
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net/http"
@@ -29,27 +29,48 @@ type UserScripts struct {
 	Scripts []string
 }
 
+// GameDataResponse -- response from leaderboard when we send GameData
+type GameDataResponse struct {
+	Status  string `json:"status"`
+	Message string `json:"message"`
+}
+
 // PostGameData -- sends gameData to the leaderboard
 func postGameData(gameData []string) {
+	uri := viper.GetString("leaderBoard_API") + "consume"
 
-	uri := viper.GetString("leaderBoard_API")
+	payload := strings.NewReader(`{"data":[` + strings.Join(gameData, ",") + `]}`)
 
-	json := `{"data":[` + strings.Join(gameData, ",") + `]}`
-	var jsonStr = []byte(json)
-	logger.Info().Msg(json)
+	req, _ := http.NewRequest("POST", uri, payload)
 
-	req, err := http.NewRequest("POST", uri+"consume", bytes.NewBuffer(jsonStr))
-	req.Header.Set("Content-Type", "application/json")
+	req.Header.Add("Content-Type", "application/json")
 
-	client := &http.Client{}
-	resp, err := client.Do(req)
-	if err != nil {
-		logger.Error().Msgf("error connecting to Leaderboard: %s", err)
-		return
+	res, sendErr := http.DefaultClient.Do(req)
+	defer closeResponse(res)
+
+	if sendErr != nil {
+		logger.Error().Msg("error sending to leaderboard")
+	} else {
+
+		var g GameDataResponse
+		body, _ := ioutil.ReadAll(res.Body)
+
+		err := json.Unmarshal(body, &g)
+		if err != nil {
+			logger.Error().Msg("error unmarshalling Json response from leaderboard")
+		}
+
+		if g.Status == "ok" {
+			logger.Info().Msg("sent data to leaderboard")
+			api.ZeroGameData()
+		}
 	}
+}
 
-	logger.Info().Msg("sent data to leaderboard")
-	defer resp.Body.Close()
+func closeResponse(res *http.Response) {
+	if res != nil {
+		res.Body.Close()
+	}
 }
 
 // FetchScripts -- fetch user's scripts from leaderboard api
@@ -76,7 +97,7 @@ func sendToLeaderboard(interval *time.Ticker, quit chan struct{}) {
 		select {
 		case <-interval.C:
 			logger.Debug().Msg("attempt to send data to leaderboard")
-			postGameData(api.GetGameData())
+			postGameData(api.StrGameData())
 		case <-quit:
 			logger.Debug().Msg("stopping routine that sends data to leaderboard.")
 			interval.Stop()

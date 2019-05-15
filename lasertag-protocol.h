@@ -9,7 +9,7 @@
  * 1 cmd bit
  * 5 address bits (like port number)
  * 9 badge id bits
- * 16 payload bits
+ * 16 payload bits (4 bits opcode (12-15), and 12 bits operands (0-11))
  *
  */
 
@@ -23,11 +23,12 @@
 /* low 12 bits of payload are duration in seconds */
 
 #define OPCODE_HIT 0x02
-/* Low 4 bits of payload (bits 0 - 3) are team id of shooter */
-/* Bits 4 - 13 are badge ID of shooter */
+/* Low 3 bits of payload (bits 0 - 2) are team id of shooter */
+/* Bits 3 - 11 are badge ID of shooter */
+/* Bits 12-15 are opcode */
 
 #define OPCODE_SET_BADGE_TEAM 0x03
-/* Low 4 bits of payload are the team ID */
+/* Low 3 bits of payload are the team ID */
 
 #define OPCODE_REQUEST_BADGE_DUMP 0x04
 /*
@@ -54,13 +55,24 @@
 /* low 9 bits contain badge id of shooter */
 
 #define OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP 0x09
-/* 16 bits timestamp of hit, seconds since game start */
+/* 12 bits timestamp of hit, seconds since game start */
 
 #define OPCODE_GAME_ID 0x0a
-/* payload is 16 bit unique game ID.  This opcode is bidirectional.  Base
+/* Low 12 bits of payload is unique game ID.  This opcode is bidirectional.  Base
  * station transmits this to the badge at the beginning of a game, and the
  * badge transmits it back to the base station when syncing. */
 
 #define OPCODE_BADGE_IDENTITY 0x0b
 /* low 9 bits contain badge id of this badge that is uploading to the base station */
+
+#define OPCODE_BYTE_TEST 0x0c
+
+#define NUM_LASERTAG_POWERUPS 2
+#define NUM_VENDOR_BADGES 10
+#define OPCODE_VENDOR_POWER_UP 0x0d
+#define AUTO_GRANT_POWERUP_INTERVAL 10 /* seconds */
+/* Bits 0 - 8 are badge ID of power-up grantor. */
+/* There is a fixed mapping of low badge numbers to powerups.
+ * So vendor badges need to be in the low-badge number range (say, 1-9)
+ */
 
