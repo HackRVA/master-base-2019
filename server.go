@@ -34,6 +34,6 @@ func main() {
 	}
 
 	lb.StartLeaderboardLoop()
-	//ss.StartBadgeWrangler()
+	ss.StartBadgeWrangler()
 	http.ListenAndServe(":8000", nil)
 }
