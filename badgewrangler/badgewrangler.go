@@ -250,11 +250,11 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 		case C.OPCODE_USERNAME_DATA:
 			if expecting == UserName && letters < 10 {
 				startTime = time.Now()
+				letters += 2
 				if debug {
 					logger.Debug().Msgf("** Badge User Name Letters Received: %d", letters)
 				}
-
-				if letters += 2; letters == 10 {
+				if letters == 10 {
 					if debug {
 						logger.Debug().Msg("GameData Complete!")
 					}
