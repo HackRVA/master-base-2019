@@ -73,6 +73,8 @@ func TestSchedule(t *testing.T) {
 		AbsStart: twoMin.Unix(),
 	}
 
+	ScheduleGame(*testGame)
+
 	next := GetNext()
 	another := GetNext()
 
