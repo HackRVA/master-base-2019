@@ -5,6 +5,7 @@ import "C"
 
 import (
 	"fmt"
+	"strings"
 	"time"
 
 	log "github.com/HackRVA/master-base-2019/filelogging"
@@ -141,6 +142,8 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 	var startTime time.Time
 	var packet *irp.Packet
 	var letters uint8
+	bsIn := make([]byte, 2)
+	bsName := make([]byte, 10)
 
 	for {
 		if expecting != SenderBadgeID {
@@ -242,6 +245,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 				if hitsRecorded++; hitsRecorded == hitCount {
 					expecting = UserName
 					letters = 0
+
 				} else {
 					expecting = BadgeID
 				}
@@ -251,15 +255,18 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 		case C.OPCODE_USERNAME_DATA:
 			if expecting == UserName && letters < 10 {
 				startTime = time.Now()
+				bsIn = ExpandNameBytes(uint16(packet.Payload & 0x03ff))
+				bsName[letters], bsName[letters+1] = bsIn[0], bsIn[1]
 				letters += 2
 				if debug {
 					logger.Debug().Msgf("** Badge User Name Letters Received: %d", letters)
 				}
 				if letters == 10 {
+					gameData.UserName = strings.TrimSpace(DecodeNameBytes(bsName))
+					gameDataOut <- gameData
 					if debug {
 						logger.Debug().Msg("GameData Complete!")
 					}
-					gameDataOut <- gameData
 					hitsRecorded = 0
 					hitCount = 0
 					gameData = nil

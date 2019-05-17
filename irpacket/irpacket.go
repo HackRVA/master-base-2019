@@ -39,7 +39,7 @@ var payloadSpecList = []PayloadSpec{
 	{C.OPCODE_BADGE_UPLOAD_HIT_RECORD_BADGE_ID, "Badge Upload Hit Record Badge ID", 0x01ff},
 	{C.OPCODE_GAME_ID, "Game ID", 0x0fff},
 	{C.OPCODE_BADGE_UPLOAD_HIT_RECORD_TIMESTAMP, "Badge Upload Hit Record Timestamp", 0x0fff},
-	{C.OPCODE_BADGE_IDENTITY, "Badge Identity", 0x01ff}}
+	{C.OPCODE_BADGE_IDENTITY, "Badge Identity", 0x03ff}}
 
 var payloadSpecMap map[uint8]PayloadSpec
 

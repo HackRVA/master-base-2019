@@ -5,6 +5,7 @@ import (
 
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
+	"github.com/HackRVA/master-base-2019/utility"
 	"github.com/hackebrot/go-repr/repr"
 	"github.com/tarm/serial"
 )
@@ -68,7 +69,7 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 
 		if debug {
 			packetLogger := packet.LoggerPlus(logger)
-			packetLogger.Debug().Str("serial", "in").Msgf("Packet read from serial and routed to channel")
+			packetLogger.Debug().Str("microtime", utility.MicroTime()).Str("serial", "in").Msgf("Packet read from serial and routed to channel")
 		}
 
 		if connected {
@@ -108,7 +109,7 @@ func WriteSerial(packetsOut chan *irp.Packet) {
 
 			if debug {
 				packetLogger := packet.LoggerPlus(logger)
-				packetLogger.Debug().Str("serial", "out").Msgf("Packet to write received from channel")
+				packetLogger.Debug().Str("microtime", utility.MicroTime()).Str("serial", "out").Msgf("Packet to write received from channel")
 			}
 
 			bytes := packet.Bytes()
