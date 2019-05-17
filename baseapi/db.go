@@ -176,7 +176,7 @@ func GetNext() gm.Game {
 	games := GetGames()
 	for _, game := range games {
 		logger.Debug().Msgf(
-			"now: %d \nnextGame: %d \nin the future: %t",
+			"now: %d nextGame: %d in the future: %t",
 			int64(t.Unix()),
 			game.AbsStart,
 			int64(t.Unix()) < game.AbsStart+int64(game.Duration))

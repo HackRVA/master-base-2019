@@ -124,7 +124,7 @@ func (gd *GameData) TransmitBadgeDump(packetsOut chan *irp.Packet, irErr bool) {
 
 // PrintUnexpectedPacketError - print expected vs. unexpected character error
 func PrintUnexpectedPacketError(expected uint8, got uint8) {
-	logger.Error().Msgf("Expected \"%s\" packet but got \"%s\" packet instead\n",
+	logger.Error().Msgf("Expected \"%s\" packet but got \"%s\" packet instead",
 		irp.GetPayloadSpecs(expected).Description,
 		irp.GetPayloadSpecs(got).Description)
 }
