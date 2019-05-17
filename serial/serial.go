@@ -2,12 +2,17 @@ package serial
 
 import (
 	"fmt"
+	"time"
 
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
 	"github.com/HackRVA/master-base-2019/utility"
 	"github.com/hackebrot/go-repr/repr"
 	"github.com/tarm/serial"
+)
+
+const (
+	sendDelay = 40 * time.Millisecond
 )
 
 var logger = log.Ger.With().Str("pkg", "serial").Logger()
@@ -131,6 +136,8 @@ func WriteSerial(packetsOut chan *irp.Packet) {
 				logger.Error().Msgf("Error flushing the buffer: %s", err)
 			}
 		}
+
+		time.Sleep(sendDelay)
 	}
 }
 
