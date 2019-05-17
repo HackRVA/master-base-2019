@@ -62,7 +62,6 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 			if byteCount != 1 {
 				logger.Debug().Msgf("Packet read is not 4 bytes, it is %d bytes", byteCount)
 			}
-			fmt.Printf("%#2x ", buf[0])
 			packetBuffer = append(packetBuffer, buf[0])
 		}
 		fmt.Println()

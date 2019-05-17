@@ -4,7 +4,6 @@ package badgewrangler
 import "C"
 
 import (
-	"fmt"
 	"strings"
 	"time"
 
@@ -162,11 +161,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 			continue
 		}
 
-		fmt.Println()
-		irp.PrintPacket(packet)
 		opcode = packet.Opcode()
-		fmt.Println("  Opcode:", opcode)
-		fmt.Println()
 		switch opcode {
 		case C.OPCODE_BADGE_IDENTITY:
 			if expecting == SenderBadgeID {
@@ -357,8 +352,6 @@ func TransmitNewGamePackets(packetsOut chan *irp.Packet, gameIn chan *gm.Game, b
 		}
 
 		NewGamePackets(packetsOut, game)
-		NewGamePackets(packetsOut, game)
-
 		time.Sleep(beaconDelay)
 
 		beaconHold <- false
