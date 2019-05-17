@@ -213,15 +213,16 @@ func GetGames() []gm.Game {
 func DataInGameOut(gameDataIn chan *bw.GameData, gameDataOut chan *bw.GameData, gameOut chan *gm.Game) {
 	for {
 		gameData := <-gameDataIn
+		logger.Debug().Msg("DataInGameOut received gameData from GameDataIn channel")
 		fmt.Println(gameData.GameID)
-		//gameDataOut <- gameData
 		nextGame := GetNext()
 		gameOut <- &nextGame
+		logger.Debug().Msg("DataInGameOut sent nextGame to gameOut channel")
 		SaveGameData(gameData)
 	}
 }
 
-// Overwrites the 'info' entry with the gameInfo
+// WriteGameInfo - Overwrites the 'info' entry with the gameInfo
 func WriteGameInfo(gameInfo gi.GameInfo) {
 	db, _ := scribble.New("./data", nil)
 	if err := db.Write("info", strconv.FormatInt(int64(gameInfo.ID), 10), gameInfo); err != nil {
@@ -262,7 +263,7 @@ func GetInfo(gameID uint16) gi.GameInfo {
 // GetOldInfo -- retreive old game info from database
 func GetOldInfo(gameID uint16) gi.GameInfo {
 	var gameInfo gi.GameInfo
-	var key string = strconv.FormatUint((uint64)(gameID), 10) + "old"
+	var key = strconv.FormatUint((uint64)(gameID), 10) + "old"
 
 	db, _ := scribble.New("./data", nil)
 	err := db.Read("info", key, &gameInfo)
@@ -274,6 +275,7 @@ func GetOldInfo(gameID uint16) gi.GameInfo {
 	return gameInfo
 }
 
+// AddNewGameEntryToGameInfo -
 func AddNewGameEntryToGameInfo(game gm.Game) {
 	var gameInfo gi.GameInfo
 
