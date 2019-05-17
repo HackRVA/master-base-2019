@@ -265,6 +265,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 					gameData.UserName = strings.TrimSpace(DecodeNameBytes(bsName))
 					gameDataOut <- gameData
 					if debug {
+						logger.Debug().Msgf("UserName: %s", gameData.UserName)
 						logger.Debug().Msg("GameData Complete!")
 					}
 					hitsRecorded = 0

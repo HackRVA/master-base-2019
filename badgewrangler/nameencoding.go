@@ -1,7 +1,6 @@
 package badgewrangler
 
-//func encode_username_slice()
-
+// EncodeNameBytes - Encode the ascii User Name as a byte array of 5 bit characters
 func EncodeNameBytes(name string) []byte {
 	bs := make([]byte, 10)
 	length := len(name)
@@ -20,6 +19,7 @@ func EncodeNameBytes(name string) []byte {
 	return bs
 }
 
+// CompressNameBytes - Compress the two element array of character bytes into 5 bit uints
 func CompressNameBytes(bytes []byte) uint16 {
 	var compressed uint16
 	compressed = compressed | (uint16(bytes[0]) << 5)
@@ -27,6 +27,7 @@ func CompressNameBytes(bytes []byte) uint16 {
 	return compressed
 }
 
+// ExpandNameBytes - Expand the 5 bit uints into an 2 element array of regular bytes
 func ExpandNameBytes(fragment uint16) []byte {
 	bs := make([]byte, 2)
 	bs[0] = byte((fragment >> 5) & 0x1f)
@@ -34,6 +35,7 @@ func ExpandNameBytes(fragment uint16) []byte {
 	return bs
 }
 
+// DecodeNameBytes - Convert the array of 5 bit characters into a trimmed ascii string
 func DecodeNameBytes(bytes []byte) string {
 	var decoded string
 	for _, b := range bytes {
