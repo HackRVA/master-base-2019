@@ -5,4 +5,3 @@ echo "serialPort: /dev/ttyACM0
 ir: true
 serialDebug: true
 bwDebug: true" > /etc/basestation/baseconfig.yaml
-go run server.go

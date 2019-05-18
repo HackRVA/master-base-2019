@@ -94,3 +94,25 @@ func TestSchedule(t *testing.T) {
 		t.Error("Test Variant does not match with next scheduled game")
 	}
 }
+
+// TestZombie -- testing that zombie is created and then it should switch to human
+func TestZombie(t *testing.T) {
+	if determineTeam(2, 2) != 1 {
+		t.Error("determine team should send PatientZero")
+	}
+	if determineTeam(2, 2) != 2 {
+		t.Error("determine team should start sending humans")
+	}
+	if determineTeam(2, 2) != 2 {
+		t.Error("determine team should still be sending humans")
+	}
+	if determineTeam(2, 3) != 1 {
+		t.Error("determine team should send PatientZero")
+	}
+	if determineTeam(2, 3) != 2 {
+		t.Error("determine team should start sending humans")
+	}
+	if determineTeam(2, 3) != 2 {
+		t.Error("determine team should still be sending humans")
+	}
+}

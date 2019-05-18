@@ -15,6 +15,7 @@ import (
 var logger = log.Ger.With().Str("pkg", "database").Logger()
 
 var gamesSent = 0
+var z zombieGames
 
 type patientZero struct {
 	gameID uint16
@@ -149,7 +150,6 @@ func determineTeam(variant uint8, gameID uint16) uint8 {
 		// "ZOMBIES!",
 		// TEAM 1 is zombie
 		// TEAM 2 is non-zombie
-		var z zombieGames
 		for _, c := range z.patientZero {
 			if c.gameID == gameID {
 				return 2
