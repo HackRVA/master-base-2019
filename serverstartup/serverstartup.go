@@ -71,5 +71,4 @@ func StartBadgeWrangler() {
 	go bw.TransmitBeacon(packetsOut, beaconHold)
 	go bw.TransmitNewGamePackets(packetsOut, gameOut, beaconHold)
 	go db.DataInGameOut(gameDataIn, gameDataOut, gameOut)
-	//go ba.SendGameData(gameDataOut)
 }

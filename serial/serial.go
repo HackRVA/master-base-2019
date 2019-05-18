@@ -2,6 +2,7 @@ package serial
 
 import (
 	"fmt"
+	"io"
 	"time"
 
 	log "github.com/HackRVA/master-base-2019/filelogging"
@@ -56,6 +57,14 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 		for len(packetBuffer) < 4 {
 			buf[0] = 0
 			byteCount, err := serialConn.Read(buf)
+			if debug {
+				logger.Debug().Bool("byteLevel", true).Msgf("byteCount = %d, err = %s", byteCount, err.Error())
+			}
+			fmt.Printf("byteCount = %d, err = %s", byteCount, err)
+			if err == io.EOF {
+				fmt.Println("Fatal serial error: EOF on serial port:", err)
+				logger.Fatal().Err(err).Msgf("Error, EOF on serial port: %s\n", err)
+			}
 			if err != nil {
 				logger.Debug().Msgf("Error reading packet: %s", err)
 			}
