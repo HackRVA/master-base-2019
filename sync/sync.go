@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"time"
 
-	api "github.com/HackRVA/master-base-2019/baseapi"
+	db "github.com/HackRVA/master-base-2019/database"
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	gm "github.com/HackRVA/master-base-2019/game"
 	"github.com/spf13/viper"
@@ -41,7 +41,7 @@ func fetchScheduledGames() []gm.Game {
 
 // isInLocalDB -- returns true if this game already exists in the localDB
 func isInLocalDB(game gm.Game) bool {
-	dbGames := api.GetGames()
+	dbGames := db.GetGames()
 
 	for _, g := range dbGames {
 		if game.GameID == g.GameID {
@@ -59,7 +59,7 @@ func pushToLocalDB(games []gm.Game) {
 	for _, game := range games {
 		if int64(t.Unix()) < game.AbsStart+int64(game.Duration) {
 			if !isInLocalDB(game) {
-				api.ScheduleGame(game)
+				db.ScheduleGame(game)
 			}
 		}
 	}

@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	api "github.com/HackRVA/master-base-2019/baseapi"
+	db "github.com/HackRVA/master-base-2019/database"
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	"github.com/spf13/viper"
 )
@@ -62,7 +62,7 @@ func postGameData(gameData []string) {
 
 		if g.Status == "ok" {
 			logger.Info().Msg("sent data to leaderboard")
-			api.ZeroGameData()
+			db.ZeroGameData()
 		}
 	}
 }
@@ -97,7 +97,7 @@ func sendToLeaderboard(interval *time.Ticker, quit chan struct{}) {
 		select {
 		case <-interval.C:
 			logger.Debug().Msg("attempt to send data to leaderboard")
-			postGameData(api.StrGameData())
+			postGameData(db.StrGameData())
 		case <-quit:
 			logger.Debug().Msg("stopping routine that sends data to leaderboard.")
 			interval.Stop()

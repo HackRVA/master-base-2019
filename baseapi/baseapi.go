@@ -5,10 +5,13 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strconv"
+	"time"
 
+	db "github.com/HackRVA/master-base-2019/database"
 	log "github.com/HackRVA/master-base-2019/filelogging"
 	gm "github.com/HackRVA/master-base-2019/game"
 	gi "github.com/HackRVA/master-base-2019/gameinfo"
+	info "github.com/HackRVA/master-base-2019/info"
 	mux "github.com/gorilla/mux"
 )
 
@@ -22,8 +25,8 @@ func NewGame(w http.ResponseWriter, r *http.Request) {
 	b, _ := ioutil.ReadAll(r.Body)
 	json.Unmarshal(b, &e)
 
-	ScheduleGame(e)
-	AddNewGameEntryToGameInfo(e)
+	db.ScheduleGame(e)
+	info.AddNewGameEntryToGameInfo(e)
 
 	j, _ := json.Marshal(e)
 	w.Write(j)
@@ -31,16 +34,30 @@ func NewGame(w http.ResponseWriter, r *http.Request) {
 
 // NextGame -- returns the game that is sheduled next
 func NextGame(w http.ResponseWriter, r *http.Request) {
+	t := time.Now()
 	w.Header().Set("Content-Type", "application/json")
-	next := GetNext()
-	var gameInfo gi.GameInfo
-	AddNewGameEntryToGameInfo(next)
+	next := func() gm.Game {
+		var g gm.Game
+		g.AbsStart = 0
+		games := db.GetGames()
+		for _, game := range games {
+			// return the first game that is greater than now
+			if int64(t.Unix()) < game.AbsStart+int64(game.Duration) {
+				game.StartTime = int16(game.AbsStart - t.Unix())
+				return game
+			}
+		}
+		return g
+	}()
 
-	gameInfo = GetInfo(next.GameID)
+	var gameInfo gi.GameInfo
+	info.AddNewGameEntryToGameInfo(next)
+
+	gameInfo = info.GetInfo(next.GameID)
 
 	logger.Info().Msgf("gameInfo ID: %d", next.GameID)
 	if gameInfo.ID == 0 {
-		AddNewGameEntryToGameInfo(next)
+		info.AddNewGameEntryToGameInfo(next)
 	}
 
 	if next.AbsStart == 0 {
@@ -55,7 +72,7 @@ func NextGame(w http.ResponseWriter, r *http.Request) {
 // AllGames - returns all scheduled games
 func AllGames(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	j, _ := json.Marshal(GetGames())
+	j, _ := json.Marshal(db.GetGames())
 	w.Write(j)
 }
 
@@ -76,10 +93,10 @@ func Info(w http.ResponseWriter, r *http.Request) {
 		logger.Error().Msgf("Info: %s", err)
 	}
 
-	gameInfo = GetInfo(uint16(gameIDFromRequest))
+	gameInfo = info.GetInfo(uint16(gameIDFromRequest))
 	if gameInfo.ID == 0 {
-		AddNewGameEntryToGameInfo(game)
-		gameInfo = GetInfo(game.GameID)
+		info.AddNewGameEntryToGameInfo(game)
+		gameInfo = info.GetInfo(game.GameID)
 	}
 	j, _ := json.Marshal(gameInfo)
 	w.Write(j)
@@ -88,6 +105,6 @@ func Info(w http.ResponseWriter, r *http.Request) {
 // AllInfo -- handler that returns all GameInfo
 func AllInfo(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	j, _ := json.Marshal(GetAllInfo())
+	j, _ := json.Marshal(info.GetAllInfo())
 	w.Write(j)
 }
