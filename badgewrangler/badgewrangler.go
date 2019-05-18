@@ -46,6 +46,7 @@ func SetIrErr(isIrErr bool) {
 
 // Hit - The data comprising a Hit
 type Hit struct {
+	GameID    uint16
 	BadgeID   uint16
 	Timestamp uint16
 	Team      uint8
