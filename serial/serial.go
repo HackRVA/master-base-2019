@@ -60,7 +60,6 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 			if debug {
 				logger.Debug().Bool("byteLevel", true).Msgf("byteCount = %d, err = %s", byteCount, err.Error())
 			}
-			fmt.Printf("byteCount = %d, err = %s", byteCount, err)
 			if err == io.EOF {
 				fmt.Println("Fatal serial error: EOF on serial port:", err)
 				logger.Fatal().Err(err).Msgf("Error, EOF on serial port: %s\n", err)
