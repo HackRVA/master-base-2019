@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	bw "github.com/HackRVA/master-base-2019/badgewrangler"
-	ba "github.com/HackRVA/master-base-2019/baseapi"
+	db "github.com/HackRVA/master-base-2019/database"
 	"github.com/HackRVA/master-base-2019/game"
 	irp "github.com/HackRVA/master-base-2019/irpacket"
 	"github.com/HackRVA/master-base-2019/serial"
@@ -70,6 +70,6 @@ func StartBadgeWrangler() {
 	go bw.ReceivePackets(filteredIn, gameDataIn, beaconHold)
 	go bw.TransmitBeacon(packetsOut, beaconHold)
 	go bw.TransmitNewGamePackets(packetsOut, gameOut, beaconHold)
-	go ba.DataInGameOut(gameDataIn, gameDataOut, gameOut)
+	go db.DataInGameOut(gameDataIn, gameDataOut, gameOut)
 	//go ba.SendGameData(gameDataOut)
 }

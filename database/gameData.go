@@ -1,4 +1,4 @@
-package baseapi
+package database
 
 import (
 	"encoding/json"

@@ -1,4 +1,4 @@
-package baseapi
+package database
 
 import (
 	"strings"
