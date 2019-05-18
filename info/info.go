@@ -10,7 +10,7 @@ import (
 	scribble "github.com/nanobox-io/golang-scribble"
 )
 
-var logger = log.Ger.With().Str("pkg", "baseapi").Logger()
+var logger = log.Ger.With().Str("pkg", "info").Logger()
 
 // WriteGameInfo - Overwrites the 'info' entry with the gameInfo
 func WriteGameInfo(gameInfo gi.GameInfo) {
