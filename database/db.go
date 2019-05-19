@@ -65,15 +65,6 @@ func SaveGameData(data *bw.GameData) {
 	db.Write("game_data", hash, d)
 }
 
-func killGameData() {
-	db, _ := scribble.New("./data", nil)
-
-	// Delete all fish from the database
-	if err := db.Delete("game_data", ""); err != nil {
-		fmt.Println("Error", err)
-	}
-}
-
 // ZeroGameData -- Sets all game data as sent
 func ZeroGameData() {
 	gameData := GetGameData()
