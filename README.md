@@ -7,13 +7,19 @@ The Master Base Station communicates with the RVASec conference attendees' badge
 
 The Base station expects a badge to be connected over usb on `/dev/ttyACM0`
 
-## Environment Variables
-An Environment Variable is expected for the Leaderboard API URI
-```
-export LEADERBOARD_API=<leaderboard API URI>
-```
+## Config File
+A config file can be created here: `/etc/basestation/baseconfig.yaml`
 
-If you do not specify the `LEADERBOARD_API` variable, it will default to `http://localhost:5000/api/` 
+This is were you can override variables such as:
+```
+leaderBoard_API: "http://192.168.1.2:5000/api/"
+serialPort: /dev/ttyACM0
+```
+note: default values exist if a config file is not present.
 
-execute startup script:
-> sh build_and_run.sh
+
+## Start Up Script
+The start up script will compile and run a binary called `basestation`
+```
+$ sh build_and_run.sh
+```
