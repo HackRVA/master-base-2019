@@ -81,14 +81,14 @@ func ZeroGameData() {
 	db, _ := scribble.New("./data", nil)
 
 	for _, g := range gameData {
+		oldHash, err := structhash.Hash(g, 1)
+
 		g.Sent = true
 		logger.Debug().Msgf("zeroing game_data for badgeID: %d", g.BadgeID)
-		hash, err := structhash.Hash(g, 1)
 		if err != nil {
 			logger.Error().Msgf("error saving zeroed game data: %s", err)
 		}
-		killGameData()
-		db.Write("game_data", hash, g)
+		db.Write("game_data", oldHash, g)
 		logger.Debug().Msg("zeroing game data")
 	}
 }
