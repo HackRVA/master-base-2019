@@ -60,7 +60,7 @@ func postGameData(gameData []string) {
 			logger.Error().Msg("error unmarshalling Json response from leaderboard")
 		}
 
-		if g.Status == "ok" {
+		if g.Message == "recieved user data" {
 			logger.Info().Msg("sent data to leaderboard")
 			db.ZeroGameData()
 		}

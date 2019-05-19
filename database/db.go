@@ -87,10 +87,10 @@ func ZeroGameData() {
 		if err != nil {
 			logger.Error().Msgf("error saving zeroed game data: %s", err)
 		}
+		killGameData()
 		db.Write("game_data", hash, g)
 		logger.Debug().Msg("zeroing game data")
 	}
-
 }
 
 func notSent(gd []GameDataWithSent, f func(GameDataWithSent) bool) []GameDataWithSent {
