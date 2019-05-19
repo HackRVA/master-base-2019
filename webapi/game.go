@@ -1,4 +1,4 @@
-package baseapi
+package webapi
 
 import (
 	"encoding/json"
