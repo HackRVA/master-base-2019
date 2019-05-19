@@ -57,15 +57,13 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 		for len(packetBuffer) < 4 {
 			buf[0] = 0
 			byteCount, err := serialConn.Read(buf)
-			if debug {
-				logger.Debug().Bool("byteLevel", true).Msgf("byteCount = %d, err = %s", byteCount, err.Error())
-			}
-			if err == io.EOF {
-				fmt.Println("Fatal serial error: EOF on serial port:", err)
-				logger.Fatal().Err(err).Msgf("Error, EOF on serial port: %s\n", err)
-			}
 			if err != nil {
-				logger.Debug().Msgf("Error reading packet: %s", err)
+				if err == io.EOF {
+					fmt.Println("Fatal serial error: EOF on serial port:", err)
+					logger.Fatal().Err(err).Msgf("Error, EOF on serial port: %s\n", err)
+				} else {
+					logger.Debug().Msgf("Error reading packet: %s", err)
+				}
 			}
 			if byteCount != 1 {
 				logger.Debug().Msgf("Packet read is not 4 bytes, it is %d bytes", byteCount)
