@@ -24,6 +24,7 @@ func main() {
 	r.HandleFunc("/api/games", api.AllGames).Methods("GET")
 	r.HandleFunc("/api/info/all", api.AllInfo).Methods("GET")
 	r.HandleFunc("/api/info/{id}", api.Info).Methods("GET")
+	r.HandleFunc("/api/zombie", api.Zombie).Methods("POST")
 	http.Handle("/", r)
 	fmt.Println("running web server on port 8000")
 
