@@ -15,15 +15,7 @@ import (
 var logger = log.Ger.With().Str("pkg", "database").Logger()
 
 var gamesSent = 0
-var z zombieGames
-
-type patientZero struct {
-	gameID uint16
-}
-
-type zombieGames struct {
-	patientZero []patientZero
-}
+var sendingZombie = false
 
 // ScheduleGame -- save gamespec to database
 func ScheduleGame(game gm.Game) {
@@ -128,6 +120,16 @@ func GetGameData() []GameDataWithSent {
 	return pendingData
 }
 
+// ToggleZombie -- sets whether or not we should send zombie
+func ToggleZombie(send bool) {
+	sendingZombie = send
+	if sendingZombie {
+		fmt.Println("sending zombies")
+		return
+	}
+	fmt.Println("sending humans")
+}
+
 func determineTeam(variant uint8, gameID uint16) uint8 {
 	gamesSent++
 	switch variant {
@@ -141,18 +143,11 @@ func determineTeam(variant uint8, gameID uint16) uint8 {
 		// "ZOMBIES!",
 		// TEAM 1 is zombie
 		// TEAM 2 is non-zombie
-		for _, c := range z.patientZero {
-			if c.gameID == gameID {
-				return 2
-			}
-		}
-		pZero := &patientZero{
-			gameID: gameID,
+		if sendingZombie {
+			return 1
 		}
 
-		z.patientZero = append(z.patientZero, *pZero)
-
-		return 1
+		return 2
 	case 3:
 		// "CAPTURE BADGE",
 		return 1

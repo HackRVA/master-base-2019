@@ -17,6 +17,11 @@ import (
 
 var logger = log.Ger.With().Str("pkg", "webapi").Logger()
 
+// SendZombie -- json to toggle zombie
+type SendZombie struct {
+	SendZombie bool `json:"sendZombie"`
+}
+
 // NewGame - function to schedule newgame
 func NewGame(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
@@ -106,5 +111,20 @@ func Info(w http.ResponseWriter, r *http.Request) {
 func AllInfo(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	j, _ := json.Marshal(info.GetAllInfo())
+	w.Write(j)
+}
+
+// Zombie -- toggles whether or not we are sending zombie based \
+// the data being posted
+func Zombie(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	var z SendZombie
+
+	b, _ := ioutil.ReadAll(r.Body)
+	json.Unmarshal(b, &z)
+
+	db.ToggleZombie(z.SendZombie)
+
+	j, _ := json.Marshal(z)
 	w.Write(j)
 }
