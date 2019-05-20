@@ -203,7 +203,6 @@ func DataInGameOut(gameDataIn chan *bw.GameData, gameDataOut chan *bw.GameData, 
 	for {
 		gameData := <-gameDataIn
 		logger.Debug().Msg("DataInGameOut received gameData from GameDataIn channel")
-		fmt.Println(gameData.GameID)
 		nextGame := GetNext()
 		gameOut <- &nextGame
 		logger.Debug().Msg("DataInGameOut sent nextGame to gameOut channel")
