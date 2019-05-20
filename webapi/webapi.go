@@ -1,4 +1,4 @@
-package baseapi
+package webapi
 
 import (
 	"encoding/json"
@@ -15,7 +15,7 @@ import (
 	mux "github.com/gorilla/mux"
 )
 
-var logger = log.Ger.With().Str("pkg", "baseapi").Logger()
+var logger = log.Ger.With().Str("pkg", "webapi").Logger()
 
 // NewGame - function to schedule newgame
 func NewGame(w http.ResponseWriter, r *http.Request) {
