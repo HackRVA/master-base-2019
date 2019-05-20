@@ -211,6 +211,7 @@ func ReceivePackets(packetsIn chan *irp.Packet, gameDataOut chan *GameData, beac
 			if expecting == BadgeID && hitsRecorded < hitCount {
 				startTime = time.Now()
 				hit := &Hit{
+					GameID:  gameData.GameID,
 					BadgeID: uint16(packet.Payload & 0x01ff)}
 				gameData.Hits[hitsRecorded] = hit
 				expecting = Timestamp
