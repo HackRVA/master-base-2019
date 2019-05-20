@@ -53,8 +53,9 @@ func main() {
 	nextErrStatusLabel := "IR Error"
 
 	gameData := &bw.GameData{
-		BadgeID: uint16(333),
-		GameID:  uint16(1234),
+		BadgeID:  uint16(333),
+		GameID:   uint16(1234),
+		UserName: "BARNEY",
 		Hits: []*bw.Hit{
 			{BadgeID: uint16(101), Timestamp: uint16(33), Team: uint8(2)},
 			{BadgeID: uint16(101), Timestamp: uint16(103), Team: uint8(2)},

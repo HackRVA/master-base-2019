@@ -70,7 +70,6 @@ func ReadSerial(packetsIn chan *irp.Packet) {
 			}
 			packetBuffer = append(packetBuffer, buf[0])
 		}
-		fmt.Println()
 		if debug {
 			logger.Debug().Str("bytes", "in").Hex("packet bytes", packetBuffer).Msgf("bytes in: %s", repr.Repr(packetBuffer))
 		}

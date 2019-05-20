@@ -90,10 +90,15 @@ func (gd *GameData) HitCountPacket(hitCount uint16) *irp.Packet {
 	return BuildBadgeUploadRecordCount(hitCount)
 }
 
+// UserNameSegmentPacket - return 2 letter segment of the gameData's user name
+func (gd *GameData) UserNameSegmentPacket(userNameSegment uint16) *irp.Packet {
+	return BuildUserNameSegment(userNameSegment)
+}
+
 // Packets - return a slice containing all the gameData packets
 func (gd *GameData) Packets(irErr bool) []*irp.Packet {
 	packetIndex := 0
-	packets := make([]*irp.Packet, len(gd.Hits)*3+3)
+	packets := make([]*irp.Packet, len(gd.Hits)*3+8)
 	packets[packetIndex] = gd.BadgeIDPacket()
 	packetIndex++
 	packets[packetIndex] = gd.GameIDPacket()
@@ -110,6 +115,13 @@ func (gd *GameData) Packets(irErr bool) []*irp.Packet {
 		packets[packetIndex] = hit.TimestampPacket()
 		packetIndex++
 		packets[packetIndex] = hit.TeamPacket()
+		packetIndex++
+	}
+	encodedName := EncodeNameBytes(gd.UserName)
+	bytePair := make([]byte, 2)
+	for i := 0; i < 5; i++ {
+		bytePair, encodedName = encodedName[0:2], encodedName[2:]
+		packets[packetIndex] = gd.UserNameSegmentPacket(CompressNameBytes(bytePair))
 		packetIndex++
 	}
 	return packets
@@ -340,6 +352,11 @@ func BuildBadgeUploadHitRecordTimestamp(timestamp uint16) *irp.Packet {
 // BuildBadgeIdentity - Build the badge identity packet
 func BuildBadgeIdentity(senderBadgeID uint16) *irp.Packet {
 	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_BADGE_IDENTITY<<12|senderBadgeID&0x01ff)
+}
+
+// BuildUserNameSegment - Build a 2 letter segment of the user name
+func BuildUserNameSegment(userNameSegment uint16) *irp.Packet {
+	return irp.BuildPacket(uint16(C.BADGE_IR_BROADCAST_ID), C.OPCODE_USERNAME_DATA<<12|userNameSegment&0x03ff)
 }
 
 // TransmitNewGamePackets - Receives GameData, Transmits packets to the badge, and re-enables beacon
